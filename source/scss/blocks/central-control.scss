@@ -1,0 +1,64 @@
+.central-control {
+  @include container;
+
+  min-height: 850px;
+  padding-left: 773px;
+  padding-top: 229px;
+
+  background-image: url("../img/mobile-app.png");
+  background-repeat: no-repeat;
+  background-position: top 120px left 53px;
+
+  @include retina {
+    background-image: url("../img/mobile-app@2x.png");
+    background-size: 600px 650px;
+  }
+}
+
+.central-control__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 46px;
+}
+
+.central-control__desc {
+  padding-right: 40px;
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.central-control__google-pay-link,
+.central-control__app-store-link {
+  @include transition;
+
+  display: inline-block;
+  width: 203px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.central-control__google-pay-link {
+  margin-right: 12px;
+
+  background-image: url("../img/icon_googlepay_grey.svg");
+}
+
+.central-control__app-store-link {
+  background-image: url("../img/icon_appstore_grey.svg");
+}

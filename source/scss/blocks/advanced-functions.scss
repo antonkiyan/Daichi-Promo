@@ -1,0 +1,77 @@
+.advanced-functions {
+  padding-top: 160px;
+}
+
+.advanced-functions__title {
+  @include container;
+
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  text-align: center;
+}
+
+.advanced-functions__desc {
+  @include container;
+
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.67px;
+}
+
+.advanced-functions__first {
+  @include container;
+
+  margin-bottom: 160px;
+}
+
+.advanced-functions__first-container {
+  min-height: 767px;
+  padding: 13px 240px 0 720px;
+
+  background-image: url("../img/advanced-groups.png");
+  background-repeat: no-repeat;
+  background-position: top 0 left 240px;
+
+}
+
+.advanced-functions__item {
+  padding-top: 140px;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: left 50% top 0;
+
+  &--status {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 80px;
+
+    background-image: url("../img/icon_status.svg");
+  }
+
+  &--amount {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 80px;
+
+    background-image: url("../img/icon_amount.svg");
+  }
+
+  &--admin {
+    background-image: url("../img/icon_admin.svg");
+  }
+}
