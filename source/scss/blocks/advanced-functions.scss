@@ -12,6 +12,7 @@
   font-size: 48px;
   line-height: 53px;
   text-align: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .advanced-functions__desc {
@@ -36,16 +37,16 @@
 
 .advanced-functions__first-container {
   min-height: 767px;
-  padding: 13px 240px 0 720px;
+  padding: 13px 53px 0 51%;
 
   background-image: url("../img/advanced-groups.png");
   background-repeat: no-repeat;
-  background-position: top 0 left 240px;
-
+  background-position: top 0 left 23.5%;
 }
 
 .advanced-functions__item {
   padding-top: 140px;
+  max-width: 450px;
 
   font-weight: 300;
   font-size: 15px;
@@ -73,5 +74,247 @@
 
   &--admin {
     background-image: url("../img/icon_admin.svg");
+  }
+
+  &--location {
+    margin-bottom: 105px;
+
+    background-image: url("../img/icon_location.svg");
+  }
+
+  &--like {
+    background-image: url("../img/icon_like.svg");
+  }
+
+  &--pin {
+    margin-bottom: 80px;
+
+    background-image: url("../img/icon_pin.svg");
+  }
+
+  &--calendar {
+    background-image: url("../img/icon_calendar.svg");
+  }
+
+  &--data {
+    margin-bottom: 80px;
+
+    background-image: url("../img/icon_data.svg");
+  }
+
+  &--energy {
+    background-image: url("../img/icon_energy.svg");
+  }
+}
+
+.advanced-functions__item-title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.63px;
+}
+
+.advanced-functions__item p {
+  margin: 0;
+}
+
+.advanced-functions__second {
+  max-width: 1920px;
+  margin: 0 auto 160px;
+  padding-top: 100px;
+
+  background-image: url("../img/happy-people-2.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  @include retina {
+    background-image: url("../img/happy-people-2@2x.png");
+    background-size: 1065px 800px;
+  }
+}
+
+.advanced-functions__second-container {
+  @include container;
+}
+
+.advanced-functions__second-content {
+  max-width: 690px;
+  min-height: 772px;
+  padding: 88px 120px 89px;
+
+  background-color: #f6f6f6;
+}
+
+.advanced-functions__third {
+  @include container;
+
+  position: relative;
+
+  min-height: 767px;
+  padding-top: 13px;
+  margin-bottom: 160px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+
+    width: 387px;
+    height: 767px;
+  }
+
+  &::before {
+    left: 53px;
+
+    background-image: url("../img/advanced-scenario.png")
+  }
+
+  &::after {
+    right: 53px;
+
+    background-image: url("../img/advanced-schedule.png")
+  }
+
+  @include retina {
+    &::before {
+      background-image: url("../img/advanced-scenario@2x.png");
+      background-size: 387px auto;
+    }
+
+    &::after {
+      background-image: url("../img/advanced-schedule@2x.png");
+      background-size: 387px auto;
+    }
+  }
+}
+
+.advanced-functions__third-content {
+  min-height: 742px;
+  margin: 0 240px;
+  padding: 84px 165px 20px;
+
+  background-color: #f6f6f6;
+}
+
+.advanced-functions__third-content .advanced-functions__item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advanced-functions__fourth {
+  max-width: 1920px;
+  margin: 0 auto 160px;
+  padding-top: 100px;
+
+  background-image: url("../img/happy-people-3.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  @include retina {
+    background-image: url("../img/happy-people-3@2x.png");
+    background-size: 1065px 800px;
+  }
+}
+
+.advanced-functions__fourth-container {
+  @include container;
+}
+
+.advanced-functions__fourth-content {
+  max-width: 690px;
+  min-height: 772px;
+  margin-left: auto;
+  padding: 88px 120px 89px;
+
+  background-color: #f6f6f6;
+}
+
+.advanced-functions__fifth {
+  @include container;
+
+  margin-bottom: 160px;
+}
+
+.advanced-functions__fifth-container {
+  padding-top: 125px;
+  min-height: 750px;
+
+  background-image: url("../img/mobile-app-l.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  @include retina {
+    background-image: url("../img/mobile-app-l@2x.png");
+    background-size: 690px 750px;
+  }
+}
+
+.advanced-functions__fifth-content {
+  max-width: 810px;
+  min-height: 500px;
+  padding: 117px 120px 115px;
+
+  background-color: #ffffff;
+  border: 1px solid #cbcbcb;
+  border-radius: 6px;
+}
+
+.advanced-functions__assistants-title {
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+}
+
+.advanced-functions__fifth-content ul {
+  @include list-reset;
+}
+
+.advanced-functions__assistants-item {
+  display: inline-block;
+  height: 48px;
+
+  background-repeat: no-repeat;
+
+  &--homekit {
+    width: 186px;
+    margin-right: 10px;
+
+    background-image: url("../img/homekit.png");
+
+    @include retina {
+      background-image: url("../img/homekit@2x.png");
+      background-size: auto 48px;
+    }
+  }
+
+  &--google {
+    width: 184px;
+    margin-right: 10px;
+
+    background-image: url("../img/google-assistant.png");
+
+    @include retina {
+      background-image: url("../img/google-assistant@2x.png");
+      background-size: auto 48px;
+    }
+  }
+
+  &--alisa {
+    width: 129px;
+
+    background-image: url("../img/alisa-assistant.png");
+
+    @include retina {
+      background-image: url("../img/alisa-assistant@2x.png");
+      background-size: auto 48px;
+    }
   }
 }

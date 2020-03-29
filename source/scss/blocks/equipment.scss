@@ -1,0 +1,189 @@
+.equipment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1276px;
+  padding: 0 53px;
+  margin: 0 auto 160px;
+}
+
+.equipment__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 50px;
+
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.equipment__desc {
+  margin: 0;
+  margin-bottom: 80px;
+  width: 100%;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.63px;
+  text-align: center;
+}
+
+.equipment__item {
+  width: 570px;
+}
+
+.equipment__header {
+  display: flex;
+  min-height: 300px;
+
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  &--split {
+    padding-top: 41px;
+    padding-left: 23px;
+
+    background: linear-gradient(118deg, #8aabc0, #485964);
+  }
+
+  &--vrf {
+    padding-top: 20px;
+    padding-left: 14px;
+
+    background: linear-gradient(118deg, #0a202f, #11415e);
+  }
+}
+
+.equipment__header p {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.63px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.equipment__split-controller {
+  width: 256px;
+  padding-top: 186px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 23px;
+  margin-right: 32px;
+
+  background-image: url("../img/d-adapter.png");
+  background-position: left -30px top -20px;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/d-adapter@2x.png");
+    background-size: 316px auto;
+  }
+}
+
+.equipment__split-app {
+  width: 218px;
+  padding-top: 186px;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  background-image: url("../img/icon_d-house.svg");
+  background-position: left 30px top 0;
+  background-repeat: no-repeat;
+}
+
+.equipment__item-content {
+  padding: 50px;
+
+  border: 1px solid #cbcbcb;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.equipment__item-title {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.equipment__list-title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.equipment__controller-name,
+.equipment__app-name,
+.equipment__controller-desc,
+.equipment__app-desc {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.equipment__controller-desc,
+.equipment__app-desc {
+  font-weight: 300;
+}
+
+.equipment__controller-desc {
+  margin-bottom: 22px;
+}
+
+.equipment__app-desc {
+  margin-bottom: 73px;
+}
+
+.equipment__item:nth-of-type(2) .equipment__app-desc {
+  margin-bottom: 50px;
+}
+
+.equipment__item-link {
+  width: 215px;
+  margin: 0 auto;
+
+  text-decoration: none;
+}
+
+.equipment__vrf-controller {
+  width: 274px;
+  padding-top: 207px;
+  padding-bottom: 23px;
+  margin-right: 23px;
+
+  background-image: url("../img/dcm.png");
+  background-position: left 0 top 0;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/dcm@2x.png");
+    background-size: 274px auto;
+  }
+}
+
+.equipment__vrf-app {
+  width: 218px;
+  padding-top: 207px;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  background-image: url("../img/icon_d-cube.svg");
+  background-position: left 30px top 21px;
+  background-repeat: no-repeat;
+}

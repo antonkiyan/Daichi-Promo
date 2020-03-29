@@ -1,0 +1,122 @@
+.to-programs {
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.to-programs__climat-online,
+.to-programs__my-comfort {
+  position: relative;
+
+  display: block;
+  width: 50%;
+  min-height: 470px;
+  padding: 50px;
+
+  text-decoration: none;
+
+  &::after {
+    @include transition(0.5s);
+
+    content: "";
+
+    position: absolute;
+    top: 50%;
+
+    width: 31px;
+    height: 15px;
+    margin-top: -7px;
+
+    opacity: 0;
+    background-image: url("../img/icon_arrow.svg");
+  }
+
+  &::before {
+    @include transition(0.5s);
+
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  &:hover::before {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.to-programs__climat-online {
+  background-image: url("../img/daichi-climat-online.png");
+
+  &::after {
+    left: 0;
+
+    transform: rotate(180deg);
+  }
+
+  &:hover::after {
+    left: 50px;
+
+    opacity: 1;
+  }
+
+  @include retina {
+    background-image: url("../img/daichi-climat-online@2x.png");
+    background-size: 960px auto;
+  }
+}
+
+.to-programs__my-comfort {
+  background-image: url("../img/daichi-comfort.png");
+
+  &::after {
+    right: 0;
+  }
+
+  &:hover::after {
+    right: 50px;
+
+    opacity: 1;
+  }
+
+  @include retina {
+    background-image: url("../img/daichi-comfort@2x.png");
+    background-size: 960px auto;
+  }
+}
+
+.to-programs p {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 7px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(136, 136, 136, 0.8);
+
+  z-index: 1;
+}
+
+.to-programs h2 {
+  position: relative;
+
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 0.32px;
+  color: rgba(0, 0, 0, 0.8);
+
+  z-index: 1;
+}
+
+

@@ -13,16 +13,18 @@
   font-size: 48px;
   line-height: 53px;
   text-align: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .basic-functions__desc {
   margin: 0 auto 80px;
-  width: 77%;
+  width: 90%;
 
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+  letter-spacing: 0.63px;
 }
 
 .basic-functions__wrapper {
@@ -159,10 +161,23 @@
 }
 
 .basic-functions__item {
-  padding-top: 220px;
+  position: relative;
 
-  background-repeat: no-repeat;
-  background-position: top 80px left 50%;
+  padding-top: 220px;
+}
+
+.basic-functions__item-image-box {
+  @include transition(0.4s);
+
+  position: absolute;
+  top: 80px;
+  left: 50%;
+
+  width: 90px;
+  height: 90px;
+  margin-left: -45px;
+
+  border-radius: 50%;
 
   &--temperature {
     background-image: url("../img/icon_temperature.svg");
@@ -179,6 +194,10 @@
   &--timer {
     background-image: url("../img/icon_clock.svg");
   }
+}
+
+.basic-functions__item:hover .basic-functions__item-image-box {
+  background-color: #f5f5f5;
 }
 
 .basic-functions__item-title {
