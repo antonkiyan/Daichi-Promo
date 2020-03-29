@@ -1340,57 +1340,15 @@ input:invalid {
   min-height: 300px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  background-size: 570px auto;
 }
 
 .equipment__header--split {
-  padding-top: 41px;
-  padding-left: 23px;
-  background: linear-gradient(118deg, #8aabc0, #485964);
+  background-image: url("../img/equipment-split.png");
 }
 
 .equipment__header--vrf {
-  padding-top: 20px;
-  padding-left: 14px;
-  background: linear-gradient(118deg, #0a202f, #11415e);
-}
-
-.equipment__header p {
-  margin: 0;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.63px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.equipment__split-controller {
-  width: 256px;
-  padding-top: 186px;
-  padding-left: 19px;
-  padding-right: 19px;
-  padding-bottom: 23px;
-  margin-right: 32px;
-  background-image: url("../img/d-adapter.png");
-  background-position: left -30px top -20px;
-  background-repeat: no-repeat;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .equipment__split-controller {
-    background-image: url("../img/d-adapter@2x.png");
-    background-size: 316px auto;
-  }
-}
-
-.equipment__split-app {
-  width: 218px;
-  padding-top: 186px;
-  padding-left: 19px;
-  padding-right: 19px;
-  background-image: url("../img/icon_d-house.svg");
-  background-position: left 30px top 0;
-  background-repeat: no-repeat;
+  background-image: url("../img/equipment-vrf.png");
 }
 
 .equipment__item-content {
@@ -1450,33 +1408,6 @@ input:invalid {
   width: 215px;
   margin: 0 auto;
   text-decoration: none;
-}
-
-.equipment__vrf-controller {
-  width: 274px;
-  padding-top: 207px;
-  padding-bottom: 23px;
-  margin-right: 23px;
-  background-image: url("../img/dcm.png");
-  background-position: left 0 top 0;
-  background-repeat: no-repeat;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .equipment__vrf-controller {
-    background-image: url("../img/dcm@2x.png");
-    background-size: 274px auto;
-  }
-}
-
-.equipment__vrf-app {
-  width: 218px;
-  padding-top: 207px;
-  padding-left: 19px;
-  padding-right: 19px;
-  background-image: url("../img/icon_d-cube.svg");
-  background-position: left 30px top 21px;
-  background-repeat: no-repeat;
 }
 
 .questions {
