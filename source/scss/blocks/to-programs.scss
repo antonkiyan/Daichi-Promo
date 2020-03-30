@@ -54,6 +54,8 @@
 .to-programs__climat-online {
   background-image: url("../img/daichi-climat-online.png");
 
+  background-position: top right;
+
   &::after {
     left: 0;
 
@@ -74,6 +76,8 @@
 
 .to-programs__my-comfort {
   background-image: url("../img/daichi-comfort.png");
+
+  background-position: top right;
 
   &::after {
     right: 0;
@@ -119,4 +123,50 @@
   z-index: 1;
 }
 
+@include desktop-medium {
+  .to-programs__climat-online,
+  .to-programs__my-comfort {
+    min-height: 530px;
+  }
 
+  .to-programs__climat-online {
+    background-image: url("../img/daichi-climat-online-medium.png");
+    background-size: cover;
+
+    @include retina {
+      background-image: url("../img/daichi-climat-online-medium@2x.png");
+    }
+  }
+
+  .to-programs__my-comfort {
+    background-image: url("../img/daichi-comfort-medium.png");
+    background-size: cover;
+
+    @include retina {
+      background-image: url("../img/daichi-comfort-medium@2x.png");
+    }
+  }
+}
+
+@include tablet {
+  .to-programs__climat-online,
+  .to-programs__my-comfort {
+    padding: 32px;
+  }
+
+  .to-programs__climat-online {
+    background-image: url("../img/daichi-climat-online-tablet.png");
+
+    @include retina {
+      background-image: url("../img/daichi-climat-online-tablet@2x.png");
+    }
+  }
+
+  .to-programs__my-comfort {
+    background-image: url("../img/daichi-comfort-tablet.png");
+
+    @include retina {
+      background-image: url("../img/daichi-comfort-tablet@2x.png");
+    }
+  }
+}

@@ -6,16 +6,9 @@
   }
 }
 
-// Меньше 1276
+// Меньше 1400
 @mixin desktop-medium {
   @media (max-width: $width-desktop-medium - 1px) {
-    @content;
-  }
-}
-
-// Меньше 1516
-@mixin desktop-catalog {
-  @media (max-width: $width-desktop-catalog - 1px) {
     @content;
   }
 }
@@ -79,6 +72,16 @@
   max-width: 1516px;
   padding-left: 53px;
   padding-right: 53px;
+
+  @include desktop-medium {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+
+  @include tablet {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
 }
 
 //ПЛАНВНЫЙ ХОВЕР

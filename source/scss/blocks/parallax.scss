@@ -5,4 +5,30 @@
   background-image: url("../img/happy-people.jpg");
   background-attachment: fixed;
   background-size: cover;
+  background-position: top 0 left 50%;
+
+  @include retina {
+    background-image: url("../img/happy-people@2x.jpg");
+  }
+}
+
+@include desktop-medium {
+  .parallax {
+    height: 300px;
+  }
+}
+
+@include tablet {
+  .parallax {
+    height: 300px;
+
+    background-attachment: scroll;
+    background-image: url("../img/happy-people-tablet.png");
+    background-position: center;
+    background-size: cover;
+
+    @include retina {
+      background-image: url("../img/happy-people-tablet@2x.png");
+    }
+  }
 }

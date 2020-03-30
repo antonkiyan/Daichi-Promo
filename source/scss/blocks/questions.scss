@@ -60,6 +60,7 @@
 
 .questions div {
   padding-left: 30px;
+  padding-right: 120px;
   //padding: 5px 120px 30px 30px;
   max-height: 0;
 
@@ -93,4 +94,20 @@
   max-height: 1000px;
 
   opacity: 1;
+}
+
+@include desktop-medium {
+  .questions__title {
+    margin-bottom: 60px;
+
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.32px;
+  }
+
+  .questions label {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.53px;
+  }
 }

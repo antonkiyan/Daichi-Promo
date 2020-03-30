@@ -156,6 +156,14 @@
   padding-left: 20px;
 }
 
+.basic-functions__left-side .basic-functions__item--modes {
+  display: none;
+}
+
+.basic-functions__right-side .basic-functions__item--flow {
+  display: none;
+}
+
 .basic-functions__left-side {
   padding-right: 20px;
 }
@@ -217,4 +225,232 @@
   font-size: 15px;
   line-height: 20px;
   text-align: center;
+}
+
+@include desktop-medium {
+  .basic-functions__title {
+    margin-bottom: 19px;
+
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.32px;
+  }
+
+  .basic-functions__desc {
+    width: 85%;
+
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .basic-functions__image-box {
+    width: 286px;
+    height: 704px;
+
+    background-image: url("../img/basic-functions-medium.png");
+
+    @include retina {
+      background-image: url("../img/basic-functions-medium@2x.png");
+      background-size: 286px auto;
+    }
+  }
+
+  .basiс-functions__temperature-image-box {
+    top: 140px;
+    left: 19px;
+
+    width: 249px;
+    height: 205px;
+
+    &.js--big {
+      top: 120px;
+      left: -6px;
+
+      width: 299px;
+      height: 246px;
+    }
+  }
+
+  .basiс-functions__modes-image-box {
+    top: 332px;
+    left: 19px;
+
+    width: 249px;
+    height: 93px;
+
+    &.js--big {
+      top: 322px;
+      left: -6px;
+
+      width: 299px;
+      height: 114px;
+    }
+  }
+
+  .basiс-functions__flow-image-box {
+    top: 426px;
+    left: 19px;
+
+    width: 249px;
+    height: 179px;
+
+    &.js--big {
+      top: 408px;
+      left: -6px;
+
+      width: 299px;
+      height: 215px;
+    }
+  }
+
+  .basiс-functions__timer-image-box {
+    top: 606px;
+    left: 19px;
+
+    width: 249px;
+    height: 68px;
+
+    &.js--big {
+      top: 599px;
+      left: -6px;
+
+      width: 299px;
+      height: 82px;
+    }
+  }
+
+  .basic-functions__right-side,
+  .basic-functions__left-side {
+    width: 286px;
+    padding-top: 12px;
+  }
+
+  .basic-functions__right-side {
+    padding-left: 0;
+  }
+
+  .basic-functions__left-side {
+    padding-right: 0;
+  }
+
+  .basic-functions__item {
+    padding-top: 204px;
+  }
+
+  .basic-functions__item-image-box {
+    top: 64px;
+  }
+
+  .basic-functions__item-title {
+    padding: 0 20px;
+
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@include tablet {
+  .basic-functions {
+    padding-bottom: 80px;
+  }
+
+  .basic-functions__desc {
+    max-width: 704px;
+    width: auto;
+  }
+
+  .basic-functions__wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 986px;
+    max-width: 704px;
+    margin: 0 auto;
+  }
+
+  .basic-functions__image-box {
+    width: 337px;
+    height: 827px;
+    margin-right: auto;
+
+    background-image: url("../img/basic-functions-tablet.png");
+    background-size: 337px auto;
+    order: 1;
+
+    @include retina {
+      background-image: url("../img/basic-functions-tablet@2x.png");
+    }
+  }
+
+  .basiс-functions__temperature-image-box {
+    display: none;
+  }
+
+  .basiс-functions__modes-image-box {
+    display: none;
+  }
+
+  .basiс-functions__flow-image-box {
+    display: none;
+  }
+
+  .basiс-functions__timer-image-box {
+    display: none;
+  }
+
+  .basic-functions__right-side,
+  .basic-functions__left-side {
+    width: 336px;
+    padding-top: 0;
+    align-self: flex-end;
+  }
+
+  .basic-functions__right-side {
+    order: 3;
+  }
+
+  .basic-functions__left-side {
+    order: 2;
+  }
+
+  .basic-functions__left-side .basic-functions__item--modes {
+    display: block;
+  }
+
+  .basic-functions__left-side .basic-functions__item--flow {
+    display: none;
+  }
+
+  .basic-functions__right-side .basic-functions__item--flow {
+    display: block;
+  }
+
+  .basic-functions__right-side .basic-functions__item--modes {
+    display: none;
+  }
+
+  .basic-functions__item {
+    padding-top: 85px;
+    margin-bottom: 50px;
+
+    &--timer {
+      margin-bottom: 0;
+    }
+  }
+
+  .basic-functions__item-title {
+    padding: 0 50px;
+  }
+
+  .basic-functions__item--timer .basic-functions__item-title {
+    padding: 0 70px;
+  }
+
+  .basic-functions__item-image-box {
+    top: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-size: cover;
+  }
 }

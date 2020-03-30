@@ -42,6 +42,11 @@
   background-image: url("../img/advanced-groups.png");
   background-repeat: no-repeat;
   background-position: top 0 left 23.5%;
+
+  @include retina {
+    background-image: url("../img/advanced-groups@2x.png");
+    background-size: 387px auto;
+  }
 }
 
 .advanced-functions__item {
@@ -315,6 +320,425 @@
     @include retina {
       background-image: url("../img/alisa-assistant@2x.png");
       background-size: auto 48px;
+    }
+  }
+}
+
+@include desktop-medium {
+  .advanced-functions {
+    padding-top: 80px;
+  }
+
+  .advanced-functions__title {
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.32px;
+  }
+
+  .advanced-functions__desc {
+    max-width: 85%;
+
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+
+  .advanced-functions__first-container {
+    min-height: 758px;
+    padding: 0 53px 0 60%;
+
+    background-image: url("../img/advanced-groups-medium.png");
+    background-position: top 0 left 13%;
+    background-size: 365px auto;
+
+    @include retina {
+      background-image: url("../img/advanced-groups-medium@2x.png");
+    }
+  }
+
+  .advanced-functions__item {
+    max-width: 286px;
+
+    line-height: 21px;
+
+    &--status {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 64px;
+    }
+
+    &--amount {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 64px;
+    }
+
+    &--location {
+      margin-bottom: 64px;
+    }
+
+    &--pin {
+      margin-bottom: 64px;
+    }
+
+    &--data {
+      margin-bottom: 64px;
+    }
+  }
+
+  .advanced-functions__item-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .advanced-functions__second {
+    margin: 0 auto 80px;
+    padding-top: 64px;
+
+    background-image: url("../img/happy-people-2-medium.png");
+
+    @include retina {
+      background-image: url("../img/happy-people-2-medium@2x.png");
+      background-size: 576px auto;
+    }
+  }
+
+  .advanced-functions__second-content {
+    max-width: 444px;
+    min-height: 778px;
+    padding: 64px 79px;
+    margin-right: 474px;
+    margin-left: auto;
+  }
+
+  .advanced-functions__third {
+    min-height: 804px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 80px;
+
+    &::before,
+    &::after {
+      top: 118px;
+
+      width: 286px;
+      height: 569px;
+    }
+
+    &::before {
+      left: 5.18%;
+
+      background-image: url("../img/advanced-scenario-medium.png")
+    }
+
+    &::after {
+      right: 5.18%;
+
+      background-image: url("../img/advanced-schedule-medium.png")
+    }
+
+    @include retina {
+      &::before {
+        background-image: url("../img/advanced-scenario-medium@2x.png");
+        background-size: 286px auto;
+      }
+
+      &::after {
+        background-image: url("../img/advanced-schedule-medium@2x.png");
+        background-size: 286px auto;
+      }
+    }
+  }
+
+  .advanced-functions__third-content {
+    min-height: 804px;
+    margin: 0;
+    padding: 80px 165px 20px;
+
+    background-color: #f6f6f6;
+  }
+
+  .advanced-functions__fourth {
+    padding-top: 64px;
+
+    background-image: url("../img/happy-people-3-medium.png");
+
+    @include retina {
+      background-image: url("../img/happy-people-3-medium@2x.png");
+      background-size: 576px auto;
+    }
+  }
+
+  .advanced-functions__fourth-content {
+    max-width: 444px;
+    min-height: 799px;
+    padding: 64px 79px;
+    margin-left: 474px;
+    margin-right: auto;
+  }
+
+  .advanced-functions__fifth-container {
+    padding-top: 64px;
+    min-height: 564px;
+
+    background-image: url("../img/mobile-app-l-medium.png");
+
+    @include retina {
+      background-image: url("../img/mobile-app-l-medium@2x.png");
+      background-size: 444px auto;
+    }
+  }
+
+  .advanced-functions__fifth-content {
+    max-width: 523px;
+    min-height: 436px;
+    padding: 80px 79px;
+    margin-left: auto;
+    margin-right: 395px;
+  }
+
+  .advanced-functions__assistants-title {
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.32px;
+  }
+
+  .advanced-functions__fifth-content ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advanced-functions__assistants-item {
+    &--homekit {
+      margin-right: 16px;
+      margin-bottom: 15px;
+      order: 1;
+    }
+
+    &--google {
+      order: 3;
+    }
+
+    &--alisa {
+      order: 2;
+    }
+  }
+}
+
+@include tablet {
+  .advanced-functions__desc {
+    max-width: 100%;
+  }
+
+  .advanced-functions__first-container {
+    min-height: 667px;
+    padding: 63px 0 60px 368px;
+    max-width: 704px;
+    margin: 0 auto;
+
+    background-image: url("../img/advanced-groups-tablet.png");
+    background-position: top 0 left 0;
+    background-size: 336px auto;
+
+    @include retina {
+      background-image: url("../img/advanced-groups-tablet@2x.png");
+    }
+  }
+
+  .advanced-functions__item {
+    padding-top: 85px;
+    max-width: 336px;
+
+    background-size: 60px 60px;
+
+    &--status {
+      margin-bottom: 50px;
+    }
+
+    &--amount {
+      margin-bottom: 50px;
+    }
+
+    &--location {
+      width: 244px;
+      margin-bottom: 0;
+    }
+
+    &--like {
+      width: 244px;
+    }
+
+    &--pin {
+      width: 244px;
+      margin-bottom: 0;
+    }
+
+    &--calendar {
+      width: 244px;
+    }
+
+    &--data {
+      width: 244px;
+      margin-bottom: 0;
+    }
+
+    &--energy {
+      width: 244px;
+    }
+  }
+
+  .advanced-functions__second {
+    margin: 0 auto 80px;
+    padding-top: 42.3%;
+
+    background-image: url("../img/happy-people-2-tablet.png");
+    background-position: top 0 right 50%;
+    background-size: 100% auto;
+
+    @include retina {
+      background-image: url("../img/happy-people-2-tablet@2x.png");
+    }
+  }
+
+  .advanced-functions__second-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0;
+    min-height: 416px;
+    padding: 64px 92px;
+  }
+
+  .advanced-functions__third {
+    @include container;
+
+    min-height: 1009px;
+    margin-bottom: 80px;
+
+    &::before,
+    &::after {
+      top: 80px;
+
+      width: 244px;
+      height: 485px;
+    }
+
+    &::before {
+      left: 50%;
+
+      margin-left: -260px;
+
+      background-image: url("../img/advanced-scenario-tablet.png");
+      background-size: 244px auto;
+    }
+
+    &::after {
+      right: 50%;
+
+      margin-right: -260px;
+
+      background-image: url("../img/advanced-schedule-tablet.png");
+      background-size: 244px auto;
+    }
+
+    @include retina {
+      &::before {
+        background-image: url("../img/advanced-scenario-tablet@2x.png");
+      }
+
+      &::after {
+        background-image: url("../img/advanced-schedule-tablet@2x.png");
+      }
+    }
+  }
+
+  .advanced-functions__third-content .advanced-functions__item {
+    margin-left: 0;
+    margin-right: 0;
+
+    &--pin {
+      margin-right: 32px;
+    }
+  }
+
+  .advanced-functions__third-content {
+    display: flex;
+    justify-content: center;
+    min-height: 804px;
+    margin: 0;
+    padding: 625px 50px 80px;
+  }
+
+  .advanced-functions__fourth {
+    margin: 0 auto 80px;
+    padding-top: 42.3%;
+
+    background-image: url("../img/happy-people-3-tablet.png");
+    background-position: top 0 right 50%;
+    background-size: 100% auto;
+
+
+    @include retina {
+      background-image: url("../img/happy-people-3-tablet@2x.png");
+    }
+  }
+
+  .advanced-functions__fourth-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0;
+    min-height: 455px;
+    padding: 64px 92px;
+  }
+
+  .advanced-functions__fifth {
+    margin-bottom: 80px;
+  }
+
+  .advanced-functions__fifth-container {
+    padding-top: 0;
+    min-height: auto;
+
+    background-image: none;
+
+    @include retina {
+      background-image: none;
+    }
+  }
+
+  .advanced-functions__fifth-content {
+    max-width: none;
+    margin: 0;
+    min-height: 328px;
+
+    text-align: center;
+  }
+
+  .advanced-functions__assistants-title {
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+
+  .advanced-functions__fifth-content ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advanced-functions__assistants-item {
+    &--homekit {
+      margin-bottom: 0;
+      order: 1;
+    }
+
+    &--google {
+      order: 2;
+      margin-right: 15px;
+    }
+
+    &--alisa {
+      order: 3;
     }
   }
 }
