@@ -450,7 +450,124 @@
 
     width: 60px;
     height: 60px;
+    margin-left: -30px;
 
     background-size: cover;
+  }
+}
+
+@include mobile-l {
+  .basic-functions__title {
+    padding: 0 80px;
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .basic-functions__desc {
+    margin-bottom: 50px;
+  }
+
+  .basic-functions__wrapper {
+    max-height: 2000px;
+  }
+
+  .basic-functions__image-box {
+    margin: 0 auto 50px;
+  }
+
+  .basic-functions__right-side,
+  .basic-functions__left-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .basic-functions__right-side {
+    order: 3;
+  }
+
+  .basic-functions__left-side {
+    order: 1;
+    margin-bottom: 50px;
+  }
+
+  .basic-functions__item {
+    width: 192px;
+    margin-bottom: 0;
+
+    &--temperature {
+      margin-right: 32px;
+    }
+
+    &--temperature .basic-functions__item-title span {
+      display: none;
+    }
+
+    &--flow {
+      margin-right: 32px;
+    }
+  }
+
+  .basic-functions__item-title {
+    padding: 0;
+  }
+
+  .basic-functions__item--timer .basic-functions__item-title {
+    padding: 0;
+  }
+}
+
+@include mobile {
+  .basic-functions {
+    padding-bottom: 50px;
+  }
+
+  .basic-functions__title {
+    padding: 0;
+  }
+
+  .basic-functions__right-side,
+  .basic-functions__left-side {
+    flex-direction: column;
+  }
+
+  .basic-functions__item {
+    width: 288px;
+    margin: 0 auto;
+
+    &--temperature {
+      margin-bottom: 50px;
+    }
+
+    &--temperature .basic-functions__item-title span {
+      display: inline;
+    }
+
+    &--flow {
+      margin-bottom: 50px;
+    }
+  }
+
+  .basic-functions__item-title {
+    padding: 0 20px;
+  }
+
+  .basic-functions__item--timer .basic-functions__item-title {
+    padding: 0 40px;
+  }
+
+  .basic-functions__image-box {
+    width: 250px;
+    height: 615px;
+    margin: 0 auto 50px;
+
+    background-image: url("../img/basic-functions-mobile.png");
+    background-size: 250px auto;
+
+    @include retina {
+      background-image: url("../img/basic-functions-mobile@2x.png");
+    }
   }
 }

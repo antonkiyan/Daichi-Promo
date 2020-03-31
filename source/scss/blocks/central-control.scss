@@ -110,7 +110,7 @@
     padding-left: 4.17%;
 
     background-image: url("../img/mobile-app-tablet.png");
-    background-position: top 100% left 50%;
+    background-position: top calc(50% + 204px) left 50%;
     background-size: contain;
 
     &::before {
@@ -146,5 +146,67 @@
     position: relative;
     z-index: 10;
   }
+}
 
+@include mobile-l {
+  .central-control__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .central-control__desc {
+    min-height: 154px;
+  }
+
+  .central-control {
+    min-height: 892px;
+
+    &::before {
+      height: 492px;
+    }
+
+    background-image: url("../img/mobile-app-mobile-l.png");
+    background-position: top calc(50% + 246px) left 50%;
+
+    @include retina {
+      background-image: url("../img/mobile-app-mobile-l@2x.png");
+    }
+  }
+}
+
+@include mobile {
+  .central-control {
+    padding-left: 5%;
+    min-height: 930px;
+
+    &::before {
+      height: 630px;
+    }
+
+    background-image: url("../img/mobile-app-mobile.png");
+    background-position: top calc(50% + 315px) left 50%;
+
+    @include retina {
+      background-image: url("../img/mobile-app-mobile@2x.png");
+    }
+  }
+
+  .central-control__title {
+    margin-bottom: 25px;
+    min-height: 114px;
+  }
+
+  .central-control__desc {
+    min-height: 200px;
+  }
+
+  .central-control__google-pay-link,
+  .central-control__app-store-link {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .central-control__google-pay-link {
+    margin-bottom: 15px;
+  }
 }

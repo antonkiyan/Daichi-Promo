@@ -111,3 +111,26 @@
     letter-spacing: 0.53px;
   }
 }
+
+@include mobile-l {
+  .questions {
+    padding: 0;
+  }
+
+  .questions__title {
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .questions label {
+    padding: 26px 75px 26px 32px;
+  }
+
+  .questions__item div {
+    padding-right: 75px;
+  }
+
+  .questions input:checked + label + div {
+    padding-right: 75px;
+  }
+}

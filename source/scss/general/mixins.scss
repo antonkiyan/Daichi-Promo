@@ -82,6 +82,11 @@
     padding-left: 4.17%;
     padding-right: 4.17%;
   }
+
+  @include mobile {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 //ПЛАНВНЫЙ ХОВЕР

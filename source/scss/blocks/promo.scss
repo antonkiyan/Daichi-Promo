@@ -180,3 +180,64 @@
     text-align: center;
   }
 }
+
+@include mobile-l {
+  .promo__container {
+    padding-top: 60px;
+    min-height: 735px;
+
+    background-image: url("../img/app-showcase-icon-mobile-l.png");
+    background-position: top 203px left calc(50% - 20px);
+    background-size: 316px auto;
+
+    @include retina {
+      background-image: url("../img/app-showcase-icon-mobile-l@2x.png");
+    }
+  }
+
+  .promo__title {
+    max-width: 85%;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .promo__description {
+    min-height: 62px;
+    margin: 0 auto 373px;
+
+    line-height: 21px;
+  }
+}
+
+@include mobile {
+  .promo__container {
+    min-height: 811px;
+
+    background-image: url("../img/app-showcase-icon-mobile.png");
+    background-position: top 307px left calc(50% - 15px);
+    background-size: 258px auto;
+
+    @include retina {
+      background-image: url("../img/app-showcase-icon-mobile@2x.png");
+    }
+  }
+
+  .promo__title {
+    max-width: 100%;
+  }
+
+  .promo__description {
+    margin-bottom: 305px;
+  }
+
+  .promo__google-pay-link,
+  .promo__app-store-link {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .promo__google-pay-link {
+    margin-bottom: 10px;
+  }
+}

@@ -1,10 +1,17 @@
 .equipment {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 1276px;
   padding: 0 53px;
   margin: 0 auto 160px;
+}
+
+.equipment__slider-container {
+  display: none;
+}
+
+.equipment__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .equipment__title {
@@ -197,7 +204,7 @@
 
   .equipment__desc {
     font-size: 15px;
-    line-height: 16px;
+    line-height: 20px;
     letter-spacing: 0px;
   }
 
@@ -224,7 +231,7 @@
 
 @include tablet {
   .equipment {
-    @include container;
+    padding: 0 32px;
 
     max-width: 768px;
     margin-bottom: 160px;
@@ -258,5 +265,45 @@
   .equipment__item-content {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+@include mobile-l {
+  .equipment {
+    margin-bottom: 60px;
+  }
+
+  .equipment__title {
+    padding: 0;
+
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .equipment__desc {
+    max-width: 416px;
+    width: auto;
+  }
+
+  .equipment__wrapper {
+    display: none;
+  }
+
+  .equipment__slider-container {
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  .equipment__item {
+    max-width: 336px;
+    margin: 0 auto;
+  }
+
+  .equipment__item-link {
+    box-sizing: border-box;
+  }
+
+  .equipment__pagination {
+    bottom: -20px;
   }
 }

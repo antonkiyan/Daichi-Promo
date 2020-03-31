@@ -29,6 +29,7 @@
 .special-programs table {
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 50px;
 
   border-collapse: collapse;
 }
@@ -87,6 +88,16 @@
   background-image: url("../img/icon_cross.svg");
 }
 
+.special-programs__remark {
+  margin: 0;
+  padding: 0 53px;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+
 @include desktop-medium {
   .special-programs__title {
     font-size: 32px;
@@ -107,6 +118,10 @@
     font-size: 24px;
     line-height: 27px;
     letter-spacing: 0px;
+  }
+
+  .special-programs__remark {
+    font-size: 13px;
   }
 }
 
@@ -155,5 +170,70 @@
     &:last-child {
       width: auto;
     }
+  }
+}
+
+@include mobile-l {
+  .special-programs {
+    margin-bottom: 100px;
+  }
+
+  .special-programs__title {
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.24px;
+  }
+
+  .special-programs__desc {
+    max-width: 86.7%;
+    margin: 0 auto 50px;
+
+  }
+
+  .special-programs tr {
+    display: flex;
+  };
+
+  .special-programs th {
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.63px;
+
+    &:first-child {
+      width: 53.3%;
+      padding-left: 32px;
+      padding-top: 7px;
+    }
+
+    &:nth-child(2) {
+      width: 16.7%;
+      padding: 0 0 25px;
+    }
+
+    &:last-child {
+      width: 30%;
+      padding: 0 10px 25px;
+    }
+  }
+
+  .special-programs td {
+
+    &:first-child {
+      width: 53.3%;
+      padding-left: 32px;
+      padding-right: 20px;
+    }
+
+    &:nth-child(2) {
+      width: 16.7%;
+    }
+
+    &:last-child {
+      width: 30%;
+    }
+  }
+
+  .special-programs__remark {
+    padding: 0 32px;
   }
 }

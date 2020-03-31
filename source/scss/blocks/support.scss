@@ -1,0 +1,144 @@
+.support {
+  padding: 90px 0 63px;
+  margin-bottom: 188px;
+  min-height: 300;
+
+  background-color: #f6f6f6;
+}
+
+.support__container {
+  @include container;
+
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -160px;
+    left: 53px;
+
+    width: 705px;
+    height: 438px;
+
+    background-image: url("../img/car.png");
+
+    @include retina {
+      background-image: url("../img/car@2x.png");
+      background-size: 705px auto;
+    }
+  }
+}
+
+.support p {
+  width: 49%;
+  margin: 0;
+  margin-left: auto;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+@include desktop-medium {
+  .support {
+    padding: 46px 0;
+    margin-bottom: 161px;
+    min-height: 193px;
+  }
+
+  .support__container {
+    &::before {
+      top: -88px;
+      left: auto;
+      right: 51.6%;
+
+      width: 444px;
+      height: 276px;
+
+      background-image: url("../img/car-medium.png");
+      background-size: 444px auto;
+
+      @include retina {
+        background-image: url("../img/car-medium@2x.png");
+      }
+    }
+  }
+
+  .support p {
+    width: 48.4%;
+
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@include tablet {
+  .support {
+    padding: 27px 0;
+    margin-bottom: 113px;
+    min-height: 144px;
+  }
+
+  .support__container {
+    &::before {
+      top: -60px;
+      left: auto;
+      right: 52.3%;
+
+      width: 336px;
+      height: 210px;
+
+      background-image: url("../img/car-tablet.png");
+      background-size: 336px auto;
+
+      @include retina {
+        background-image: url("../img/car-tablet@2x.png");
+      }
+    }
+  }
+
+  .support p {
+    width: 47.7%;
+
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@include mobile-l {
+  .support {
+    padding: 217px 0 0 0;
+    margin-bottom: 100px;
+    min-height: 307px;
+
+    background-color: none;
+    background: linear-gradient(180deg, #f6f6f6, #f6f6f6 144px, #ffffff 144px, #ffffff 100%);
+  }
+
+  .support__container {
+    &::before {
+      top: -250px;
+      right: 50%;
+
+      width: 336px;
+      height: 210px;
+      margin-right: -168px;
+
+      background-image: url("../img/car-tablet.png");
+      background-size: 336px auto;
+
+      @include retina {
+        background-image: url("../img/car-tablet@2x.png");
+      }
+    }
+  }
+
+  .support p {
+    width: 100%;
+    //min-height: 90px;
+
+    text-align: center;
+  }
+
+}

@@ -32,3 +32,23 @@
     }
   }
 }
+
+@include mobile-l {
+  .parallax {
+    background-image: url("../img/happy-people-mobile-l.png");
+
+    @include retina {
+      background-image: url("../img/happy-people-mobile-l@2x.png");
+    }
+  }
+}
+
+@include mobile {
+  .parallax {
+    background-image: url("../img/happy-people-mobile.png");
+
+    @include retina {
+      background-image: url("../img/happy-people-mobile@2x.png");
+    }
+  }
+}

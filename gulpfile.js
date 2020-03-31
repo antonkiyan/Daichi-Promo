@@ -145,7 +145,7 @@ gulp.task(`server`, function () {
 
   gulp.watch(`source/scss/**/*.scss`, gulp.series(`css`));
   gulp.watch(`source/img/**/*`, gulp.series(`images`, `sprite`, `webp`, `refresh`));
-  gulp.watch(`source/js/**/*.js`, gulp.series(`js`, `refresh`));
+  gulp.watch(`source/js/**/*.js`, gulp.series(`js`, `js-vendor`, `refresh`));
   gulp.watch(`source/*.html`).on(`change`, gulp.series(`html`, `refresh`));
 });
 

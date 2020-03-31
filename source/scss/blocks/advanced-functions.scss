@@ -722,8 +722,7 @@
   }
 
   .advanced-functions__fifth-content ul {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .advanced-functions__assistants-item {
@@ -741,4 +740,204 @@
       order: 3;
     }
   }
+}
+
+@include mobile-l {
+  .advanced-functions__title {
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .advanced-functions__desc {
+    margin-bottom: 50px;
+
+    line-height: 21px;
+  }
+
+  .advanced-functions__first {
+    margin-bottom: 100px;
+  }
+
+  .advanced-functions__first-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 715px 0 0;
+    max-width: 600px;
+
+    background-position: top 0 left 50%;
+  }
+
+  .advanced-functions__item {
+    padding-top: 85px;
+    max-width: 192px;
+
+    background-size: 60px 60px;
+
+    &--status {
+      margin-right: 32px;
+    }
+
+    &--admin {
+      max-width: 416px;
+    }
+
+    &--location {
+      max-width: 416px;
+      width: auto;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    &--like {
+      max-width: 416px;
+      width: auto;
+      margin: 0 auto;
+    }
+
+    &--data {
+      max-width: 416px;
+      width: auto;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    &--energy {
+      max-width: 416px;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+
+  .advanced-functions__second-container {
+    padding: 0;
+  }
+
+  .advanced-functions__second {
+    margin-bottom: 50px;
+    padding-top: 67.7%;
+
+    background-image: url("../img/happy-people-2-mobile-l.png");
+
+    @include retina {
+      background-image: url("../img/happy-people-2-mobile-l@2x.png");
+    }
+  }
+
+  .advanced-functions__second-content {
+    flex-direction: column;
+
+    min-height: 561px;
+    padding: 50px 32px;
+  }
+
+  .advanced-functions__third {
+    padding: 0;
+    min-height: 1619px;
+    margin-bottom: 50px;
+
+    &::before {
+      top: 50px;
+
+      margin-left: -122px;
+    }
+
+    &::after {
+      top: 845px;
+
+      margin-right: -122px;
+    }
+  }
+
+  .advanced-functions__third-content .advanced-functions__item {
+    max-width: 416px;
+    width: auto;
+
+    &--pin {
+      margin-right: 0;
+      margin-bottom: 585px;
+    }
+
+    &--calendar .advanced-functions__item-title {
+      padding: 0 120px;
+    }
+  }
+
+  .advanced-functions__third-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 1619px;
+    padding: 585px 32px 50px;
+  }
+
+  .advanced-functions__fourth-container {
+    padding: 0;
+  }
+
+  .advanced-functions__fourth {
+    margin-bottom: 50px;
+    padding-top: 67.7%;
+
+    background-image: url("../img/happy-people-3-mobile-l.png");
+
+    @include retina {
+      background-image: url("../img/happy-people-3-mobile-l@2x.png");
+    }
+  }
+
+  .advanced-functions__fourth-content {
+    flex-direction: column;
+
+    min-height: 534px;
+    padding: 50px 32px;
+  }
+
+  .advanced-functions__fifth {
+    padding: 0;
+  }
+
+  .advanced-functions__fifth-content {
+    min-height: 222px;
+    padding: 50px 32px;
+
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .advanced-functions__assistants-title {
+    padding: 0;
+
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .advanced-functions__assistants-item {
+    height: 38px;
+
+    &--homekit {
+      width: 146px;
+      margin-right: 11px;
+
+      background-size: 146px auto;
+    }
+
+    &--google {
+      width: 144px;
+      margin-right: 11px;
+
+      background-size: 144px auto;
+    }
+
+    &--alisa {
+      width: 102px;
+
+      background-size: 102px auto;
+    }
+  }
+}
+
+@include mobile {
+
 }
