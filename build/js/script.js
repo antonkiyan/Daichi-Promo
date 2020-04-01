@@ -1,7 +1,7 @@
 (function () {
   var temperature = document.querySelector('.basic-functions__item--temperature');
   var temperatureImage = document.querySelector('.basiс-functions__temperature-image-box');
-  var modes = document.querySelector('.basic-functions__item--modes');
+  var modes = document.querySelectorAll('.basic-functions__item--modes');
   var modesImage = document.querySelector('.basiс-functions__modes-image-box');
   var flow = document.querySelector('.basic-functions__item--flow');
   var flowImage = document.querySelector('.basiс-functions__flow-image-box');
@@ -42,8 +42,8 @@
 
   temperature.addEventListener('mouseover', onTemperatureHover);
   temperature.addEventListener('mouseleave', onTemperatureLeave);
-  modes.addEventListener('mouseover', onModesHover);
-  modes.addEventListener('mouseleave', onModesLeave);
+  modes[1].addEventListener('mouseover', onModesHover);
+  modes[1].addEventListener('mouseleave', onModesLeave);
   flow.addEventListener('mouseover', onFlowHover);
   flow.addEventListener('mouseleave', onFlowLeave);
   timer.addEventListener('mouseover', onTimerHover);
@@ -108,4 +108,56 @@
   if (scrollDownLink) {
     scrollDownLink.addEventListener(`click`, handleAnchorClick);
   }
+})();
+
+(function () {
+  var wrapper = document.querySelector('.special-programs__wrapper');
+
+  function onTouchStart(e) {
+    let x = 0;
+
+    function onTouchMove(e) {
+      let touchobj = e.changedTouches[0];
+
+      if (x !== 0) {
+        wrapper.scrollLeft += x - touchobj.clientX;
+      }
+
+      x = touchobj.clientX;
+    }
+
+    function onTouchEnd(e) {
+      document.removeEventListener(`touchmove`, onTouchMove);
+      document.removeEventListener(`touchend`, onTouchEnd)
+    }
+
+    document.addEventListener(`touchmove`, onTouchMove);
+    document.addEventListener(`touchend`, onTouchEnd);
+  }
+
+  function onMouseDown(e) {
+    let x = 0;
+
+    function onMouseMove(e) {
+      e.preventDefault();
+
+      if (x !== 0) {
+        wrapper.scrollLeft += x - e.clientX;
+      }
+
+      x = e.clientX;
+    }
+
+    function onMouseUp(e) {
+
+      document.removeEventListener(`mousemove`, onMouseMove);
+      document.removeEventListener(`mouseup`, onMouseUp);
+    }
+
+    document.addEventListener(`mousemove`, onMouseMove);
+    document.addEventListener(`mouseup`, onMouseUp);
+  }
+
+  wrapper.addEventListener(`touchstart`, onTouchStart);
+  wrapper.addEventListener(`mousedown`, onMouseDown);
 })();

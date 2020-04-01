@@ -247,7 +247,6 @@
   }
 
   .equipment__header {
-    display: flex;
     min-height: 177px;
 
     background-size: 336px auto;
@@ -306,4 +305,43 @@
   .equipment__pagination {
     bottom: -20px;
   }
+}
+
+@include mobile {
+  .equipment {
+    padding: 0;
+  }
+
+  .equipment__item {
+    max-width: 288px;
+  }
+
+  .equipment__header {
+    min-height: 152px;
+
+    background-size: 288px auto;
+    background-repeat: no-repeat;
+  }
+
+  .equipment__item-content {
+    padding: 25px 15px 50px;
+  }
+
+  .equipment__app-desc {
+    margin-bottom: 48px;
+  }
+
+  .equipment__slide:nth-of-type(2) .equipment__app-desc {
+    margin-bottom: 25px;
+  }
+
+  .equipment__slide {
+    width: 100%;
+  }
+
+  .equipment__list-title {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
 }

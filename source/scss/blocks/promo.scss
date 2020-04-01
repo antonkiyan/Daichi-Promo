@@ -23,7 +23,7 @@
 .promo__title {
   margin: 0;
   margin-bottom: 50px;
-  max-width: 46%;
+  max-width: 50%;
 
   font-weight: 300;
   font-size: 56px;
@@ -34,7 +34,7 @@
 .promo__description {
   margin: 0;
   margin-bottom: 50px;
-  max-width: 43%;
+  max-width: 49%;
 
   font-weight: 300;
   font-size: 18px;
@@ -196,7 +196,7 @@
   }
 
   .promo__title {
-    max-width: 85%;
+    max-width: 90%;
 
     font-size: 24px;
     line-height: 28px;
@@ -212,10 +212,11 @@
 
 @include mobile {
   .promo__container {
-    min-height: 811px;
+    min-height: auto;
+    padding-bottom: 93px;
 
     background-image: url("../img/app-showcase-icon-mobile.png");
-    background-position: top 307px left calc(50% - 15px);
+    background-position: bottom 199px left calc(50% - 15px);
     background-size: 258px auto;
 
     @include retina {

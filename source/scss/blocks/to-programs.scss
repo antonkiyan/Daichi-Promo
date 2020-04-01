@@ -208,5 +208,28 @@
     line-height: 27px;
     letter-spacing: 0.24px;
   }
+}
 
+@include mobile {
+  .to-programs__climat-online,
+  .to-programs__my-comfort {
+    min-height: 200px;
+    padding: 16px 5%;
+  }
+
+  .to-programs__climat-online {
+    background-image: url("../img/daichi-climat-online-mobile.png");
+
+    @include retina {
+      background-image: url("../img/daichi-climat-online-mobile@2x.png");
+    }
+  }
+
+  .to-programs__my-comfort {
+    background-image: url("../img/daichi-comfort-mobile.png");
+
+    @include retina {
+      background-image: url("../img/daichi-comfort-mobile@2x.png");
+    }
+  }
 }

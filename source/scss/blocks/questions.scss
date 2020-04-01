@@ -134,3 +134,13 @@
     padding-right: 75px;
   }
 }
+
+@include mobile {
+  .questions__title {
+    margin-bottom: 50px;
+  }
+
+  .questions label {
+    padding: 30px 50px 30px 5%;
+  }
+}

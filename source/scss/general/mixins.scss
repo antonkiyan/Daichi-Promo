@@ -83,6 +83,11 @@
     padding-right: 4.17%;
   }
 
+  @include mobile-l {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+
   @include mobile {
     padding-left: 5%;
     padding-right: 5%;

@@ -52,7 +52,7 @@
   font-size: 32px;
   line-height: 35px;
   letter-spacing: 0.32px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #000000;
 
   border-bottom: 1px solid #cbcbcb;
 
@@ -137,7 +137,6 @@
   .special-programs th {
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0.63px;
 
     &:first-child {
       width: 52.1%;
@@ -190,6 +189,10 @@
 
   }
 
+  .special-programs table {
+    min-width: 480px;
+  }
+
   .special-programs tr {
     display: flex;
   };
@@ -197,12 +200,10 @@
   .special-programs th {
     font-size: 15px;
     line-height: 17px;
-    letter-spacing: 0.63px;
 
     &:first-child {
       width: 53.3%;
       padding-left: 32px;
-      padding-top: 7px;
     }
 
     &:nth-child(2) {
@@ -235,5 +236,21 @@
 
   .special-programs__remark {
     padding: 0 32px;
+  }
+}
+
+@include mobile {
+  .special-programs__title {
+    padding: 0 5%;
+  }
+
+  .special-programs__wrapper {
+    max-width: 100%;
+
+    overflow: hidden;
+  }
+
+  .special-programs__remark {
+    padding: 0 16px;
   }
 }

@@ -24,7 +24,7 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 0.63px;
+  letter-spacing: 0;
 }
 
 .basic-functions__wrapper {
@@ -458,7 +458,7 @@
 
 @include mobile-l {
   .basic-functions__title {
-    padding: 0 80px;
+    padding: 0 60px;
     margin-bottom: 25px;
 
     font-size: 24px;

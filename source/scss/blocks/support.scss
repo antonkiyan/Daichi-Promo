@@ -112,7 +112,7 @@
     margin-bottom: 100px;
     min-height: 307px;
 
-    background-color: none;
+    background-color: transparent;
     background: linear-gradient(180deg, #f6f6f6, #f6f6f6 144px, #ffffff 144px, #ffffff 100%);
   }
 
@@ -130,6 +130,41 @@
 
       @include retina {
         background-image: url("../img/car-tablet@2x.png");
+      }
+    }
+  }
+
+  .support p {
+    width: 100%;
+    //min-height: 90px;
+
+    text-align: center;
+  }
+}
+
+@include mobile {
+  .support {
+    padding: 187px 0 0 0;
+    margin-bottom: 75px;
+    min-height: auto;
+
+    background: linear-gradient(180deg, #f6f6f6, #f6f6f6 144px, #ffffff 144px, #ffffff 100%);
+  }
+
+  .support__container {
+    &::before {
+      top: -205px;
+      right: 50%;
+
+      width: 288px;
+      height: 180px;
+      margin-right: -144px;
+
+      background-image: url("../img/car-mobile.png");
+      background-size: 288px auto;
+
+      @include retina {
+        background-image: url("../img/car-mobile@2x.png");
       }
     }
   }
