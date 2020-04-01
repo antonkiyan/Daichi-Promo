@@ -41,7 +41,7 @@
   }
 
   &::before {
-    @include transition(0.1s);
+    //@include transition(0.1s);
 
     content: "";
 
@@ -75,7 +75,7 @@
   overflow: hidden;
   //opacity: 0;
 
-  transition: 0.1s ease;
+  //transition: 0.1s ease;
 }
 
 .questions input:checked + label {

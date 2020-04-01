@@ -37,7 +37,7 @@
 
       var num = +target.getAttribute('id').split('-')[1] - 1;
 
-      setTimeout(scroll(labels[num]), 100);
+      setTimeout(scroll(labels[num]), 200);
     }
   }
 

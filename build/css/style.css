@@ -4240,8 +4240,6 @@ input:invalid {
 }
 
 .questions label::before {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
   content: "";
   position: absolute;
   top: 50%;
@@ -4266,8 +4264,6 @@ input:invalid {
   border-top: none;
   background-color: #fbfbfb;
   overflow: hidden;
-  -webkit-transition: 0.1s ease;
-  transition: 0.1s ease;
 }
 
 .questions input:checked + label {
