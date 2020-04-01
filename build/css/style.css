@@ -3975,7 +3975,7 @@ input:invalid {
 }
 
 .equipment__header--vrf {
-  background-image: url("../img/equipment-vrf.png");
+  background-image: url("../img/equipment-vrf.jpg");
 }
 
 .equipment__item-content {
@@ -4240,8 +4240,8 @@ input:invalid {
 }
 
 .questions label::before {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
   content: "";
   position: absolute;
   top: 50%;
@@ -4266,8 +4266,8 @@ input:invalid {
   border-top: none;
   background-color: #fbfbfb;
   overflow: hidden;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
 }
 
 .questions input:checked + label {
