@@ -4308,6 +4308,7 @@ input:invalid {
   .questions__title {
     font-size: 24px;
     line-height: 27px;
+    padding: 0 32px;
   }
   .questions label {
     padding: 26px 75px 26px 32px;
@@ -4323,6 +4324,7 @@ input:invalid {
 @media (max-width: 479px) {
   .questions__title {
     margin-bottom: 50px;
+    padding: 0 16px;
   }
   .questions label {
     padding: 30px 50px 30px 5%;
