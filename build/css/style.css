@@ -3705,6 +3705,7 @@ input:invalid {
 .special-programs__title {
   margin: 0;
   margin-bottom: 25px;
+  padding: 0 16px;
   font-weight: 300;
   font-size: 48px;
   line-height: 53px;
@@ -3715,6 +3716,7 @@ input:invalid {
 .special-programs__desc {
   margin: 0;
   margin-bottom: 130px;
+  padding: 0 16px;
   font-weight: 300;
   font-size: 19px;
   line-height: 21px;
@@ -4134,6 +4136,12 @@ input:invalid {
 @media (max-width: 479px) {
   .equipment {
     padding: 0;
+  }
+  .equipment__title {
+    padding: 0 16px;
+  }
+  .equipment__desc {
+    padding: 0 16px;
   }
   .equipment__item {
     max-width: 288px;
