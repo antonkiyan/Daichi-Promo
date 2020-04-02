@@ -1,6 +1,10 @@
 (function () {
   var wrapper = document.querySelector('.special-programs__wrapper');
 
+  if (!wrapper) {
+    return;
+  }
+
   function onTouchStart(e) {
     let x = 0;
 

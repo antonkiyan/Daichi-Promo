@@ -8,6 +8,10 @@
   var timer = document.querySelector('.basic-functions__item--timer');
   var timerImage = document.querySelector('.basiс-functions__timer-image-box');
 
+  if (!temperature) {
+    return;
+  }
+
   var onTemperatureHover = function () {
     temperatureImage.classList.add('js--big');
   }

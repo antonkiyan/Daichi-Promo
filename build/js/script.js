@@ -8,6 +8,10 @@
   var timer = document.querySelector('.basic-functions__item--timer');
   var timerImage = document.querySelector('.basiс-functions__timer-image-box');
 
+  if (!temperature) {
+    return;
+  }
+
   var onTemperatureHover = function () {
     temperatureImage.classList.add('js--big');
   }
@@ -69,6 +73,10 @@
   var labels = document.querySelectorAll('.questions label');
   var title = document.querySelector('.questions__title');
 
+  if (!box) {
+    return;
+  }
+
   var idx = -1;
 
   var scroll = function (target) {
@@ -127,6 +135,10 @@
 
 (function () {
   var wrapper = document.querySelector('.special-programs__wrapper');
+
+  if (!wrapper) {
+    return;
+  }
 
   function onTouchStart(e) {
     let x = 0;

@@ -4,6 +4,10 @@
   var labels = document.querySelectorAll('.questions label');
   var title = document.querySelector('.questions__title');
 
+  if (!box) {
+    return;
+  }
+
   var idx = -1;
 
   var scroll = function (target) {

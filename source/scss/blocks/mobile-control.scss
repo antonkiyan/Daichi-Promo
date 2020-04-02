@@ -1,0 +1,162 @@
+.mobile-control__container {
+  @include container;
+
+  padding-top: 120px;
+}
+
+.mobile-control__about {
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  line-height: 27px;
+  color: rgba(136, 136, 136, 0.8);
+  text-align: center;
+}
+
+.mobile-control__title {
+  @include title-font;
+
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.mobile-control__desc {
+  @include desc-font;
+
+  width: 83%;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.mobile-control__adapter {
+  padding-top: 122px;
+  padding-left: 51.1%;
+
+  background-image: url("../img/d-adapter-big.png");
+  background-repeat: no-repeat;
+  background-position: top 80px left 0;
+
+  @include retina {
+    background-image: url("../img/d-adapter-big@2x.png");
+    background-size: 570px auto;
+  }
+}
+
+.mobile-control__adapter-title,
+.mobile-control__app-title,
+.mobile-control__cloud-title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.mobile-control__adapter-property-list,
+.mobile-control__app-property-list,
+.mobile-control__cloud-property-list {
+  @include list-reset;
+}
+
+.mobile-control__property {
+  @include desc-font;
+
+  position: relative;
+
+  padding-left: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: #00adef;
+    border-radius: 50%;
+  }
+}
+
+.mobile-control__adapter .mobile-control__property {
+  padding-right: 70px;
+}
+
+.mobile-control__adapter-property-list {
+  margin-bottom: 50px;
+}
+
+.mobile-control__adapter-link {
+  width: 215px;
+}
+
+.mobile-control__app {
+  display: flex;
+  padding-top: 90px;
+}
+
+.mobile-control__right {
+  width: 570px;
+  height: 400px;
+  padding-top: 300px;
+  padding-left: 75px;
+
+  background-image: url("../img/icon_d-house-bg.svg");
+}
+
+.mobile-control__left {
+  flex-grow: 1;
+  padding-top: 110px;
+}
+
+.mobile-control__google-play-link,
+.mobile-control__app-store-link {
+  @include transition;
+
+  display: inline-block;
+  width: 203px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.mobile-control__google-play-link {
+  margin-right: 12px;
+
+  background-image: url("../img/icon_googlepay_grey.svg");
+}
+
+.mobile-control__app-store-link {
+  background-image: url("../img/icon_appstore_grey.svg");
+}
+
+.mobile-control__cloud {
+  padding-top: 150px;
+  padding-left: 51.1%;
+  padding-bottom: 100px;
+
+  background-image: url("../img/icon_cloud.svg");
+  background-repeat: no-repeat;
+  background-position: top 50px left 0;
+}
+
+.mobile-control__cloud .mobile-control__property {
+  padding-right: 70px;
+}

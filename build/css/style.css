@@ -1155,6 +1155,7 @@ input:invalid {
   font-size: 15px;
   line-height: 17px;
   text-align: center;
+  text-decoration: none;
   color: #ffffff;
   background-color: #00adef;
   border: none;
@@ -4769,4 +4770,411 @@ input:invalid {
     width: 100%;
     text-align: center;
   }
+}
+
+.promo-split {
+  position: relative;
+  background: linear-gradient(119deg, #8aabc0, #485964);
+}
+
+.promo-split__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1399px) {
+  .promo-split__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .promo-split__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-split__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .promo-split__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.promo-split__left {
+  width: 50%;
+  padding-top: 323px;
+  padding-bottom: 215px;
+}
+
+.promo-split__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.promo-split__desc {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.promo-split__link {
+  width: 215px;
+}
+
+.promo-split__right {
+  width: 570px;
+  padding-top: 198px;
+  padding-bottom: 215px;
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-position: top 200px right -30px;
+  background-size: 390px auto;
+}
+
+.promo-split__adapter,
+.promo-split__app {
+  width: 210px;
+}
+
+.promo-split__adapter {
+  margin-bottom: 50px;
+}
+
+.promo-split__app {
+  margin-bottom: 60px;
+}
+
+.promo-split__adapter p,
+.promo-split__app p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo-split__app p {
+  padding: 0 20px;
+}
+
+.promo-split__adapter-img-box {
+  width: 210px;
+  height: 150px;
+  background-image: url("../img/d-adapter-big.png");
+  background-size: 210px auto;
+}
+
+.promo-split__adapter-img-box {
+  width: 210px;
+  height: 150px;
+  background-image: url("../img/d-adapter-big.png");
+  background-size: 210px auto;
+}
+
+.promo-split__app-img-box {
+  width: 210px;
+  height: 125px;
+  background-image: url("../img/icon_d-house.svg");
+  background-size: 160px 160px;
+  background-repeat: no-repeat;
+  background-position: top -28px center;
+}
+
+.promo-split__google-pay-link,
+.promo-split__app-store-link {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: block;
+  width: 162px;
+  height: 48px;
+  margin-left: 24px;
+  background-repeat: no-repeat;
+}
+
+.promo-split__google-pay-link:hover,
+.promo-split__app-store-link:hover {
+  opacity: 0.8;
+}
+
+.promo-split__google-pay-link:active,
+.promo-split__app-store-link:active {
+  opacity: 0.5;
+}
+
+.promo-split__google-pay-link {
+  background-image: url("../img/icon_googlepay_white.svg");
+}
+
+.promo-split__app-store-link {
+  margin-bottom: 15px;
+  background-image: url("../img/icon_appstore_white.svg");
+}
+
+.promo-split__scroll-down {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  display: block;
+  width: 25px;
+  height: 42px;
+  margin-left: -12px;
+  background-image: url("../img/icon_down_white.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px left 0;
+}
+
+.promo-split__scroll-down::before, .promo-split__scroll-down::after {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 14px;
+  background-image: url("../img/icon_down_white.svg");
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.promo-split__scroll-down::before {
+  top: 0;
+}
+
+.promo-split__scroll-down::after {
+  bottom: 0;
+}
+
+.promo-split__scroll-down:hover {
+  cursor: pointer;
+}
+
+.promo-split__scroll-down:hover::before, .promo-split__scroll-down:hover::after {
+  opacity: 1;
+}
+
+.mobile-control__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  padding-top: 120px;
+}
+
+@media (max-width: 1399px) {
+  .mobile-control__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mobile-control__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-control__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .mobile-control__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.mobile-control__about {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 27px;
+  color: rgba(136, 136, 136, 0.8);
+  text-align: center;
+}
+
+.mobile-control__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.mobile-control__desc {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+  width: 83%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mobile-control__adapter {
+  padding-top: 122px;
+  padding-left: 51.1%;
+  background-image: url("../img/d-adapter-big.png");
+  background-repeat: no-repeat;
+  background-position: top 80px left 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .mobile-control__adapter {
+    background-image: url("../img/d-adapter-big@2x.png");
+    background-size: 570px auto;
+  }
+}
+
+.mobile-control__adapter-title,
+.mobile-control__app-title,
+.mobile-control__cloud-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.mobile-control__adapter-property-list,
+.mobile-control__app-property-list,
+.mobile-control__cloud-property-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-control__property {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.mobile-control__property:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.mobile-control__property::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #00adef;
+  border-radius: 50%;
+}
+
+.mobile-control__adapter .mobile-control__property {
+  padding-right: 70px;
+}
+
+.mobile-control__adapter-property-list {
+  margin-bottom: 50px;
+}
+
+.mobile-control__adapter-link {
+  width: 215px;
+}
+
+.mobile-control__app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 90px;
+}
+
+.mobile-control__right {
+  width: 570px;
+  height: 400px;
+  padding-top: 300px;
+  padding-left: 75px;
+  background-image: url("../img/icon_d-house-bg.svg");
+}
+
+.mobile-control__left {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 110px;
+}
+
+.mobile-control__google-play-link,
+.mobile-control__app-store-link {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: inline-block;
+  width: 203px;
+  height: 60px;
+  background-repeat: no-repeat;
+}
+
+.mobile-control__google-play-link:hover,
+.mobile-control__app-store-link:hover {
+  opacity: 0.8;
+}
+
+.mobile-control__google-play-link:active,
+.mobile-control__app-store-link:active {
+  opacity: 0.5;
+}
+
+.mobile-control__google-play-link {
+  margin-right: 12px;
+  background-image: url("../img/icon_googlepay_grey.svg");
+}
+
+.mobile-control__app-store-link {
+  background-image: url("../img/icon_appstore_grey.svg");
+}
+
+.mobile-control__cloud {
+  padding-top: 150px;
+  padding-left: 51.1%;
+  padding-bottom: 100px;
+  background-image: url("../img/icon_cloud.svg");
+  background-repeat: no-repeat;
+  background-position: top 50px left 0;
+}
+
+.mobile-control__cloud .mobile-control__property {
+  padding-right: 70px;
 }

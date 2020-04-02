@@ -1,0 +1,181 @@
+.promo-split {
+  position: relative;
+  background: linear-gradient(119deg, #8aabc0, #485964);
+}
+
+.promo-split__container {
+  @include container;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-split__left {
+  width: 50%;
+  padding-top: 323px;
+  padding-bottom: 215px;
+}
+
+.promo-split__title {
+  @include title-font;
+
+  margin-bottom: 50px;
+
+  color: #ffffff;
+}
+
+.promo-split__desc {
+  @include desc-font;
+
+  margin-bottom: 50px;
+
+  color: #ffffff;
+}
+
+.promo-split__link {
+  width: 215px;
+}
+
+.promo-split__right {
+  width: 570px;
+  padding-top: 198px;
+  padding-bottom: 215px;
+
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-position: top 200px right -30px;
+  background-size: 390px auto;
+}
+
+.promo-split__adapter,
+.promo-split__app {
+  width: 210px;
+}
+
+.promo-split__adapter {
+  margin-bottom: 50px;
+}
+
+.promo-split__app {
+  margin-bottom: 60px;
+}
+
+.promo-split__adapter p,
+.promo-split__app p {
+  @include desc-font;
+
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo-split__app p {
+  padding: 0 20px;
+}
+
+.promo-split__adapter-img-box {
+  width: 210px;
+  height: 150px;
+
+  background-image: url("../img/d-adapter-big.png");
+  background-size: 210px auto;
+}
+
+.promo-split__adapter-img-box {
+  width: 210px;
+  height: 150px;
+
+  background-image: url("../img/d-adapter-big.png");
+  background-size: 210px auto;
+}
+
+.promo-split__app-img-box {
+  width: 210px;
+  height: 125px;
+
+  background-image: url("../img/icon_d-house.svg");
+  background-size: 160px 160px;
+  background-repeat: no-repeat;
+  background-position: top -28px center;
+}
+
+.promo-split__google-pay-link,
+.promo-split__app-store-link {
+  @include transition;
+
+  display: block;
+  width: 162px;
+  height: 48px;
+  margin-left: 24px;
+
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.promo-split__google-pay-link {
+  background-image: url("../img/icon_googlepay_white.svg");
+}
+
+.promo-split__app-store-link {
+  margin-bottom: 15px;
+  background-image: url("../img/icon_appstore_white.svg");
+}
+
+.promo-split__scroll-down {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+
+  display: block;
+  width: 25px;
+  height: 42px;
+  margin-left: -12px;
+
+  background-image: url("../img/icon_down_white.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px left 0;
+
+  &::before,
+  &::after {
+    @include transition(0.5s);
+
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 25px;
+    height: 14px;
+
+    background-image: url("../img/icon_down_white.svg");
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+
+

@@ -59,6 +59,23 @@
   }
 }
 
+@mixin title-font {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+}
+
+@mixin desc-font {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+}
+
 // РЕТИНА
 @mixin retina {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
