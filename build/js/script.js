@@ -82,8 +82,6 @@
 
   var onResize = function () {
     isMobile = window.matchMedia('(max-width: 768px)').matches;
-    console.log(isMobile);
-
   };
 
   var scroll = function (target) {
