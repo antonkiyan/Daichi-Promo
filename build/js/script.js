@@ -78,12 +78,19 @@
   }
 
   var idx = -1;
+  var isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+  var onResize = function () {
+    isMobile = window.matchMedia('(max-width: 768px)').matches;
+    console.log(isMobile);
+
+  };
 
   var scroll = function (target) {
     return function () {
       target.scrollIntoView({block: `start`, behavior: `smooth`});
     }
-  }
+  };
 
   var clearInputs = function () {
     inputs.forEach(function (input) {
@@ -91,7 +98,7 @@
         input.checked = false;
       }
     })
-  }
+  };
 
   var onBoxClick = function (evt) {
     var target = evt.target;
@@ -110,11 +117,14 @@
 
       var num = +target.getAttribute('id').split('-')[1] - 1;
 
-      setTimeout(scroll(labels[num]), 200);
+      if (isMobile) {
+        setTimeout(scroll(labels[num]), 200);
+      }
     }
-  }
+  };
 
   box.addEventListener('click', onBoxClick);
+  window.addEventListener('resize', onResize);
 })();
 
 (function () {

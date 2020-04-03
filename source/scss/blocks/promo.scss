@@ -8,7 +8,8 @@
   position: relative;
 
   padding-top: 296px;
-  min-height: 999px;
+  min-height: 865px;
+  height: 100vh;
 
   background-image: url("../img/app-showcase-icon.png");
   background-repeat: no-repeat;
@@ -124,6 +125,7 @@
   .promo__container {
     min-height: 703px;
     padding-top: 148px;
+    height: auto;
 
     background-image: url("../img/app-showcase-icon-medium.png");
     background-position: top 90px right 53px;

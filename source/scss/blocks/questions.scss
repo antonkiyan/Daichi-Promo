@@ -145,4 +145,14 @@
   .questions label {
     padding: 30px 50px 30px 5%;
   }
+
+  .questions__item div {
+    padding-right: 50px;
+    padding-left: 5%;
+  }
+
+  .questions input:checked + label + div {
+    padding-right: 50px;
+    padding-left: 5%;
+  }
 }
