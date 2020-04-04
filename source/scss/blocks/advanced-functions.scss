@@ -486,11 +486,11 @@
   .advanced-functions__fifth-container {
     padding-top: 64px;
     min-height: 564px;
-    max-width: 1024px;
+    max-width: 918px;
     margin: 0 auto;
 
     background-image: url("../img/mobile-app-l-medium.png");
-    background-position: right 53px top 0;
+    background-position: right 0 top 0;
 
     @include retina {
       background-image: url("../img/mobile-app-l-medium@2x.png");
@@ -502,7 +502,7 @@
     max-width: 523px;
     min-height: 436px;
     padding: 80px 79px;
-    margin-left: 53px;
+    margin-left: 0;
   }
 
   .advanced-functions__assistants-title {

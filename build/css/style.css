@@ -2280,6 +2280,7 @@ input:invalid {
 @media (max-width: 1399px) {
   .parallax {
     height: 300px;
+    background-size: 100vw auto;
   }
 }
 
@@ -2287,39 +2288,20 @@ input:invalid {
   .parallax {
     height: 300px;
     background-attachment: scroll;
-    background-image: url("../img/happy-people-tablet.png");
-    background-position: center;
-    background-size: cover;
+    background-position: top calc(50% - 60px) center;
   }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .parallax {
-    background-image: url("../img/happy-people-tablet@2x.png");
+    background-image: url("../img/happy-people.jpg");
   }
 }
 
 @media (max-width: 767px) {
   .parallax {
-    background-image: url("../img/happy-people-mobile-l.png");
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .parallax {
-    background-image: url("../img/happy-people-mobile-l@2x.png");
-  }
-}
-
-@media (max-width: 479px) {
-  .parallax {
-    background-image: url("../img/happy-people-mobile.png");
-  }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .parallax {
-    background-image: url("../img/happy-people-mobile@2x.png");
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -2996,10 +2978,10 @@ input:invalid {
   .advanced-functions__fifth-container {
     padding-top: 64px;
     min-height: 564px;
-    max-width: 1024px;
+    max-width: 918px;
     margin: 0 auto;
     background-image: url("../img/mobile-app-l-medium.png");
-    background-position: right 53px top 0;
+    background-position: right 0 top 0;
   }
 }
 
@@ -3015,7 +2997,7 @@ input:invalid {
     max-width: 523px;
     min-height: 436px;
     padding: 80px 79px;
-    margin-left: 53px;
+    margin-left: 0;
   }
   .advanced-functions__assistants-title {
     font-size: 32px;
@@ -4889,6 +4871,8 @@ input:invalid {
 
 .promo-split {
   position: relative;
+  min-height: 890px;
+  height: 100vh;
   background: linear-gradient(119deg, #8aabc0, #485964);
 }
 
@@ -4936,7 +4920,7 @@ input:invalid {
 .promo-split__left {
   width: 50%;
   padding-top: 323px;
-  padding-bottom: 215px;
+  padding-bottom: 100px;
 }
 
 .promo-split__title {
@@ -4965,7 +4949,7 @@ input:invalid {
 .promo-split__right {
   width: 570px;
   padding-top: 198px;
-  padding-bottom: 215px;
+  padding-bottom: 100px;
   background-image: url("../img/phone.png");
   background-repeat: no-repeat;
   background-position: top 200px right -30px;

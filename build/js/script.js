@@ -78,10 +78,10 @@
   }
 
   var idx = -1;
-  var isMobile = window.matchMedia('(max-width: 768px)').matches;
+  var isMobile = window.matchMedia('(max-width: 767px)').matches;
 
   var onResize = function () {
-    isMobile = window.matchMedia('(max-width: 768px)').matches;
+    isMobile = window.matchMedia('(max-width: 767px)').matches;
   };
 
   var scroll = function (target) {
