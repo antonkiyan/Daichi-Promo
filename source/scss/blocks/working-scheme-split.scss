@@ -1,0 +1,128 @@
+.working-scheme-split__container {
+  @include container;
+
+  padding-bottom: 80px;
+  padding-top: 160px;
+}
+
+.working-scheme-split__title {
+  @include title-font;
+
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.working-scheme-split__desc {
+  @include desc-font;
+
+  width: 83%;
+  margin: 0 auto 80px;
+
+  text-align: center;
+}
+
+.working-scheme-split__items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 380px;
+  margin-bottom: 80px;
+
+  background-image: url("../img/icon_scheme.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+}
+
+.working-scheme-split__item {
+  @include desc-font;
+
+  width: 32%;
+  padding: 0 60px;
+
+  font-weight: 400;
+  vertical-align: top;
+  text-align: center;
+
+  &:last-child {
+    padding: 0 80px;
+  }
+}
+
+.working-scheme-split__bottom-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.working-scheme-split__benefits {
+  width: 750px;
+  padding-top: 255px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+}
+
+.working-scheme-split__benefits p {
+  margin: 0;
+
+  font-weight: 300px;
+  line-height: 40px;
+
+  &:first-child {
+    margin-bottom: 34px;
+
+    font-size: 32px;
+  }
+
+  &:last-child {
+    font-size: 24px;
+  }
+}
+
+.working-scheme-split__mobile-control {
+  width: 570px;
+  min-width: 570px;
+
+  &-header {
+    width: 100%;
+    height: 300px;
+
+    background-image: url("../img/app-showcase-bg.png");
+    background-repeat: no-repeat;
+    background-size: 570px auto;
+
+    @include retina {
+      background-image: url("../img/app-showcase-bg@2x.png");
+    }
+  }
+
+  &-content {
+    padding: 50px;
+
+    border: 1px solid #cbcbcb;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  &-title {
+    @include title-font;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+  }
+
+  &-desc {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &-link {
+    width: 215px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,44 @@
+.dcm-adapter {
+  background: linear-gradient(109deg, #0a202f, #14415e);
+}
+
+.dcm-adapter__container {
+  @include container;
+
+  padding-top: 80px;
+  padding-bottom: 380px;
+
+  background-image: url("../img/dcm-big.png");
+  background-repeat: no-repeat;
+  background-position: bottom 40px center;
+
+  @include retina {
+    background-image: url("../img/dcm-big@2x.png");
+    background-size: 570px auto;
+  }
+}
+
+.dcm-adapter__title {
+  @include title-font;
+
+  margin-bottom: 15px;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.dcm-adapter__desc {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 35px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.dcm-adapter__link {
+  width: 215px;
+  margin: 0 auto;
+}

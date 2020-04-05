@@ -1,0 +1,127 @@
+.diagnostics-repair__container {
+  @include container;
+
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.diagnostics-repair__title {
+  @include title-font;
+
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.diagnostics-repair__name {
+  width: 210px;
+  margin: 0 auto 15px;
+
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.63px;
+  text-align: center;
+}
+
+.diagnostics-repair__items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  padding-top: 210px;
+  margin: 0 auto 80px;
+
+  background-image: url("../img/icon_diagnostic.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+}
+
+.diagnostics-repair__item {
+  margin: 0;
+  width: 210px;
+  padding: 0 25px;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.diagnostics-repair__bottom-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diagnostics-repair__climat-online {
+  width: 570px;
+  min-width: 570px;
+
+  &-header {
+    width: 100%;
+    height: 300px;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-image: url("../img/daichi-climat-online.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: top right;
+
+    @include retina {
+      background-image: url("../img/daichi-climat-online@2x.png");
+    }
+  }
+
+  &-content {
+    padding: 50px 49px;
+
+    border: 1px solid #cbcbcb;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  &-title {
+    @include title-font;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+  }
+
+  &-desc {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &-link {
+    width: 215px;
+    margin: 0 auto;
+  }
+}
+
+.diagnostics-repair__benefits {
+  width: 750px;
+  padding: 182px 0 60px 60px;
+}
+
+.diagnostics-repair__benefits p {
+  margin: 0;
+
+  font-weight: 300;
+  line-height: 38px;
+
+  &:first-child {
+    margin-bottom: 50px;
+
+    font-size: 24px;
+  }
+
+  &:last-child {
+    font-size: 32px;
+  }
+}

@@ -1,10 +1,11 @@
-.mobile-control__container {
+.vrf-control__container {
   @include container;
 
   padding-top: 120px;
 }
 
-.mobile-control__about {
+.vrf-control__about {
+  margin: 0;
   margin-bottom: 24px;
 
   font-size: 24px;
@@ -13,7 +14,7 @@
   text-align: center;
 }
 
-.mobile-control__title {
+.vrf-control__title {
   @include title-font;
 
   margin-bottom: 25px;
@@ -21,7 +22,7 @@
   text-align: center;
 }
 
-.mobile-control__desc {
+.vrf-control__desc {
   @include desc-font;
 
   width: 83%;
@@ -30,23 +31,24 @@
   text-align: center;
 }
 
-.mobile-control__adapter {
-  padding-top: 122px;
+.vrf-control__adapter {
+  padding-top: 110px;
   padding-left: 51.1%;
+  padding-bottom: 28px;
 
-  background-image: url("../img/d-adapter-big.png");
+  background-image: url("../img/dcm-big.png");
   background-repeat: no-repeat;
   background-position: top 80px left 0;
 
   @include retina {
-    background-image: url("../img/d-adapter-big@2x.png");
+    background-image: url("../img/dcm-big@2x.png");
     background-size: 570px auto;
   }
 }
 
-.mobile-control__adapter-title,
-.mobile-control__app-title,
-.mobile-control__cloud-title {
+.vrf-control__adapter-title,
+.vrf-control__app-title,
+.vrf-control__cloud-title {
   margin: 0;
   margin-bottom: 25px;
 
@@ -55,13 +57,13 @@
   line-height: 27px;
 }
 
-.mobile-control__adapter-property-list,
-.mobile-control__app-property-list,
-.mobile-control__cloud-property-list {
+.vrf-control__adapter-property-list,
+.vrf-control__app-property-list,
+.vrf-control__cloud-property-list {
   @include list-reset;
 }
 
-.mobile-control__property {
+.vrf-control__property {
   @include desc-font;
 
   position: relative;
@@ -87,39 +89,39 @@
   }
 }
 
-.mobile-control__adapter .mobile-control__property {
-  padding-right: 70px;
+.vrf-control__adapter .vrf-control__property {
+  padding-right: 60px;
 }
 
-.mobile-control__adapter-property-list {
+.vrf-control__adapter-property-list {
   margin-bottom: 50px;
 }
 
-.mobile-control__adapter-link {
+.vrf-control__adapter-link {
   width: 215px;
 }
 
-.mobile-control__app {
+.vrf-control__app {
   display: flex;
-  padding-top: 90px;
+  padding-top: 50px;
 }
 
-.mobile-control__right {
+.vrf-control__right {
   width: 570px;
   height: 400px;
   padding-top: 300px;
   padding-left: 75px;
 
-  background-image: url("../img/icon_d-house-bg.svg");
+  background-image: url("../img/icon_d-cube-bg.svg");
 }
 
-.mobile-control__left {
+.vrf-control__left {
   flex-grow: 1;
   padding-top: 110px;
 }
 
-.mobile-control__google-play-link,
-.mobile-control__app-store-link {
+.vrf-control__google-play-link,
+.vrf-control__app-store-link {
   @include transition;
 
   display: inline-block;
@@ -137,17 +139,17 @@
   }
 }
 
-.mobile-control__google-play-link {
+.vrf-control__google-play-link {
   margin-right: 12px;
 
   background-image: url("../img/icon_googlepay_grey.svg");
 }
 
-.mobile-control__app-store-link {
+.vrf-control__app-store-link {
   background-image: url("../img/icon_appstore_grey.svg");
 }
 
-.mobile-control__cloud {
+.vrf-control__cloud {
   padding-top: 150px;
   padding-left: 51.1%;
   padding-bottom: 100px;
@@ -157,6 +159,6 @@
   background-position: top 50px left 0;
 }
 
-.mobile-control__cloud .mobile-control__property {
+.vrf-control__cloud .vrf-control__property {
   padding-right: 70px;
 }

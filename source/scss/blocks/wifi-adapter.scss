@@ -1,0 +1,44 @@
+.wifi-adapter {
+  background: linear-gradient(109deg, #8aabc0, #485964);
+}
+
+.wifi-adapter__container {
+  @include container;
+
+  padding-top: 80px;
+  padding-bottom: 380px;
+
+  background-image: url("../img/d-adapter-big.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @include retina {
+    background-image: url("../img/d-adapter-big@2x.png");
+    background-size: 570px auto;
+  }
+}
+
+.wifi-adapter__title {
+  @include title-font;
+
+  margin-bottom: 15px;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.wifi-adapter__desc {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 35px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.wifi-adapter__link {
+  width: 215px;
+  margin: 0 auto;
+}
