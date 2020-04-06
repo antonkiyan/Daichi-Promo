@@ -5,7 +5,8 @@
 }
 
 .to-programs__climat-online,
-.to-programs__my-comfort {
+.to-programs__my-comfort,
+.to-programs__mobile-control {
   position: relative;
 
   display: block;
@@ -95,6 +96,29 @@
   }
 }
 
+.to-programs__mobile-control {
+  background-image: url("../img/app-showcase-bg-right.png");
+
+  background-position: top right;
+
+  &::after {
+    left: 0;
+
+    transform: rotate(180deg);
+  }
+
+  &:hover::after {
+    left: 50px;
+
+    opacity: 1;
+  }
+
+  @include retina {
+    background-image: url("../img/app-showcase-bg-right@2x.png");
+    background-size: 960px auto;
+  }
+}
+
 .to-programs p {
   position: relative;
 
@@ -109,9 +133,14 @@
   z-index: 1;
 }
 
+.to-programs__mobile-control p {
+  color: rgba(0, 0, 0, 0.5)
+}
+
 .to-programs h2 {
   position: relative;
 
+  max-width: 405px;
   margin: 0;
 
   font-weight: 300;

@@ -1,0 +1,80 @@
+.engineering-center {
+  &__container {
+    @include container;
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-bottom: 160px;
+  }
+
+  &__left {
+    position: relative;
+
+    align-self: flex-start;
+    width: 570px;
+    min-width: 570px;
+    min-height: 700px;
+    padding-top: 123px;
+    padding-left: 46px;
+    margin-right: 60px;
+
+    background:
+      url("../img/icon_daichi-color.svg") top 50px left 200px no-repeat,
+      linear-gradient(180deg, #e7ecec, #e3eaea);
+
+    background-size: 200px 36px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 627px;
+      height: 459px;
+      margin-left: -313px;
+
+      background: url("../img/stuff.png") no-repeat;
+      background-size: 627px auto;
+
+      @include retina {
+        background-image: url("../img/stuff@2x.png");
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  &__right {
+    width: 690px;
+  }
+
+  &__desc {
+    @include desc-font;
+
+    line-height: 27px;
+    letter-spacing: 0.63px;
+  }
+
+  &__desc:first-of-type {
+    margin-bottom: 50px;
+  }
+
+  &__monitoring-title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 46px;
+  }
+}

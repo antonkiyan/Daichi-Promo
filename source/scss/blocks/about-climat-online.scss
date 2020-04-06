@@ -1,0 +1,95 @@
+.about-climat-online {
+  &__container {
+    @include container;
+
+    margin-bottom: 160px;
+  }
+
+  &__note {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    line-height: 27px;
+    color: rgba(136, 136, 136, 0.8);
+    text-align: center;
+  }
+
+  &__title {
+    @include title-font;
+
+    margin-bottom: 80px;
+
+    text-align: center;
+  }
+
+  &__content {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 930px;
+    margin: 0 auto 138px;
+  }
+
+  &__content::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 1px;
+    height: 100%;
+
+    background-color: #dddddd;
+  }
+
+  &__engineering-center-scheme {
+    margin-bottom: 80px;
+  }
+
+  &__remark {
+    margin: 0;
+
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+.about-climat-online__item {
+  width: 330px;
+  padding-top: 140px;
+
+  &--status {
+    background: url("../img/icon_status.svg") top center no-repeat;
+    background-size: 90px 90px;
+  }
+
+  &--connection {
+    background: url("../img/icon_connection.svg") top center no-repeat;
+    background-size: 90px 90px;
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.63px;
+    text-align: center;
+  }
+
+  &-desc {
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+  }
+}

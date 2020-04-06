@@ -13,38 +13,42 @@
   text-align: center;
 }
 
-.diagnostics-repair__name {
-  width: 210px;
-  margin: 0 auto 15px;
-
-  font-size: 18px;
-  line-height: 23px;
-  letter-spacing: 0.63px;
-  text-align: center;
+.diagnostics-repair__engineering-center-scheme {
+  margin-bottom: 80px;
 }
 
-.diagnostics-repair__items-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 1170px;
-  padding-top: 210px;
-  margin: 0 auto 80px;
+// .diagnostics-repair__name {
+//   width: 210px;
+//   margin: 0 auto 15px;
 
-  background-image: url("../img/icon_diagnostic.svg");
-  background-repeat: no-repeat;
-  background-position: top 0 center;
-}
+//   font-size: 18px;
+//   line-height: 23px;
+//   letter-spacing: 0.63px;
+//   text-align: center;
+// }
 
-.diagnostics-repair__item {
-  margin: 0;
-  width: 210px;
-  padding: 0 25px;
+// .diagnostics-repair__items-wrapper {
+//   display: flex;
+//   justify-content: space-between;
+//   width: 1170px;
+//   padding-top: 210px;
+//   margin: 0 auto 80px;
 
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-}
+//   background-image: url("../img/icon_diagnostic.svg");
+//   background-repeat: no-repeat;
+//   background-position: top 0 center;
+// }
+
+// .diagnostics-repair__item {
+//   margin: 0;
+//   width: 210px;
+//   padding: 0 25px;
+
+//   font-weight: 300;
+//   font-size: 15px;
+//   line-height: 20px;
+//   text-align: center;
+// }
 
 .diagnostics-repair__bottom-block {
   display: flex;

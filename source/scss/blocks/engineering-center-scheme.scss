@@ -1,0 +1,32 @@
+.engineering-center-scheme__name {
+  width: 210px;
+  margin: 0 auto 15px;
+
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.63px;
+  text-align: center;
+}
+
+.engineering-center-scheme__items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  padding-top: 210px;
+  margin: 0 auto;
+
+  background-image: url("../img/icon_diagnostic.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+}
+
+.engineering-center-scheme__item {
+  margin: 0;
+  width: 210px;
+  padding: 0 25px;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
