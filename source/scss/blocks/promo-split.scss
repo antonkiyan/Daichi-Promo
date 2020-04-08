@@ -49,6 +49,10 @@
   background-repeat: no-repeat;
   background-position: top 200px right -30px;
   background-size: 390px auto;
+
+  @include retina {
+    background-image: url("../img/phone@2x.png");
+  }
 }
 
 .promo-split__adapter,
@@ -179,6 +183,65 @@
   &:hover::after {
     opacity: 1;
   }
+}
+
+@include desktop-medium {
+  .promo-split__container {
+    max-width: calc(1000px + 10.36%);
+  }
+
+  .promo-split {
+    min-height: 768px;
+    height: auto;
+  }
+
+  .promo-split__left {
+    width: 48.4%;
+    padding-top: 246px;
+  }
+
+  .promo-split__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .promo-split__desc {
+    margin: 0;
+  }
+
+  .promo-split__link {
+    display: none;
+  }
+
+  .promo-split__right {
+    width: 365px;
+    padding-top: 583px;
+    padding-bottom: 100px;
+    align-self: flex-start;
+
+    background-image: url("../img/split-control-promo.png");
+    background-size: auto 357px;
+    background-position: top 200px right 0;
+  }
+
+  .promo-split__adapter,
+  .promo-split__app {
+    display: none;
+  }
+
+  .promo-split__app-store-link,
+  .promo-split__google-pay-link {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .promo-split__app-store-link {
+    display: inline-block;
+    margin-left: 13px;
+    margin-right: 12px;
+  }
+
+
 }
 
 

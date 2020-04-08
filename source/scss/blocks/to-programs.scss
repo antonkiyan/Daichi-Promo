@@ -57,17 +57,17 @@
 
   background-position: top right;
 
-  &::after {
-    left: 0;
+  // &::after {
+  //   left: 0;
 
-    transform: rotate(180deg);
-  }
+  //   transform: rotate(180deg);
+  // }
 
-  &:hover::after {
-    left: 50px;
+  // &:hover::after {
+  //   left: 50px;
 
-    opacity: 1;
-  }
+  //   opacity: 1;
+  // }
 
   @include retina {
     background-image: url("../img/daichi-climat-online@2x.png");
@@ -80,15 +80,15 @@
 
   background-position: top right;
 
-  &::after {
-    right: 0;
-  }
+  // &::after {
+  //   right: 0;
+  // }
 
-  &:hover::after {
-    right: 50px;
+  // &:hover::after {
+  //   right: 50px;
 
-    opacity: 1;
-  }
+  //   opacity: 1;
+  // }
 
   @include retina {
     background-image: url("../img/daichi-comfort@2x.png");
@@ -101,6 +101,25 @@
 
   background-position: top right;
 
+  // &::after {
+  //   left: 0;
+
+  //   transform: rotate(180deg);
+  // }
+
+  // &:hover::after {
+  //   left: 50px;
+
+  //   opacity: 1;
+  // }
+
+  @include retina {
+    background-image: url("../img/app-showcase-bg-right@2x.png");
+    background-size: 960px auto;
+  }
+}
+
+.to-programs a:first-child {
   &::after {
     left: 0;
 
@@ -112,10 +131,17 @@
 
     opacity: 1;
   }
+}
 
-  @include retina {
-    background-image: url("../img/app-showcase-bg-right@2x.png");
-    background-size: 960px auto;
+.to-programs a:last-child {
+  &::after {
+    right: 0;
+  }
+
+  &:hover::after {
+    right: 50px;
+
+    opacity: 1;
   }
 }
 

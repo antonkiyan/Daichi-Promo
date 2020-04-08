@@ -161,3 +161,74 @@
 .split-control__cloud .split-control__property {
   padding-right: 70px;
 }
+
+@include desktop-medium {
+  .split-control__about {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .split-control__adapter-title,
+  .split-control__app-title,
+  .split-control__cloud-title {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.63px;
+  }
+
+  .split-control__adapter {
+    max-width: 918px;
+    margin: 0 auto;
+    padding-left: 395px;
+    padding-top: 84px;
+
+    background-size: 365px auto;
+    background-position: top 100px left 0;
+  }
+
+  .split-control__adapter .split-control__property {
+    padding-right: 50px;
+  }
+
+  .split-control__app {
+    max-width: 918px;
+    margin: 0 auto;
+    padding-top: 64px;
+  }
+
+  .split-control__right {
+    width: 365px;
+    height: 256px;
+    padding-top: 208px;
+    padding-left: 13px;
+
+    background-size: 365px auto;
+  }
+
+  .split-control__left {
+    padding-top: 57px;
+  }
+
+  .split-control__google-play-link,
+  .split-control__app-store-link {
+    width: 162px;
+    height: 48px;
+
+    background-size: 162px 48px;
+  }
+
+  .split-control__cloud {
+    max-width: 918px;
+    margin: 0 auto;
+    padding-top: 123px;
+    padding-left: 395px;
+    padding-bottom: 0;
+
+    background-size: 365px 256px;
+    background-position: top 80px left 0;
+  }
+
+  .split-control__cloud .split-control__property {
+    padding-right: 50px;
+  }
+}

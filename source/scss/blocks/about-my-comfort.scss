@@ -1,0 +1,134 @@
+.about-my-comfort {
+  padding-top: 120px;
+
+  &__container {
+    @include container;
+  }
+
+  &__note {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    line-height: 27px;
+    color: rgba(136, 136, 136, 0.8);
+    text-align: center;
+  }
+
+  &__title {
+    @include title-font;
+
+    margin-bottom: 105px;
+
+    text-align: center;
+  }
+
+  &__remark {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
+
+    background: linear-gradient(102deg, #8aabc0, #485964);
+  }
+
+  &__remark p {
+    max-width: 930px;
+    margin: 0 auto;
+  }
+
+  &__remark p:first-child {
+    margin-bottom: 50px;
+  }
+}
+
+.about-my-comfort__first {
+  min-height: 615px;
+  margin-bottom: 160px;
+
+  background:
+    url("../img/daikin-2.png") top left calc(50% - 635px)/auto 615px no-repeat,
+    url("../img/wi-fi-sign.png") top 74px left calc(50% - 30px)/auto 263px no-repeat;
+
+  @include retina {
+    background:
+      url("../img/daikin-2@2x.png") top left calc(50% - 635px)/auto 615px no-repeat,
+      url("../img/wi-fi-sign@2x.png") top 74px left calc(50% - 30px)/auto 263px no-repeat;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 120px;
+    padding-top: 62px;
+  }
+}
+
+.about-my-comfort__item {
+  width: 450px;
+
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  text-align: center;
+
+  &--status {
+    padding-top: 118px;
+    margin-bottom: 80px;
+
+    background: url("../img/icon_status-no-ring.svg") top center no-repeat;
+  }
+
+  &--replace {
+    padding-top: 121px;
+
+    background: url("../img/icon_replace.svg") top center no-repeat;
+  }
+
+  &--48hours {
+    padding-top: 115px;
+    margin-bottom: 80px;
+
+    background: url("../img/icon_48hours.svg") top center no-repeat;
+  }
+
+  &--assistant {
+    padding-top: 116px;
+
+    background: url("../img/icon_assistant.svg") top center no-repeat;
+  }
+}
+
+.about-my-comfort__second {
+  padding-top: 80px;
+  max-width: 1920px;
+  margin: 0 auto 160px;
+
+  background: url("../img/48hours.png") top right/auto 600px no-repeat;
+
+  @include retina {
+    background: url("../img/48hours@2x.png") top right/auto 600px no-repeat;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 690px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    background-color: #f6f6f6;
+  }
+}
+
+
+
+

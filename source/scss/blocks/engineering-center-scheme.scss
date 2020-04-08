@@ -30,3 +30,23 @@
   line-height: 20px;
   text-align: center;
 }
+
+@include desktop-medium {
+  .engineering-center-scheme__name {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+
+  .engineering-center-scheme__items-wrapper {
+    width: 760px;
+    padding-top: 148px;
+
+    background-size: 760px 117px;
+  }
+
+  .engineering-center-scheme__item {
+    width: 128px;
+    padding: 0;
+  }
+}

@@ -7,8 +7,11 @@
     min-height: 750px;
     padding-top: 182px;
 
-    background: url("../img/daichi-climat-online-scale.png") top left 53px no-repeat;
-    background-size: 690px auto;
+    background: url("../img/daichi-climat-online-scale.png") top left 53px/690px auto no-repeat;
+
+    @include retina {
+      background: url("../img/daichi-climat-online-scale@2x.png") top left 53px/690px auto no-repeat;
+    }
   }
 
   &__content {

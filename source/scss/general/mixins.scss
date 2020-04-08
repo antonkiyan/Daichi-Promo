@@ -65,6 +65,11 @@
   font-weight: 300;
   font-size: 48px;
   line-height: 53px;
+
+  @include desktop-medium {
+    font-size: 32px;
+    line-height: 35px;
+  }
 }
 
 @mixin desc-font {
@@ -74,6 +79,12 @@
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.63px;
+
+  @include desktop-medium {
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0;
+  }
 }
 
 // РЕТИНА

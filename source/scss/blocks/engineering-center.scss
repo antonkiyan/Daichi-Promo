@@ -36,11 +36,10 @@
       height: 459px;
       margin-left: -313px;
 
-      background: url("../img/stuff.png") no-repeat;
-      background-size: 627px auto;
+      background: url("../img/stuff.png") top left/627px auto no-repeat;
 
       @include retina {
-        background-image: url("../img/stuff@2x.png");
+        background: url("../img/stuff@2x.png") top left/627px auto no-repeat;
       }
     }
   }

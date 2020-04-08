@@ -1,0 +1,92 @@
+.my-comfort-order {
+  margin-bottom: 160px;
+  
+  &__container {
+    @include container;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 80px;
+
+    background: url("../img/happy-people-4.png") top center/510px auto no-repeat;
+
+    @include retina {
+      background: url("../img/happy-people-4@2x.png") top center/510px auto no-repeat;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.32px;
+    text-align: center;
+  }
+
+  &__list {
+    @include list-reset;
+  }
+
+  &__list--left {
+    margin-bottom: 52px;
+  }
+
+  &__list--right {
+    margin-bottom: 77px;
+  }
+
+  &__item {
+    @include desc-font;
+
+    position: relative;
+
+    padding-left: 30px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__item::before {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 0;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: #00adef;
+  }
+
+  &__link {
+    width: 215px;
+    margin: 0 auto;
+  }
+
+  &__remark {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.63px;
+    text-align: center;
+  }
+}
+
+.my-comfort-order__side {
+  width: 450px;
+  padding: 80px 60px;
+
+  background-color: #f6f6f6;
+}

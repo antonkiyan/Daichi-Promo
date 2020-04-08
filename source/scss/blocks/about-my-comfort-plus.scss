@@ -1,0 +1,146 @@
+.about-my-comfort-plus {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  &__container {
+    @include container;
+  }
+
+  &__container--third {
+    background: url("../img/car.png") top left/690px auto no-repeat;
+
+    @include retina {
+      background: url("../img/car@2x.png") top left/690px auto no-repeat;
+    }
+  }
+
+  &__title {
+    @include title-font;
+
+    margin-bottom: 100px;
+
+    text-align: center;
+  }
+
+  &__remark {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
+
+    background: linear-gradient(102deg, #0a202f, #14415e);
+  }
+
+  &__remark p {
+    max-width: 930px;
+    margin: 0 auto;
+  }
+
+  &__remark p:first-child {
+    margin-bottom: 50px;
+  }
+}
+
+.about-my-comfort-plus__first {
+  min-height: 400px;
+  margin-bottom: 160px;
+
+  background:
+    url("../img/daikin-1.png") top left calc(50% - 700px)/auto 400px no-repeat,
+    url("../img/wi-fi-sign.png") top 82px left calc(50% - 10px)/auto 237px no-repeat;
+
+  @include retina {
+    background:
+      url("../img/daikin-1@2x.png") top left calc(50% - 700px)/auto 400px no-repeat,
+      url("../img/wi-fi-sign@2x.png") top 82px left calc(50% - 10px)/auto 237px no-repeat;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 120px;
+    padding-top: 106px;
+  }
+}
+
+.about-my-comfort-plus__item {
+  width: 450px;
+
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  text-align: center;
+
+  &--service {
+    padding-top: 140px;
+
+    background: url("../img/icon_service.svg") top center no-repeat;
+  }
+
+  &--status {
+    padding-top: 118px;
+    margin-bottom: 80px;
+
+    background: url("../img/icon_status-no-ring.svg") top center no-repeat;
+  }
+
+  &--replace {
+    padding-top: 121px;
+
+    background: url("../img/icon_replace.svg") top center no-repeat;
+  }
+
+  &--48hours {
+    padding-top: 115px;
+    margin-bottom: 80px;
+
+    background: url("../img/icon_48hours.svg") top center no-repeat;
+  }
+
+  &--assistant {
+    padding-top: 116px;
+
+    background: url("../img/icon_assistant.svg") top center no-repeat;
+  }
+}
+
+.about-my-comfort-plus__second {
+  padding-top: 80px;
+  max-width: 1920px;
+  margin: 0 auto 160px;
+
+  background: url("../img/service.png") top right/auto 600px no-repeat;
+
+  @include retina {
+    background: url("../img/service@2x.png") top right/auto 600px no-repeat;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 690px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    background-color: #f6f6f6;
+  }
+}
+
+.about-my-comfort-plus__third {
+  margin-bottom: 139px;
+
+  &-content {
+    width: 450px;
+    margin-left: auto;
+    margin-right: 120px;
+    padding-bottom: 21px;
+  }
+}

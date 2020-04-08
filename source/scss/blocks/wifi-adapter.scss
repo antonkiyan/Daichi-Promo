@@ -42,3 +42,20 @@
   width: 215px;
   margin: 0 auto;
 }
+
+@include desktop-medium {
+  .wifi-adapter__container {
+    padding-top: 50px;
+    padding-bottom: 250px;
+
+    background-size: 286px auto;
+    background-position: bottom 25px center;
+  }
+
+  .wifi-adapter__desc {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
