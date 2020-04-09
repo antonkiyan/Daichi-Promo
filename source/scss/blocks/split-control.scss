@@ -112,6 +112,7 @@
   padding-left: 75px;
 
   background-image: url("../img/icon_d-house-bg.svg");
+  background-repeat: no-repeat;
 }
 
 .split-control__left {
@@ -230,5 +231,168 @@
 
   .split-control__cloud .split-control__property {
     padding-right: 50px;
+  }
+}
+
+@include tablet {
+  .split-control__desc {
+    width: 100%;
+  }
+
+  .split-control__adapter-title,
+  .split-control__app-title,
+  .split-control__cloud-title {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.63px;
+  }
+
+  .split-control__property {
+    line-height: 20px;
+  }
+
+  .split-control__adapter {
+    max-width: 704px;
+    padding-left: 367px;
+    padding-top: 80px;
+
+    background-size: 336px auto;
+    background-position: top 130px left 0;
+  }
+
+  .split-control__adapter .split-control__property {
+    padding-right: 0;
+  }
+
+  .split-control__app {
+    max-width: 704px;
+    padding-top: 80px;
+  }
+
+  .split-control__right {
+    width: 336px;
+    height: 236px;
+    padding-top: 188px;
+    padding-left: 0;
+
+    font-size: 0;
+
+    background-size: 336px 236px;
+  }
+
+  .split-control__left {
+    width: 367px;
+    padding-top: 0;
+    padding-right: 32px;
+  }
+
+  .split-control__google-play-link {
+    margin-right: 10px;
+  }
+
+  .split-control__cloud {
+    max-width: 704px;
+    padding-top: 77px;
+    padding-left: 367px;
+
+    background-size: 336px 236px;
+    background-position: top 80px left 0;
+  }
+
+  .split-control__cloud .split-control__property {
+    padding-right: 0;
+  }
+}
+
+@include mobile-l {
+  .split-control__adapter-title,
+  .split-control__app-title,
+  .split-control__cloud-title {
+    text-align: center;
+  }
+
+  .split-control__adapter {
+    max-width: 416px;
+    padding: 80px 0 341px;
+
+    background-size: 416px auto;
+    background-position: top 440px center;
+  }
+
+  .split-control__adapter-link {
+    margin: 0 auto;
+  }
+
+  .split-control__app {
+    flex-direction: column;
+    max-width: 416px;
+    padding-top: 25px;
+  }
+
+  .split-control__right {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-width: 416px;
+    height: 292px;
+    padding-top: 219px;
+    padding-left: 0;
+
+    background-size: 416px 292px;
+    background-position: top center;
+  }
+
+  .split-control__left {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .split-control__cloud {
+    max-width: 416px;
+    padding: 50px 0 317px;
+
+    background-size: 416px 292px;
+    background-position: top 270px center;
+  }
+}
+
+@include mobile {
+  .split-control__adapter {
+    padding-top: 50px;
+    padding-bottom: 227px;
+
+    background-size: 288px auto;
+    background-position: bottom center;
+  }
+
+  .split-control__left {
+    margin-bottom: 25px;
+  }
+
+  .split-control__right {
+    max-width: 288px;
+    height: auto;
+    padding-top: 140px;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    background-size: 288px auto;
+  }
+
+  .split-control__google-play-link {
+    margin: 0;
+  }
+
+  .split-control__app-store-link {
+    margin-bottom: 10px;
+  }
+
+  .split-control__cloud {
+    padding-bottom: 227px;
+
+    background-size: 288px 202px;
+    background-position: bottom center;
   }
 }

@@ -175,3 +175,116 @@
   }
 
 }
+
+@include tablet {
+  .diagnostics-repair__container {
+    padding-bottom: 120px;
+  }
+
+  .diagnostics-repair__bottom-block {
+    max-width: 704px;
+  }
+
+  .diagnostics-repair__climat-online {
+    width: 336px;
+
+    &-header {
+      height: 177px;
+
+      background-size: auto 177px;
+    }
+
+    &-content {
+      padding: 50px 14px;
+    }
+
+    &-title {
+      font-size: 24px;
+      line-height: 27px;
+    }
+
+    &-desc {
+      line-height: 22px;
+    }
+  }
+
+  .diagnostics-repair__benefits {
+    width: 366px;
+    padding: 73px 0 60px 30px;
+  }
+
+  .diagnostics-repair__benefits p {
+    line-height: 32px;
+
+    &:first-child {
+      font-size: 18px;
+    }
+
+    &:last-child {
+      font-size: 24px;
+    }
+  }
+}
+
+@include mobile-l {
+  .diagnostics-repair__container {
+    padding-top: 50px;
+  }
+
+  .diagnostics-repair__engineering-center-scheme {
+    margin-bottom: 0;
+  }
+
+  .diagnostics-repair__bottom-block {
+    flex-direction: column-reverse;
+  }
+
+  .diagnostics-repair__benefits {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .diagnostics-repair__benefits p {
+    line-height: 22px;
+    text-align: center;
+
+    &:first-child {
+      margin-bottom: 25px;
+
+      font-size: 15px;
+    }
+
+    &:last-child {
+      font-size: 18px;
+    }
+  }
+
+  .diagnostics-repair__climat-online {
+    margin: 0 auto;
+  }
+}
+
+@include mobile {
+  .diagnostics-repair__climat-online {
+    width: 288px;
+
+    &-header {
+      height: 152px;
+
+      background-size: auto 152px;
+    }
+
+    &-content {
+      padding: 25px 24px 50px;
+    }
+
+    &-title {
+      padding: 0;
+    }
+
+    &-desc {
+      margin-bottom: 25px;
+    }
+  }
+}

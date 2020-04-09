@@ -1259,6 +1259,81 @@ input:invalid {
   }
 }
 
+@media (max-width: 1023px) {
+  .engineering-center-scheme__items-wrapper {
+    width: 704px;
+    background-size: 704px 109px;
+  }
+}
+
+@media (max-width: 767px) {
+  .engineering-center-scheme {
+    max-width: 416px;
+    margin: 0 auto;
+  }
+  .engineering-center-scheme__name {
+    display: none;
+  }
+  .engineering-center-scheme__items-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+    padding: 60px 0 120px;
+    background-image: url("../img/icon_diagnostic-vertical.svg");
+    background-size: 150px 1000px;
+    background-position: top left;
+  }
+  .engineering-center-scheme__item {
+    width: 192px;
+    padding-right: 40px;
+    text-align: left;
+  }
+  .engineering-center-scheme__item:first-child {
+    margin-bottom: 152px;
+  }
+  .engineering-center-scheme__item:nth-child(2) {
+    margin-bottom: 188px;
+  }
+  .engineering-center-scheme__item:nth-child(3) {
+    margin-bottom: 155px;
+  }
+  .engineering-center-scheme__item:nth-child(4) {
+    margin-bottom: 135px;
+  }
+}
+
+@media (max-width: 479px) {
+  .engineering-center-scheme {
+    max-width: 288px;
+  }
+  .engineering-center-scheme__items-wrapper {
+    padding-bottom: 125px;
+    background-size: 136px 907px;
+  }
+  .engineering-center-scheme__item {
+    width: 136px;
+    padding-right: 0;
+    line-height: 21px;
+  }
+  .engineering-center-scheme__item:first-child {
+    margin-bottom: 114px;
+  }
+  .engineering-center-scheme__item:nth-child(2) {
+    margin-bottom: 143px;
+  }
+  .engineering-center-scheme__item:nth-child(3) {
+    margin-bottom: 114px;
+  }
+  .engineering-center-scheme__item:nth-child(4) {
+    margin-bottom: 114px;
+  }
+}
+
 .promo {
   background: -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
   background: linear-gradient(180deg, #7FB0F8, #D5D3FF);
@@ -5021,6 +5096,13 @@ input:invalid {
   }
 }
 
+@media (max-width: 767px) {
+  .promo-split__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .promo-split__desc {
   margin: 0;
   font-weight: 300;
@@ -5240,6 +5322,85 @@ input:invalid {
   }
 }
 
+@media (max-width: 1023px) {
+  .promo-split__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .promo-split__left {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+  .promo-split__title {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .promo-split__desc {
+    text-align: center;
+  }
+  .promo-split__right {
+    width: 100%;
+    padding-top: 447px;
+    padding-bottom: 142px;
+    text-align: center;
+    background-position: top 65px left 50%;
+  }
+  .promo-split__app-store-link {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-split {
+    min-height: 735px;
+  }
+  .promo-split__left {
+    padding-top: 60px;
+  }
+  .promo-split__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .promo-split__right {
+    padding-top: 361px;
+    padding-bottom: 94px;
+    background-size: 312px auto;
+    background-position: top 48px center;
+  }
+}
+
+@media (max-width: 479px) {
+  .promo-split {
+    min-height: 810px;
+  }
+  .promo-split__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 316px;
+    padding-bottom: 82px;
+    background-size: auto 266px;
+    background-position: top 25px center;
+  }
+  .promo-split__app-store-link {
+    margin: 0;
+  }
+  .promo-split__google-pay-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
 .split-control__container {
   margin: 0 auto;
   max-width: 1516px;
@@ -5298,6 +5459,13 @@ input:invalid {
   .split-control__title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .split-control__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -5411,6 +5579,7 @@ input:invalid {
   padding-top: 300px;
   padding-left: 75px;
   background-image: url("../img/icon_d-house-bg.svg");
+  background-repeat: no-repeat;
 }
 
 .split-control__left {
@@ -5520,6 +5689,150 @@ input:invalid {
   }
 }
 
+@media (max-width: 1023px) {
+  .split-control__desc {
+    width: 100%;
+  }
+  .split-control__adapter-title,
+  .split-control__app-title,
+  .split-control__cloud-title {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.63px;
+  }
+  .split-control__property {
+    line-height: 20px;
+  }
+  .split-control__adapter {
+    max-width: 704px;
+    padding-left: 367px;
+    padding-top: 80px;
+    background-size: 336px auto;
+    background-position: top 130px left 0;
+  }
+  .split-control__adapter .split-control__property {
+    padding-right: 0;
+  }
+  .split-control__app {
+    max-width: 704px;
+    padding-top: 80px;
+  }
+  .split-control__right {
+    width: 336px;
+    height: 236px;
+    padding-top: 188px;
+    padding-left: 0;
+    font-size: 0;
+    background-size: 336px 236px;
+  }
+  .split-control__left {
+    width: 367px;
+    padding-top: 0;
+    padding-right: 32px;
+  }
+  .split-control__google-play-link {
+    margin-right: 10px;
+  }
+  .split-control__cloud {
+    max-width: 704px;
+    padding-top: 77px;
+    padding-left: 367px;
+    background-size: 336px 236px;
+    background-position: top 80px left 0;
+  }
+  .split-control__cloud .split-control__property {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .split-control__adapter-title,
+  .split-control__app-title,
+  .split-control__cloud-title {
+    text-align: center;
+  }
+  .split-control__adapter {
+    max-width: 416px;
+    padding: 80px 0 341px;
+    background-size: 416px auto;
+    background-position: top 440px center;
+  }
+  .split-control__adapter-link {
+    margin: 0 auto;
+  }
+  .split-control__app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 416px;
+    padding-top: 25px;
+  }
+  .split-control__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    max-width: 416px;
+    height: 292px;
+    padding-top: 219px;
+    padding-left: 0;
+    background-size: 416px 292px;
+    background-position: top center;
+  }
+  .split-control__left {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .split-control__cloud {
+    max-width: 416px;
+    padding: 50px 0 317px;
+    background-size: 416px 292px;
+    background-position: top 270px center;
+  }
+}
+
+@media (max-width: 479px) {
+  .split-control__adapter {
+    padding-top: 50px;
+    padding-bottom: 227px;
+    background-size: 288px auto;
+    background-position: bottom center;
+  }
+  .split-control__left {
+    margin-bottom: 25px;
+  }
+  .split-control__right {
+    max-width: 288px;
+    height: auto;
+    padding-top: 140px;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-size: 288px auto;
+  }
+  .split-control__google-play-link {
+    margin: 0;
+  }
+  .split-control__app-store-link {
+    margin-bottom: 10px;
+  }
+  .split-control__cloud {
+    padding-bottom: 227px;
+    background-size: 288px 202px;
+    background-position: bottom center;
+  }
+}
+
 .working-scheme-split__container {
   margin: 0 auto;
   max-width: 1516px;
@@ -5570,6 +5883,13 @@ input:invalid {
   .working-scheme-split__title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .working-scheme-split__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -5670,6 +5990,8 @@ input:invalid {
 .working-scheme-split__mobile-control-header {
   width: 100%;
   height: 300px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   background-image: url("../img/app-showcase-bg.png");
   background-repeat: no-repeat;
   background-size: 570px auto;
@@ -5702,6 +6024,13 @@ input:invalid {
   .working-scheme-split__mobile-control-title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .working-scheme-split__mobile-control-title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -5783,6 +6112,155 @@ input:invalid {
   }
 }
 
+@media (max-width: 1023px) {
+  .working-scheme-split__container {
+    padding-top: 160px;
+  }
+  .working-scheme-split__desc {
+    width: 100%;
+  }
+  .working-scheme-split__items-wrapper {
+    max-width: 704px;
+    padding-top: 195px;
+    background-size: 704px 165px;
+  }
+  .working-scheme-split__item:first-child {
+    padding: 0 28px;
+  }
+  .working-scheme-split__bottom-block {
+    max-width: 704px;
+  }
+  .working-scheme-split__benefits {
+    width: 366px;
+    padding-top: 92px;
+    padding-right: 30px;
+  }
+  .working-scheme-split__mobile-control {
+    width: 336px;
+  }
+  .working-scheme-split__mobile-control-header {
+    width: 100%;
+    height: 178px;
+    background-size: 336px auto;
+  }
+  .working-scheme-split__mobile-control-content {
+    padding: 50px 14px;
+  }
+  .working-scheme-split__mobile-control-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .working-scheme-split__mobile-control-desc {
+    padding: 0;
+  }
+  .working-scheme-split__mobile-control-link {
+    width: 215px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .working-scheme-split__container {
+    padding-top: 105px;
+  }
+  .working-scheme-split__desc {
+    margin-bottom: 53px;
+    line-height: 22px;
+  }
+  .working-scheme-split__items-wrapper {
+    max-width: 416px;
+    padding-top: 132px;
+    margin-bottom: 0;
+    background-size: 453px 107px;
+    background-position: left -18px top 0;
+  }
+  .working-scheme-split__item {
+    width: 110px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .working-scheme-split__item:first-child {
+    padding: 0;
+  }
+  .working-scheme-split__bottom-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 80px;
+  }
+  .working-scheme-split__benefits {
+    width: 100%;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+  .working-scheme-split__benefits p {
+    line-height: 23px;
+    text-align: center;
+  }
+  .working-scheme-split__benefits p:first-child {
+    margin-bottom: 23px;
+    font-size: 18px;
+  }
+  .working-scheme-split__benefits p:last-child {
+    font-size: 15px;
+  }
+  .working-scheme-split__mobile-control {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .working-scheme-split__items-wrapper {
+    max-width: 288px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 42px 0 43px;
+    background-image: url("../img/icon_scheme-vertical.svg");
+    background-size: 137px 421px;
+    background-position: top left;
+  }
+  .working-scheme-split__item {
+    width: 136px;
+    text-align: left;
+    line-height: 17px;
+  }
+  .working-scheme-split__item:first-child {
+    margin-bottom: 127px;
+  }
+  .working-scheme-split__item:nth-child(2) {
+    margin-bottom: 92px;
+  }
+  .working-scheme-split__item:last-child {
+    padding-right: 10px;
+  }
+  .working-scheme-split__bottom-block {
+    padding-top: 50px;
+  }
+  .working-scheme-split__mobile-control {
+    width: 288px;
+  }
+  .working-scheme-split__mobile-control-header {
+    height: 152px;
+    background-size: 288px auto;
+  }
+  .working-scheme-split__mobile-control-content {
+    padding: 25px 24px 50px;
+  }
+  .working-scheme-split__mobile-control-desc {
+    margin-bottom: 25px;
+  }
+}
+
 .diagnostics-repair__container {
   margin: 0 auto;
   max-width: 1516px;
@@ -5833,6 +6311,13 @@ input:invalid {
   .diagnostics-repair__title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .diagnostics-repair__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -5892,6 +6377,13 @@ input:invalid {
   .diagnostics-repair__climat-online-title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .diagnostics-repair__climat-online-title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -5965,6 +6457,98 @@ input:invalid {
   }
 }
 
+@media (max-width: 1023px) {
+  .diagnostics-repair__container {
+    padding-bottom: 120px;
+  }
+  .diagnostics-repair__bottom-block {
+    max-width: 704px;
+  }
+  .diagnostics-repair__climat-online {
+    width: 336px;
+  }
+  .diagnostics-repair__climat-online-header {
+    height: 177px;
+    background-size: auto 177px;
+  }
+  .diagnostics-repair__climat-online-content {
+    padding: 50px 14px;
+  }
+  .diagnostics-repair__climat-online-title {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .diagnostics-repair__climat-online-desc {
+    line-height: 22px;
+  }
+  .diagnostics-repair__benefits {
+    width: 366px;
+    padding: 73px 0 60px 30px;
+  }
+  .diagnostics-repair__benefits p {
+    line-height: 32px;
+  }
+  .diagnostics-repair__benefits p:first-child {
+    font-size: 18px;
+  }
+  .diagnostics-repair__benefits p:last-child {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .diagnostics-repair__container {
+    padding-top: 50px;
+  }
+  .diagnostics-repair__engineering-center-scheme {
+    margin-bottom: 0;
+  }
+  .diagnostics-repair__bottom-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .diagnostics-repair__benefits {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .diagnostics-repair__benefits p {
+    line-height: 22px;
+    text-align: center;
+  }
+  .diagnostics-repair__benefits p:first-child {
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+  .diagnostics-repair__benefits p:last-child {
+    font-size: 18px;
+  }
+  .diagnostics-repair__climat-online {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .diagnostics-repair__climat-online {
+    width: 288px;
+  }
+  .diagnostics-repair__climat-online-header {
+    height: 152px;
+    background-size: auto 152px;
+  }
+  .diagnostics-repair__climat-online-content {
+    padding: 25px 24px 50px;
+  }
+  .diagnostics-repair__climat-online-title {
+    padding: 0;
+  }
+  .diagnostics-repair__climat-online-desc {
+    margin-bottom: 25px;
+  }
+}
+
 .wifi-adapter {
   background: linear-gradient(109deg, #8aabc0, #485964);
 }
@@ -6033,6 +6617,13 @@ input:invalid {
   }
 }
 
+@media (max-width: 767px) {
+  .wifi-adapter__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .wifi-adapter__desc {
   margin: 0;
   margin-bottom: 50px;
@@ -6059,6 +6650,19 @@ input:invalid {
     margin-bottom: 30px;
     font-size: 24px;
     line-height: 27px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wifi-adapter__container {
+    padding-bottom: 265px;
+  }
+  .wifi-adapter__title {
+    margin-bottom: 10px;
+  }
+  .wifi-adapter__desc {
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
@@ -6130,6 +6734,13 @@ input:invalid {
   .promo-vrf__title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-vrf__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -6340,6 +6951,13 @@ input:invalid {
   .vrf-control__title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .vrf-control__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -6558,6 +7176,13 @@ input:invalid {
   }
 }
 
+@media (max-width: 767px) {
+  .working-scheme-vrf__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .working-scheme-vrf__desc {
   margin: 0;
   font-weight: 300;
@@ -6718,6 +7343,13 @@ input:invalid {
   }
 }
 
+@media (max-width: 767px) {
+  .working-scheme-vrf__mobile-control-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .working-scheme-vrf__mobile-control-desc {
   margin: 0;
   margin-bottom: 50px;
@@ -6800,6 +7432,13 @@ input:invalid {
   }
 }
 
+@media (max-width: 767px) {
+  .dcm-adapter__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .dcm-adapter__desc {
   margin: 0;
   margin-bottom: 50px;
@@ -6844,6 +7483,13 @@ input:invalid {
   .promo-climat-online__title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-climat-online__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -7125,6 +7771,13 @@ input:invalid {
   }
 }
 
+@media (max-width: 767px) {
+  .about-climat-online__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .about-climat-online__content {
   position: relative;
   display: -webkit-box;
@@ -7292,6 +7945,13 @@ input:invalid {
   }
 }
 
+@media (max-width: 767px) {
+  .promo-my-comfort__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .promo-my-comfort__desc {
   margin: 0;
   font-weight: 300;
@@ -7453,6 +8113,13 @@ input:invalid {
   .about-my-comfort__title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -7628,6 +8295,13 @@ input:invalid {
   .about-my-comfort-plus__title {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort-plus__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 

@@ -50,3 +50,91 @@
     padding: 0;
   }
 }
+
+@include tablet {
+  .engineering-center-scheme__items-wrapper {
+    width: 704px;
+
+    background-size: 704px 109px;
+  }
+}
+
+@include mobile-l {
+  .engineering-center-scheme {
+    max-width: 416px;
+    margin: 0 auto;
+  }
+
+  .engineering-center-scheme__name {
+    display: none;
+  }
+
+  .engineering-center-scheme__items-wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding: 60px 0 120px;
+
+    background-image: url("../img/icon_diagnostic-vertical.svg");
+    background-size: 150px 1000px;
+    background-position: top left;
+  }
+
+  .engineering-center-scheme__item {
+    width: 192px;
+    padding-right: 40px;
+
+    text-align: left;
+
+    &:first-child {
+      margin-bottom: 152px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 188px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 155px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 135px;
+    }
+  }
+}
+
+@include mobile {
+  .engineering-center-scheme {
+    max-width: 288px;
+  }
+
+  .engineering-center-scheme__items-wrapper {
+    padding-bottom: 125px;
+
+    background-size: 136px 907px;
+  }
+
+  .engineering-center-scheme__item {
+    width: 136px;
+    padding-right: 0;
+
+    line-height: 21px;
+
+    &:first-child {
+      margin-bottom: 114px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 143px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 114px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 114px;
+    }
+  }
+}

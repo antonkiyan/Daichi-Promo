@@ -240,8 +240,91 @@
     margin-left: 13px;
     margin-right: 12px;
   }
+}
 
+@include tablet {
+  .promo-split__container {
+    flex-direction: column;
+  }
 
+  .promo-split__left {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .promo-split__title {
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+
+  .promo-split__desc {
+    text-align: center;
+  }
+
+  .promo-split__right {
+    width: 100%;
+    padding-top: 447px;
+    padding-bottom: 142px;
+
+    text-align: center;
+
+    background-position: top 65px left 50%;
+  }
+
+  .promo-split__app-store-link {
+    margin-left: 0;
+  }
+}
+
+@include mobile-l {
+  .promo-split {
+    min-height: 735px;
+  }
+
+  .promo-split__left {
+    padding-top: 60px;
+  }
+
+  .promo-split__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .promo-split__right {
+    padding-top: 361px;
+    padding-bottom: 94px;
+
+    background-size: 312px auto;
+    background-position: top 48px center;
+  }
+}
+
+@include mobile {
+  .promo-split {
+    min-height: 810px;
+  }
+
+  .promo-split__right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 316px;
+    padding-bottom: 82px;
+
+    background-size: auto 266px;
+    background-position: top 25px center;
+  }
+
+  .promo-split__app-store-link {
+    margin: 0;
+  }
+
+  .promo-split__google-pay-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 
