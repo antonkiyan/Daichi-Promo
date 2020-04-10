@@ -77,3 +77,131 @@
     line-height: 46px;
   }
 }
+
+@include desktop-medium {
+  .engineering-center {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    &__left {
+      width: 365px;
+      min-width: 365px;
+      min-height: 646px;
+      padding-top: 123px;
+      padding-left: 46px;
+      margin-right: 60px;
+
+      background: url("../img/service-common@2x.png") top 0 left 0/395px auto no-repeat;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__right {
+      width: 442px;
+    }
+
+    &__monitoring-title {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &__desc {
+      line-height: 22px;
+    }
+
+    &__desc:first-of-type {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@include tablet {
+  .engineering-center {
+    position: relative;
+
+    max-width: 768px;
+
+    &__left {
+      position: absolute;
+      top: 120px;
+      left: 32px;
+
+      width: 335px;
+      min-width: 335px;
+      min-height: 377px;
+      padding: 0;
+      margin: 0;
+
+      background: url("../img/service-common-tablet@2x.png") top 0 left 0/335px auto no-repeat;
+    }
+
+    &__right {
+      width: 100%;
+    }
+
+    &__monitoring-title {
+      margin-bottom: 25px;
+
+      text-align: center;
+    }
+
+    &__desc {
+      line-height: 22px;
+    }
+
+    &__desc:first-of-type {
+      min-height: 377px;
+      padding: 112px 0 90px 368px;
+      margin-bottom: 80px;
+    }
+
+    &__desc:last-of-type {
+      text-align: center;
+    }
+  }
+}
+
+@include mobile-l {
+  .engineering-center__container {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .engineering-center {
+    &__left {
+      position: static;
+
+      width: 416px;
+      min-width: 416px;
+      min-height: 468px;
+      margin: 0 auto;
+
+      background: url("../img/service-common-tablet@2x.png") top 0 center/416px auto no-repeat;
+    }
+
+    &__right {
+      width: 100%;
+    }
+
+    &__monitoring-title {
+      font-size: 24px;
+      line-height: 27px;
+    }
+
+    &__desc:first-of-type {
+      min-height: auto;
+      padding: 0;
+      padding-top: 50px;
+      margin-bottom: 50px;
+
+      text-align: center;
+    }
+  }
+}

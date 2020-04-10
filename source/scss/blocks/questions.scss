@@ -112,15 +112,10 @@
   }
 }
 
-@include mobile-l {
+@include tablet {
   .questions {
     padding: 0;
-  }
-
-  .questions__title {
-    font-size: 24px;
-    line-height: 27px;
-    padding: 0 32px;
+    margin-bottom: 80px;
   }
 
   .questions label {
@@ -133,6 +128,18 @@
 
   .questions input:checked + label + div {
     padding-right: 75px;
+  }
+}
+
+@include mobile-l {
+  .questions {
+    padding: 0;
+  }
+
+  .questions__title {
+    font-size: 24px;
+    line-height: 27px;
+    padding: 0 32px;
   }
 }
 
