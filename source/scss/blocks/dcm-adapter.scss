@@ -42,3 +42,45 @@
   width: 215px;
   margin: 0 auto;
 }
+
+@include desktop-medium {
+  .dcm-adapter__container {
+    padding-top: 50px;
+    padding-bottom: 250px;
+
+    background-size: 286px auto;
+    background-position: bottom 25px center;
+  }
+
+  .dcm-adapter__desc {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+@include tablet {
+  .dcm-adapter__title {
+    margin-bottom: 10px;
+  }
+}
+
+@include mobile-l {
+  .dcm-adapter__container {
+    padding-bottom: 265px;
+  }
+
+  .dcm-adapter__desc {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@include mobile {
+  .dcm-adapter__container {
+    padding-bottom: 236px;
+
+    background-position: bottom 13px center;
+  }
+}

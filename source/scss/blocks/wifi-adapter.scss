@@ -60,13 +60,15 @@
   }
 }
 
+@include tablet {
+  .wifi-adapter__title {
+    margin-bottom: 10px;
+  }
+}
+
 @include mobile-l {
   .wifi-adapter__container {
     padding-bottom: 265px;
-  }
-
-  .wifi-adapter__title {
-    margin-bottom: 10px;
   }
 
   .wifi-adapter__desc {

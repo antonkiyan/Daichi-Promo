@@ -173,3 +173,157 @@
   }
 }
 
+@include desktop-medium {
+  .promo-vrf__container {
+    max-width: calc(1000px + 10.36%);
+  }
+
+  .promo-vrf {
+    min-height: 768px;
+    height: auto;
+  }
+
+  .promo-vrf__left {
+    width: 48.4%;
+    padding-top: 212px;
+  }
+
+  .promo-vrf__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .promo-vrf__desc {
+    margin: 0;
+  }
+
+  .promo-vrf__link {
+    display: none;
+  }
+
+  .promo-vrf__right {
+    width: 365px;
+    padding-top: 600px;
+    padding-bottom: 117px;
+    align-self: flex-start;
+
+    background-image: url("../img/vrf-control-promo@2x.png");
+    background-repeat: no-repeat;
+    background-size: 365px auto;
+    background-position: top 186px center;
+  }
+
+  .promo-vrf__adapter,
+  .promo-vrf__app {
+    display: none;
+  }
+
+  .promo-vrf__app-store-link,
+  .promo-vrf__google-pay-link {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .promo-vrf__app-store-link {
+    margin-left: 13px;
+    margin-right: 12px;
+  }
+}
+
+@include tablet {
+  .promo-vrf {
+    min-height: 960px;
+  }
+
+  .promo-vrf__container {
+    flex-direction: column;
+  }
+
+  .promo-vrf__left {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .promo-vrf__title {
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+
+  .promo-vrf__desc {
+    text-align: center;
+  }
+
+  .promo-vrf__right {
+    width: 100%;
+    padding-top: 447px;
+    padding-bottom: 142px;
+
+    text-align: center;
+
+    background-position: top 34px left 50%;
+  }
+
+  .promo-vrf__app-store-link {
+    margin-left: 0;
+  }
+}
+
+@include mobile-l {
+  .promo-vrf {
+    min-height: 735px;
+  }
+
+  .promo-vrf__left {
+    padding-top: 60px;
+  }
+
+  .promo-vrf__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .promo-vrf__right {
+    padding-top: 338px;
+    padding-bottom: 94px;
+
+    background-size: 260px auto;
+    background-position: top 25px center;
+  }
+}
+
+@include mobile {
+  .promo-vrf {
+    min-height: auto;
+  }
+
+  .promo-vrf__right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 298px;
+    padding-bottom: 106px;
+
+    background-size: 219px auto;
+    background-position: top 29px center;
+  }
+
+  .promo-vrf__app-store-link {
+    margin-right: 0;
+  }
+
+  .promo-vrf__google-pay-link {
+    margin-right: 8px;
+  }
+
+  .promo-vrf__app-store-link,
+  .promo-vrf__google-pay-link {
+    width: 140px;
+    height: 42px;
+
+    background-size: contain;
+  }
+
+}
+
