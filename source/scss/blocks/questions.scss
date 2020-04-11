@@ -144,6 +144,10 @@
 }
 
 @include mobile {
+  .questions {
+    margin-bottom: 50px;
+  }
+
   .questions__title {
     margin-bottom: 50px;
     padding: 0 16px;

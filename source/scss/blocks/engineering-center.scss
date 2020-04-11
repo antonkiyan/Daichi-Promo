@@ -205,3 +205,21 @@
     }
   }
 }
+
+@include mobile {
+  .engineering-center__container {
+    padding-top: 50px;
+  }
+
+  .engineering-center {
+    &__left {
+      position: static;
+
+      width: 288px;
+      min-width: 288px;
+      min-height: 324px;
+
+      background: url("../img/service-common-tablet@2x.png") top 0 center/288px auto no-repeat;
+    }
+  }
+}

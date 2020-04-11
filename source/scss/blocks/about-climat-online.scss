@@ -193,3 +193,28 @@
     margin-bottom: 0;
   }
 }
+
+@include mobile {
+  .about-climat-online {
+    &__title {
+      padding: 0;
+    }
+
+    &__remark {
+      line-height: 26px;
+    }
+  }
+
+  .about-climat-online__item {
+    width: 288px;
+
+    &--status {
+      padding: 140px 0 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  .about-climat-online__engineering-center-scheme  .engineering-center-scheme__items-wrapper {
+    padding-bottom: 100px;
+  }
+}

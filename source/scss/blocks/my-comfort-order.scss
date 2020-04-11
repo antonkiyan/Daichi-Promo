@@ -1,6 +1,6 @@
 .my-comfort-order {
   margin-bottom: 160px;
-  
+
   &__container {
     @include container;
   }
@@ -89,4 +89,131 @@
   padding: 80px 60px;
 
   background-color: #f6f6f6;
+}
+
+@include desktop-medium {
+  .my-comfort-order {
+    &__content {
+      max-width: 918px;
+      margin: 0 auto 80px;
+
+      background: url("../img/happy-people-4.png") top center/contain no-repeat;
+
+      @include retina {
+        background: url("../img/happy-people-4@2x.png") top center/contain no-repeat;
+      }
+    }
+
+    &__title {
+      margin-bottom: 25px;
+
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0px;
+    }
+
+    &__list--left {
+      margin-bottom: 25px;
+    }
+
+    &__list--right {
+      margin-bottom: 46px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    &__remark {
+      max-width: 880px;
+    }
+  }
+
+  .my-comfort-order__side {
+    width: 316px;
+    padding: 50px 25px;
+  }
+}
+
+@include tablet {
+  .my-comfort-order {
+    margin-bottom: 80px;
+
+    &__content {
+      max-width: 704px;
+      padding-top: 300px;
+
+      background: url("../img/happy-people-4-tablet.png") top center/contain no-repeat;
+
+      @include retina {
+        background: url("../img/happy-people-4-tablet@2x.png") top center/contain no-repeat;
+      }
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &__remark {
+      display: none;
+      max-width: 650px;
+    }
+  }
+
+  .my-comfort-order__side {
+    width: 351px;
+    padding: 50px 42px;
+  }
+}
+
+@include mobile-l {
+  .my-comfort-order {
+    &__content {
+      max-width: 352px;
+      padding-top: 0;
+      flex-direction: column;
+
+      background: url("../img/happy-people-4.png") top 54% center/contain no-repeat;
+
+      @include retina {
+        background: url("../img/happy-people-4@2x.png") top 54% center/contain no-repeat;
+      }
+    }
+  }
+
+  .my-comfort-order__side {
+    width: 352px;
+
+    &:first-child {
+      margin-bottom: 300px;
+    }
+  }
+}
+
+@include mobile {
+  .my-comfort-order {
+    &__content {
+      max-width: 288px;
+
+      background: url("../img/happy-people-4.png") top 54% center/contain no-repeat;
+
+      @include retina {
+        background: url("../img/happy-people-4@2x.png") top 54% center/contain no-repeat;
+      }
+    }
+
+    &__list {
+      padding-left: 11px;
+    }
+  }
+
+  .my-comfort-order__side {
+    width: 288px;
+    padding: 50px 11px;
+
+    &:first-child {
+      margin-bottom: 200px;
+    }
+  }
+
 }

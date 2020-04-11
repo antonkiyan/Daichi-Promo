@@ -4300,14 +4300,17 @@ input:invalid {
   .equipment {
     padding: 0 32px;
     max-width: 768px;
-    margin-bottom: 160px;
+    margin-bottom: 140px;
+  }
+  .equipment__title--long {
+    padding: 0;
   }
   .equipment__title--climat-online {
     padding: 0;
   }
   .equipment__desc {
     width: 74%;
-    margin: 0 auto 57px;
+    margin: 0 auto 80px;
   }
   .equipment__item {
     width: 336px;
@@ -4327,11 +4330,15 @@ input:invalid {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .equipment__remark {
+    margin-top: 60px;
+    padding: 0;
+  }
 }
 
 @media (max-width: 767px) {
   .equipment {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
   .equipment__title {
     padding: 0;
@@ -4341,6 +4348,7 @@ input:invalid {
   .equipment__desc {
     max-width: 416px;
     width: auto;
+    margin-bottom: 50px;
   }
   .equipment__wrapper {
     display: none;
@@ -4360,11 +4368,17 @@ input:invalid {
   .equipment__pagination {
     bottom: -20px;
   }
+  .equipment__remark {
+    margin-top: 50px;
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 @media (max-width: 479px) {
   .equipment {
     padding: 0;
+    margin-bottom: 100px;
   }
   .equipment__title {
     padding: 0 16px;
@@ -4395,6 +4409,9 @@ input:invalid {
   .equipment__list-title {
     font-size: 15px;
     line-height: 17px;
+  }
+  .equipment__remark {
+    width: 288px;
   }
 }
 
@@ -4554,6 +4571,9 @@ input:invalid {
 }
 
 @media (max-width: 479px) {
+  .questions {
+    margin-bottom: 50px;
+  }
   .questions__title {
     margin-bottom: 50px;
     padding: 0 16px;
@@ -4626,16 +4646,10 @@ input:invalid {
 }
 
 .to-programs__climat-online {
-  background-image: url("../img/daichi-climat-online.png");
+  background-image: url("../img/daichi-climat-online@2x.png");
+  background-size: 960px auto;
+  background-repeat: no-repeat;
   background-position: top right;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online@2x.png");
-    background-repeat: no-repeat;
-    background-size: 960px auto;
-  }
 }
 
 .to-programs__my-comfort {
@@ -4717,18 +4731,9 @@ input:invalid {
     min-height: 530px;
   }
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-medium.png");
+    background-image: url("../img/daichi-climat-online-medium@2x.png");
     background-size: cover;
   }
-}
-
-@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
-  .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-medium@2x.png");
-  }
-}
-
-@media (max-width: 1399px) {
   .to-programs__my-comfort {
     background-image: url("../img/daichi-comfort-medium.png");
     background-size: cover;
@@ -4768,18 +4773,15 @@ input:invalid {
     min-height: 590px;
     padding: 32px;
   }
-  .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-tablet.png");
+  .to-programs a:nth-child(n)::before {
+    display: none;
   }
-}
-
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .to-programs a:nth-child(n)::after {
+    display: none;
+  }
   .to-programs__climat-online {
     background-image: url("../img/daichi-climat-online-tablet@2x.png");
   }
-}
-
-@media (max-width: 1023px) {
   .to-programs__my-comfort {
     background-image: url("../img/daichi-comfort-tablet.png");
   }
@@ -4812,17 +4814,8 @@ input:invalid {
     min-height: 290px;
   }
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-mobile-l.png");
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .to-programs__climat-online {
     background-image: url("../img/daichi-climat-online-mobile-l@2x.png");
   }
-}
-
-@media (max-width: 767px) {
   .to-programs__my-comfort {
     background-image: url("../img/daichi-comfort-mobile-l.png");
   }
@@ -4855,22 +4848,18 @@ input:invalid {
 
 @media (max-width: 479px) {
   .to-programs__climat-online,
-  .to-programs__my-comfort {
+  .to-programs__my-comfort,
+  .to-programs__mobile-control {
     min-height: 200px;
     padding: 16px 5%;
   }
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-mobile.png");
-  }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .to-programs__climat-online {
     background-image: url("../img/daichi-climat-online-mobile@2x.png");
   }
-}
-
-@media (max-width: 479px) {
+  .to-programs__mobile-control {
+    background-size: 170px auto;
+    background-position: bottom -10px right 10px, bottom right;
+  }
   .to-programs__my-comfort {
     background-image: url("../img/daichi-comfort-mobile.png");
   }
@@ -5080,6 +5069,7 @@ input:invalid {
   position: relative;
   min-height: 890px;
   height: 100vh;
+  max-height: 1200px;
   background: linear-gradient(119deg, #8aabc0, #485964);
 }
 
@@ -8092,10 +8082,11 @@ input:invalid {
   position: relative;
   min-height: 800px;
   height: 100vh;
+  max-height: 1200px;
   background-image: url("../img/daichi-climat-online-big.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 1920px auto;
+  background-size: cover;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -8304,6 +8295,47 @@ input:invalid {
   .promo-climat-online__container {
     padding-top: 60px;
     padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 479px) {
+  .promo-climat-online {
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 60px, transparent 120px), linear-gradient(180deg, rgba(246, 245, 251, 0.5) 0, #f6f5fc80 100%), url("../img/daichi-climat-online-medium.png") top 34px right/100% auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .promo-climat-online {
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 60px, transparent 120px), linear-gradient(180deg, rgba(246, 245, 251, 0.5) 0, rgba(246, 245, 252, 0.5) 100%), url("../img/daichi-climat-online-medium@2x.png") top 34px right/100% auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (max-width: 410px) {
+  .promo-climat-online {
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 60px, transparent 120px), linear-gradient(180deg, rgba(246, 245, 251, 0.5) 0, rgba(246, 245, 252, 0.5) 100%), url("../img/daichi-climat-online-medium.png") bottom right/410px auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (max-width: 410px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (max-width: 410px) and (min-resolution: 144dpi), (max-width: 479px) and (max-width: 410px) and (min-resolution: 1.5dppx) {
+  .promo-climat-online {
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 60px, transparent 120px), linear-gradient(180deg, rgba(246, 245, 251, 0.5) 0, rgba(246, 245, 252, 0.5) 100%), url("../img/daichi-climat-online-medium@2x.png") bottom right/410px auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
+  .promo-climat-online__title {
+    width: 100%;
+    margin-bottom: 178px;
+  }
+  .promo-climat-online__desc {
+    margin-bottom: 25px;
+  }
+  .promo-climat-online__scroll-down {
+    display: none;
+  }
+  .promo-climat-online__container {
+    padding-top: 40px;
+    padding-bottom: 25px;
   }
 }
 
@@ -8525,6 +8557,19 @@ input:invalid {
     padding-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .engineering-center__container {
+    padding-top: 50px;
+  }
+  .engineering-center__left {
+    position: static;
+    width: 288px;
+    min-width: 288px;
+    min-height: 324px;
+    background: url("../img/service-common-tablet@2x.png") top 0 center/288px auto no-repeat;
   }
 }
 
@@ -8769,6 +8814,25 @@ input:invalid {
   }
 }
 
+@media (max-width: 479px) {
+  .about-climat-online__title {
+    padding: 0;
+  }
+  .about-climat-online__remark {
+    line-height: 26px;
+  }
+  .about-climat-online__item {
+    width: 288px;
+  }
+  .about-climat-online__item--status {
+    padding: 140px 0 0;
+    margin-bottom: 50px;
+  }
+  .about-climat-online__engineering-center-scheme .engineering-center-scheme__items-wrapper {
+    padding-bottom: 100px;
+  }
+}
+
 .climat-online-order {
   margin-bottom: 160px;
 }
@@ -8962,14 +9026,45 @@ input:invalid {
   }
 }
 
+@media (max-width: 479px) {
+  .climat-online-order {
+    max-width: 288px;
+  }
+  .climat-online-order__container {
+    min-height: 402px;
+    padding: 173px 0 0;
+    background: url("../img/daichi-climat-online-mobile-l.png") top right/auto 173px no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .climat-online-order__container {
+    background: url("../img/daichi-climat-online-mobile-l@2x.png") top right/auto 173px no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
+  .climat-online-order__content {
+    padding: 50px 0;
+    min-height: 230px;
+  }
+  .climat-online-order__title {
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .promo-my-comfort {
   position: relative;
   min-height: 800px;
   height: 100vh;
+  max-height: 1200px;
   background-image: url("../img/daichi-comfort-big.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 1920px auto;
+  background-size: cover;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -9009,6 +9104,9 @@ input:invalid {
   letter-spacing: 0.63px;
   width: 690px;
   margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0px;
 }
 
 @media (max-width: 1399px) {
@@ -9020,6 +9118,7 @@ input:invalid {
 }
 
 .promo-my-comfort__link {
+  display: none;
   width: 215px;
 }
 
@@ -9031,7 +9130,7 @@ input:invalid {
   width: 25px;
   height: 42px;
   margin-left: -12px;
-  background-image: url("../img/icon_down_white.svg");
+  background-image: url("../img/icon_down_grey.svg");
   background-repeat: no-repeat;
   background-position: top 14px left 0;
 }
@@ -9044,7 +9143,7 @@ input:invalid {
   left: 0;
   width: 25px;
   height: 14px;
-  background-image: url("../img/icon_down_white.svg");
+  background-image: url("../img/icon_down_grey.svg");
   background-repeat: no-repeat;
   opacity: 0;
 }
@@ -9098,6 +9197,113 @@ input:invalid {
   .promo-my-comfort__container {
     padding-left: 5%;
     padding-right: 5%;
+  }
+}
+
+@media (max-width: 1399px) {
+  .promo-my-comfort {
+    height: auto;
+    min-height: 768px;
+    background-size: cover;
+    background-position: top right;
+  }
+}
+
+@media (max-width: 1399px) and (max-width: 1300px) {
+  .promo-my-comfort {
+    background-position: top right -40px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .promo-my-comfort__title {
+    width: 48.4%;
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .promo-my-comfort__desc {
+    width: 48%;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.63px;
+  }
+  .promo-my-comfort__link {
+    display: none;
+  }
+  .promo-my-comfort__scroll-down {
+    background-image: url("../img/icon_down_white.svg");
+  }
+  .promo-my-comfort__scroll-down::before, .promo-my-comfort__scroll-down::after {
+    background-image: url("../img/icon_down_white.svg");
+  }
+  .promo-my-comfort__container {
+    padding-top: 263px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .promo-my-comfort {
+    min-height: 959px;
+    background-size: auto 900px;
+    background-position: top 180px right;
+    background-color: #e6e8e7;
+  }
+  .promo-my-comfort__title {
+    width: 380px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .promo-my-comfort__desc {
+    width: 704px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .promo-my-comfort__container {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-my-comfort {
+    min-height: 735px;
+    background-size: auto 690px;
+    background-position: top 130px right calc(50% + 240px);
+    background-color: #e6e8e7;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 600px) {
+  .promo-my-comfort {
+    background-position: top 130px right -60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-my-comfort__title {
+    width: auto;
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .promo-my-comfort__desc {
+    width: 100%;
+  }
+  .promo-my-comfort__container {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 479px) {
+  .promo-my-comfort {
+    min-height: 503px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.6) 100%), #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+  }
+  .promo-my-comfort__container {
+    padding-top: 40px;
   }
 }
 
@@ -9279,6 +9485,304 @@ input:invalid {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #f6f6f6;
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort__note {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .about-my-comfort__title {
+    margin-bottom: 80px;
+  }
+  .about-my-comfort__remark {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .about-my-comfort__remark p {
+    max-width: 918px;
+  }
+  .about-my-comfort__first {
+    min-height: auto;
+    background: url("../img/daikin-2.png") top 96px left calc(50% - 405px)/auto 402px no-repeat, url("../img/wi-fi-sign.png") top 111px left calc(50% - 20px)/140px auto no-repeat;
+  }
+}
+
+@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort__first {
+    background: url("../img/daikin-2@2x.png") top 96px left calc(50% - 405px)/auto 402px no-repeat, url("../img/wi-fi-sign@2x.png") top 111px left calc(50% - 20px)/140px auto no-repeat;
+  }
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort__first-content {
+    max-width: 918px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .about-my-comfort__item {
+    width: 365px;
+    font-size: 18px;
+    letter-spacing: 0.63px;
+  }
+  .about-my-comfort__item--status {
+    margin-bottom: 50px;
+  }
+  .about-my-comfort__item--48hours {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-my-comfort__second {
+    max-width: 1024px;
+    background: url("../img/48hours-medium.png") top right/auto 489px no-repeat;
+  }
+}
+
+@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort__second {
+    background: url("../img/48hours-medium@2x.png") top right/auto 489px no-repeat;
+  }
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort__second-content {
+    width: 444px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-my-comfort__remark {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .about-my-comfort__remark p {
+    max-width: 704px;
+  }
+  .about-my-comfort__remark p:first-child {
+    margin-bottom: 25px;
+  }
+  .about-my-comfort__first {
+    margin-bottom: 80px;
+    background: url("../img/daikin-2.png") bottom left calc(50% + 55px)/auto 364px no-repeat, url("../img/wi-fi-sign-vertical.png") bottom 389px left 50%/169px auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort__first {
+    background: url("../img/daikin-2@2x.png") bottom left calc(50% + 55px)/auto 364px no-repeat, url("../img/wi-fi-sign-vertical@2x.png") bottom 389px left 50%/169px auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-my-comfort__first-content {
+    max-width: 704px;
+    padding-bottom: 536px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about-my-comfort__item {
+    width: 336px;
+  }
+  .about-my-comfort__item--status {
+    margin-bottom: 0;
+  }
+  .about-my-comfort__item--48hours {
+    width: 244px;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+  .about-my-comfort__item--assistant {
+    width: 244px;
+  }
+  .about-my-comfort__second {
+    max-width: none;
+    padding-bottom: 325px;
+    padding-top: 0;
+    margin-bottom: 80px;
+    background: url("../img/48hours.png") top 375px center/100% auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort__second {
+    background: url("../img/48hours@2x.png") top 375px center/100% auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-my-comfort__second-content {
+    width: 704px;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort {
+    padding-top: 80px;
+  }
+  .about-my-comfort__title {
+    max-width: 416px;
+    margin: 0 auto 80px;
+  }
+  .about-my-comfort__container--second {
+    padding: 0;
+  }
+  .about-my-comfort__remark {
+    padding: 50px 0;
+    font-size: 18px;
+  }
+  .about-my-comfort__remark p {
+    max-width: 416px;
+  }
+  .about-my-comfort__first {
+    margin-bottom: 108px;
+    background: url("../img/daikin-2.png") bottom left calc(50% + 30px)/auto 234px no-repeat, url("../img/wi-fi-sign-vertical.png") bottom 260px left 50%/169px auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort__first {
+    background: url("../img/daikin-2@2x.png") bottom left calc(50% + 30px)/auto 234px no-repeat, url("../img/wi-fi-sign-vertical@2x.png") bottom 260px left 50%/169px auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort__first-content {
+    max-width: 416px;
+    padding-bottom: 447px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-my-comfort__item {
+    width: 416px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  .about-my-comfort__item--status {
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .about-my-comfort__item--replace {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-my-comfort__item--48hours {
+    margin-right: 0;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about-my-comfort__item--assistant {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .about-my-comfort__second {
+    padding-bottom: 325px;
+    margin-bottom: 100px;
+    background: url("../img/48hours.png") top 485px center/110% auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort__second {
+    background: url("../img/48hours@2x.png") top 485px center/110% auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort__second-content {
+    width: 100%;
+    padding: 50px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-my-comfort {
+    padding-top: 80px;
+  }
+  .about-my-comfort__first {
+    margin-bottom: 100px;
+    background: url("../img/daikin-2.png") bottom left calc(50% + 22px)/auto 164px no-repeat, url("../img/wi-fi-sign-vertical.png") bottom 182px left 50%/169px auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort__first {
+    background: url("../img/daikin-2@2x.png") bottom left calc(50% + 22px)/auto 164px no-repeat, url("../img/wi-fi-sign-vertical@2x.png") bottom 182px left 50%/169px auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-my-comfort__first-content {
+    max-width: 416px;
+    padding-bottom: 339px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-my-comfort__item {
+    width: 288px;
+  }
+  .about-my-comfort__item--status {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-my-comfort__item--replace {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about-my-comfort__item--48hours {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-my-comfort__item--assistant {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about-my-comfort__second {
+    padding-bottom: 225px;
+    margin-bottom: 100px;
+    background: url("../img/48hours.png") top 506px center/110% auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort__second {
+    background: url("../img/48hours@2x.png") top 506px center/110% auto no-repeat;
+  }
 }
 
 .about-my-comfort-plus {
@@ -9479,6 +9983,391 @@ input:invalid {
   padding-bottom: 21px;
 }
 
+@media (max-width: 1399px) {
+  .about-my-comfort-plus {
+    padding-bottom: 120px;
+  }
+  .about-my-comfort-plus__container--third {
+    background: url("../img/car.png") top 16px left 53px/523px auto no-repeat;
+  }
+}
+
+@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__container--third {
+    background: url("../img/car@2x.png") top 16px left 53px/523px auto no-repeat;
+  }
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort-plus__remark {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .about-my-comfort-plus__remark p {
+    max-width: 918px;
+  }
+  .about-my-comfort-plus__first {
+    min-height: 254px;
+    background: url("../img/daikin-1.png") top left calc(50% - 435px)/auto 254px no-repeat, url("../img/wi-fi-sign.png") top 16px left calc(50% - 5px)/140px auto no-repeat;
+  }
+}
+
+@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__first {
+    background: url("../img/daikin-1@2x.png") top left calc(50% - 435px)/auto 254px no-repeat, url("../img/wi-fi-sign@2x.png") top 16px left calc(50% - 5px)/140px auto no-repeat;
+  }
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort-plus__first-content {
+    max-width: 918px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-top: 40px;
+  }
+  .about-my-comfort-plus__item {
+    width: 365px;
+    font-size: 18px;
+    letter-spacing: 0.63px;
+  }
+  .about-my-comfort-plus__item--service {
+    padding-top: 123px;
+    background-size: auto 73px;
+  }
+  .about-my-comfort-plus__item--status {
+    padding-top: 114px;
+    margin-bottom: 50px;
+  }
+  .about-my-comfort-plus__item--replace {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-my-comfort-plus__item--48hours {
+    margin-bottom: 50px;
+  }
+  .about-my-comfort-plus__item--assistant {
+    padding-top: 115px;
+  }
+  .about-my-comfort-plus__second {
+    max-width: 1024px;
+    margin: 0 auto 140px;
+    background: url("../img/service-medium.png") top right/auto 600px no-repeat;
+  }
+}
+
+@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__second {
+    background: url("../img/service-medium@2x.png") top right/auto 600px no-repeat;
+  }
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort-plus__second-content {
+    width: 444px;
+  }
+  .about-my-comfort-plus__third {
+    max-width: 1024px;
+    margin: 0 auto 160px;
+  }
+  .about-my-comfort-plus__third-content {
+    width: 365px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-my-comfort-plus {
+    padding-bottom: 80px;
+  }
+  .about-my-comfort-plus__container--third {
+    background: url("../img/car.png") bottom center/523px auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__container--third {
+    background: url("../img/car@2x.png") bottom center/523px auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-my-comfort-plus__remark p {
+    max-width: 640px;
+  }
+  .about-my-comfort-plus__remark p:first-child {
+    margin-bottom: 25px;
+  }
+  .about-my-comfort-plus__first {
+    min-height: auto;
+    margin-bottom: 80px;
+    background: url("../img/daikin-1.png") top left calc(50% - 335px)/auto 163px no-repeat, url("../img/wi-fi-sign.png") top 16px left calc(50% - 55px)/90px auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__first {
+    background: url("../img/daikin-1@2x.png") top left calc(50% - 335px)/auto 163px no-repeat, url("../img/wi-fi-sign@2x.png") top 16px left calc(50% - 55px)/90px auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-my-comfort-plus__first-content {
+    max-width: 704px;
+    padding-top: 0;
+  }
+  .about-my-comfort-plus__item {
+    width: 336px;
+  }
+  .about-my-comfort-plus__item--status {
+    width: 244px;
+    margin-bottom: 0;
+    margin-right: 32px;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .about-my-comfort-plus__item--replace {
+    width: 244px;
+  }
+  .about-my-comfort-plus__item--48hours {
+    margin-bottom: 0;
+    margin-right: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about-my-comfort-plus__second {
+    max-width: none;
+    margin: 0 auto 80px;
+    padding: 0 0 325px;
+    background: linear-gradient(180deg, #ffffff 0, #ffffff 507px, transparent 507px), url("../img/service.png") bottom -70px right/100% auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__second {
+    background: linear-gradient(180deg, #ffffff 0, #ffffff 507px, transparent 507px), url("../img/service@2x.png") bottom -70px right/100% auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-my-comfort-plus__second-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 704px;
+    margin: 0 auto;
+  }
+  .about-my-comfort-plus__third {
+    max-width: 768px;
+    margin: 0 auto 80px;
+  }
+  .about-my-comfort-plus__third-content {
+    width: 704px;
+    padding-bottom: 374px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort-plus {
+    padding-top: 100px;
+  }
+  .about-my-comfort-plus__container--third {
+    background: url("../img/car.png") bottom center/480px auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__container--third {
+    background: url("../img/car@2x.png") bottom center/480px auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort-plus__container--second {
+    padding: 0;
+  }
+  .about-my-comfort-plus__title {
+    max-width: 416px;
+    margin: 0 auto 50px;
+  }
+  .about-my-comfort-plus__remark {
+    padding: 50px 0;
+    font-size: 18px;
+    letter-spacing: 0.63px;
+  }
+  .about-my-comfort-plus__remark p {
+    max-width: 416px;
+  }
+  .about-my-comfort-plus__first {
+    margin-bottom: 100px;
+    padding-bottom: 280px;
+    background: url("../img/daikin-1.png") bottom left 50%/auto 143px no-repeat, url("../img/wi-fi-sign-vertical.png") bottom 148px left 50%/142px auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__first {
+    background: url("../img/daikin-1@2x.png") bottom left 50%/auto 143px no-repeat, url("../img/wi-fi-sign-vertical@2x.png") bottom 148px left 50%/142px auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort-plus__first-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-my-comfort-plus__item {
+    width: 416px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  .about-my-comfort-plus__item--service {
+    margin-right: 0;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .about-my-comfort-plus__item--status {
+    margin-bottom: 50px;
+    margin-right: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .about-my-comfort-plus__item--48hours {
+    margin-bottom: 50px;
+    margin-right: 0;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+  .about-my-comfort-plus__item--assistant {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+  .about-my-comfort-plus__second {
+    margin: 0 auto 100px;
+    background: linear-gradient(180deg, #ffffff 0, #ffffff 507px, transparent 507px), url("../img/service.png") bottom right/110% auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__second {
+    background: linear-gradient(180deg, #ffffff 0, #ffffff 507px, transparent 507px), url("../img/service@2x.png") bottom right/110% auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort-plus__second-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 50px 0;
+  }
+  .about-my-comfort-plus__third {
+    margin: 0 auto 50px;
+  }
+  .about-my-comfort-plus__third-content {
+    width: 100%;
+    padding-bottom: 348px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-my-comfort-plus__container--third {
+    background: url("../img/car.png") bottom center/320px auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__container--third {
+    background: url("../img/car@2x.png") bottom center/320px auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-my-comfort-plus__first {
+    padding-bottom: 263px;
+    background: url("../img/daikin-1.png") bottom left 50%/320px auto no-repeat, url("../img/wi-fi-sign-vertical.png") bottom 133px left 50%/142px auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__first {
+    background: url("../img/daikin-1@2x.png") bottom left 50%/320px auto no-repeat, url("../img/wi-fi-sign-vertical@2x.png") bottom 133px left 50%/142px auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-my-comfort-plus__item {
+    width: 288px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  .about-my-comfort-plus__item--service {
+    padding-right: 37px;
+    padding-left: 37px;
+  }
+  .about-my-comfort-plus__item--status {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .about-my-comfort-plus__item--replace {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .about-my-comfort-plus__item--48hours {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .about-my-comfort-plus__item--assistant {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+  .about-my-comfort-plus__second {
+    padding-bottom: 225px;
+    background: linear-gradient(180deg, #ffffff 0, #ffffff 570px, transparent 570px), url("../img/service.png") bottom right/110% auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .about-my-comfort-plus__second {
+    background: linear-gradient(180deg, #ffffff 0, #ffffff 570px, transparent 570px), url("../img/service@2x.png") bottom right/110% auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-my-comfort-plus__third-content {
+    padding-bottom: 250px;
+  }
+}
+
 .my-comfort-order {
   margin-bottom: 160px;
 }
@@ -9612,4 +10501,127 @@ input:invalid {
   width: 450px;
   padding: 80px 60px;
   background-color: #f6f6f6;
+}
+
+@media (max-width: 1399px) {
+  .my-comfort-order__content {
+    max-width: 918px;
+    margin: 0 auto 80px;
+    background: url("../img/happy-people-4.png") top center/contain no-repeat;
+  }
+}
+
+@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
+  .my-comfort-order__content {
+    background: url("../img/happy-people-4@2x.png") top center/contain no-repeat;
+  }
+}
+
+@media (max-width: 1399px) {
+  .my-comfort-order__title {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+  .my-comfort-order__list--left {
+    margin-bottom: 25px;
+  }
+  .my-comfort-order__list--right {
+    margin-bottom: 46px;
+  }
+  .my-comfort-order__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  .my-comfort-order__remark {
+    max-width: 880px;
+  }
+  .my-comfort-order__side {
+    width: 316px;
+    padding: 50px 25px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .my-comfort-order {
+    margin-bottom: 80px;
+  }
+  .my-comfort-order__content {
+    max-width: 704px;
+    padding-top: 300px;
+    background: url("../img/happy-people-4-tablet.png") top center/contain no-repeat;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .my-comfort-order__content {
+    background: url("../img/happy-people-4-tablet@2x.png") top center/contain no-repeat;
+  }
+}
+
+@media (max-width: 1023px) {
+  .my-comfort-order__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .my-comfort-order__remark {
+    display: none;
+    max-width: 650px;
+  }
+  .my-comfort-order__side {
+    width: 351px;
+    padding: 50px 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-comfort-order__content {
+    max-width: 352px;
+    padding-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: url("../img/happy-people-4.png") top 54% center/contain no-repeat;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .my-comfort-order__content {
+    background: url("../img/happy-people-4@2x.png") top 54% center/contain no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-comfort-order__side {
+    width: 352px;
+  }
+  .my-comfort-order__side:first-child {
+    margin-bottom: 300px;
+  }
+}
+
+@media (max-width: 479px) {
+  .my-comfort-order__content {
+    max-width: 288px;
+    background: url("../img/happy-people-4.png") top 54% center/contain no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .my-comfort-order__content {
+    background: url("../img/happy-people-4@2x.png") top 54% center/contain no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
+  .my-comfort-order__list {
+    padding-left: 11px;
+  }
+  .my-comfort-order__side {
+    width: 288px;
+    padding: 50px 11px;
+  }
+  .my-comfort-order__side:first-child {
+    margin-bottom: 200px;
+  }
 }

@@ -53,8 +53,9 @@
 }
 
 .to-programs__climat-online {
-  background-image: url("../img/daichi-climat-online.png");
-
+  background-image: url("../img/daichi-climat-online@2x.png");
+  background-size: 960px auto;
+  background-repeat: no-repeat;
   background-position: top right;
 
   // &::after {
@@ -68,12 +69,6 @@
 
   //   opacity: 1;
   // }
-
-  @include retina {
-    background-image: url("../img/daichi-climat-online@2x.png");
-    background-repeat: no-repeat;
-    background-size: 960px auto;
-  }
 }
 
 .to-programs__my-comfort {
@@ -188,12 +183,8 @@
   }
 
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-medium.png");
+    background-image: url("../img/daichi-climat-online-medium@2x.png");
     background-size: cover;
-
-    @include retina {
-      background-image: url("../img/daichi-climat-online-medium@2x.png");
-    }
   }
 
   .to-programs__my-comfort {
@@ -230,12 +221,18 @@
     padding: 32px;
   }
 
-  .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-tablet.png");
-
-    @include retina {
-      background-image: url("../img/daichi-climat-online-tablet@2x.png");
+  .to-programs a:nth-child(n) {
+    &::before {
+      display: none;
     }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .to-programs__climat-online {
+    background-image: url("../img/daichi-climat-online-tablet@2x.png");
   }
 
   .to-programs__my-comfort {
@@ -265,11 +262,7 @@
   }
 
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-mobile-l.png");
-
-    @include retina {
-      background-image: url("../img/daichi-climat-online-mobile-l@2x.png");
-    }
+    background-image: url("../img/daichi-climat-online-mobile-l@2x.png");
   }
 
   .to-programs__my-comfort {
@@ -303,17 +296,21 @@
 
 @include mobile {
   .to-programs__climat-online,
-  .to-programs__my-comfort {
+  .to-programs__my-comfort,
+  .to-programs__mobile-control {
     min-height: 200px;
     padding: 16px 5%;
   }
 
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-mobile.png");
+    background-image: url("../img/daichi-climat-online-mobile@2x.png");
+  }
 
-    @include retina {
-      background-image: url("../img/daichi-climat-online-mobile@2x.png");
-    }
+  .to-programs__mobile-control {
+    background-size: 170px auto;
+    background-position:
+      bottom -10px right 10px,
+      bottom right;
   }
 
   .to-programs__my-comfort {

@@ -246,7 +246,13 @@
     padding: 0 32px;
 
     max-width: 768px;
-    margin-bottom: 160px;
+    margin-bottom: 140px;
+  }
+
+  .equipment__title {
+    &--long {
+      padding: 0;
+    }
   }
 
   .equipment__title--climat-online {
@@ -255,7 +261,7 @@
 
   .equipment__desc {
     width: 74%;
-    margin: 0 auto 57px;
+    margin: 0 auto 80px;
   }
 
   .equipment__item {
@@ -281,11 +287,16 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  .equipment__remark {
+    margin-top: 60px;
+    padding: 0;
+  }
 }
 
 @include mobile-l {
   .equipment {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 
   .equipment__title {
@@ -298,6 +309,7 @@
   .equipment__desc {
     max-width: 416px;
     width: auto;
+    margin-bottom: 50px;
   }
 
   .equipment__wrapper {
@@ -321,11 +333,19 @@
   .equipment__pagination {
     bottom: -20px;
   }
+
+  .equipment__remark {
+    margin-top: 50px;
+
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 @include mobile {
   .equipment {
     padding: 0;
+    margin-bottom: 100px;
   }
 
   .equipment__title {
@@ -366,6 +386,10 @@
   .equipment__list-title {
     font-size: 15px;
     line-height: 17px;
+  }
+
+  .equipment__remark {
+    width: 288px;
   }
 
 }
