@@ -142,6 +142,7 @@
     &__content {
       max-width: 704px;
       padding-top: 300px;
+      margin-bottom: 50px;
 
       background: url("../img/happy-people-4-tablet.png") top center/contain no-repeat;
 
@@ -155,8 +156,11 @@
     }
 
     &__remark {
-      display: none;
-      max-width: 650px;
+      max-width: 695px;
+
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0;
     }
   }
 
@@ -178,6 +182,12 @@
       @include retina {
         background: url("../img/happy-people-4@2x.png") top 54% center/contain no-repeat;
       }
+    }
+
+    &__remark {
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0;
     }
   }
 

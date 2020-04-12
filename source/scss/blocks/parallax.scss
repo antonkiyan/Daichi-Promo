@@ -15,7 +15,7 @@
 @include desktop-medium {
   .parallax {
     height: 300px;
-    background-size: 100vw auto;
+    background-size: cover;
   }
 }
 

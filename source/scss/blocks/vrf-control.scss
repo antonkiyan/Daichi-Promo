@@ -174,7 +174,7 @@
   .vrf-control__app-title,
   .vrf-control__cloud-title {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 23px;
     letter-spacing: 0.63px;
   }
 
@@ -360,6 +360,10 @@
     padding-bottom: 260px;
 
     background-size: 288px auto;
+  }
+
+  .vrf-control__app-title {
+    padding: 0;
   }
 
   .vrf-control__left {

@@ -7,13 +7,14 @@
 
   position: relative;
 
-  padding-top: 296px;
-  min-height: 865px;
+  padding-top: 377px;
+  min-height: 950px;
   height: 100vh;
+  max-height: 1200px;
 
   background-image: url("../img/app-showcase-icon.png");
   background-repeat: no-repeat;
-  background-position: top 103px right 53px;
+  background-position: top 184px right 53px;
 
   @include retina {
     background-image: url("../img/app-showcase-icon@2x.png");
@@ -123,12 +124,12 @@
 
 @include desktop-medium {
   .promo__container {
-    min-height: 703px;
-    padding-top: 148px;
+    min-height: 768px;
+    padding-top: 213px;
     height: auto;
 
     background-image: url("../img/app-showcase-icon-medium.png");
-    background-position: top 90px right 53px;
+    background-position: top 155px right 53px;
     background-size: 444px auto;
 
     @include retina {

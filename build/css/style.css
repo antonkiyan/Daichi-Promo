@@ -1345,12 +1345,13 @@ input:invalid {
   padding-left: 53px;
   padding-right: 53px;
   position: relative;
-  padding-top: 296px;
-  min-height: 865px;
+  padding-top: 377px;
+  min-height: 950px;
   height: 100vh;
+  max-height: 1200px;
   background-image: url("../img/app-showcase-icon.png");
   background-repeat: no-repeat;
-  background-position: top 103px right 53px;
+  background-position: top 184px right 53px;
 }
 
 @media (max-width: 1399px) {
@@ -1481,11 +1482,11 @@ input:invalid {
 
 @media (max-width: 1399px) {
   .promo__container {
-    min-height: 703px;
-    padding-top: 148px;
+    min-height: 768px;
+    padding-top: 213px;
     height: auto;
     background-image: url("../img/app-showcase-icon-medium.png");
-    background-position: top 90px right 53px;
+    background-position: top 155px right 53px;
     background-size: 444px auto;
   }
 }
@@ -2406,7 +2407,7 @@ input:invalid {
 @media (max-width: 1399px) {
   .parallax {
     height: 300px;
-    background-size: 100vw auto;
+    background-size: cover;
   }
 }
 
@@ -3931,6 +3932,7 @@ input:invalid {
 @media (max-width: 1023px) {
   .special-programs {
     padding: 0;
+    margin-bottom: 130px;
   }
   .special-programs__desc {
     margin-bottom: 85px;
@@ -4300,7 +4302,7 @@ input:invalid {
   .equipment {
     padding: 0 32px;
     max-width: 768px;
-    margin-bottom: 140px;
+    margin-bottom: 130px;
   }
   .equipment__title--long {
     padding: 0;
@@ -7313,7 +7315,7 @@ input:invalid {
   .vrf-control__app-title,
   .vrf-control__cloud-title {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 23px;
     letter-spacing: 0.63px;
   }
   .vrf-control__adapter {
@@ -7471,6 +7473,9 @@ input:invalid {
     padding-top: 50px;
     padding-bottom: 260px;
     background-size: 288px auto;
+  }
+  .vrf-control__app-title {
+    padding: 0;
   }
   .vrf-control__left {
     margin-bottom: 25px;
@@ -8253,6 +8258,7 @@ input:invalid {
 
 @media (max-width: 1023px) {
   .promo-climat-online__title {
+    width: 600px;
     margin: 0 auto 25px;
     text-align: center;
   }
@@ -8324,7 +8330,7 @@ input:invalid {
 
 @media (max-width: 479px) {
   .promo-climat-online__title {
-    width: 100%;
+    width: 280px;
     margin-bottom: 178px;
   }
   .promo-climat-online__desc {
@@ -9695,8 +9701,8 @@ input:invalid {
     padding-right: 30px;
   }
   .about-my-comfort__item--assistant {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .about-my-comfort__second {
     padding-bottom: 325px;
@@ -9769,8 +9775,8 @@ input:invalid {
     padding-right: 10px;
   }
   .about-my-comfort__item--assistant {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .about-my-comfort__second {
     padding-bottom: 225px;
@@ -10255,8 +10261,8 @@ input:invalid {
     padding-left: 70px;
   }
   .about-my-comfort-plus__item--assistant {
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .about-my-comfort-plus__second {
     margin: 0 auto 100px;
@@ -10549,6 +10555,7 @@ input:invalid {
   .my-comfort-order__content {
     max-width: 704px;
     padding-top: 300px;
+    margin-bottom: 50px;
     background: url("../img/happy-people-4-tablet.png") top center/contain no-repeat;
   }
 }
@@ -10564,8 +10571,10 @@ input:invalid {
     margin-bottom: 20px;
   }
   .my-comfort-order__remark {
-    display: none;
-    max-width: 650px;
+    max-width: 695px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
   }
   .my-comfort-order__side {
     width: 351px;
@@ -10592,6 +10601,11 @@ input:invalid {
 }
 
 @media (max-width: 767px) {
+  .my-comfort-order__remark {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
   .my-comfort-order__side {
     width: 352px;
   }
