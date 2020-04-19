@@ -1120,10 +1120,6 @@ img {
   overflow: hidden;
 }
 
-.hidden {
-  display: none;
-}
-
 input:not([type=checkbox]):not([type=radio]),
 textarea,
 select {
