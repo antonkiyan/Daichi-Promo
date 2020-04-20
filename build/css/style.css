@@ -1144,6 +1144,14 @@ input:invalid {
           box-shadow: none;
 }
 
+ul li {
+  list-style: none;
+}
+
+a {
+  border-bottom: 0;
+}
+
 .button {
   display: block;
   height: 48px;
@@ -1428,10 +1436,12 @@ input:invalid {
 .promo__google-pay-link {
   margin-right: 12px;
   background-image: url("../img/icon_googlepay_white.svg");
+  border: none;
 }
 
 .promo__app-store-link {
   background-image: url("../img/icon_appstore_white.svg");
+  border: none;
 }
 
 .promo__scroll-down {
@@ -1445,6 +1455,7 @@ input:invalid {
   background-image: url("../img/icon_down_white.svg");
   background-repeat: no-repeat;
   background-position: top 14px left 0;
+  border: none;
 }
 
 .promo__scroll-down::before, .promo__scroll-down::after {
@@ -1829,6 +1840,7 @@ input:invalid {
   .central-control__app-store-link {
     display: block;
     margin: 0 auto;
+    border: none;
   }
   .central-control__google-pay-link {
     margin-bottom: 15px;
@@ -4466,11 +4478,17 @@ input:invalid {
   border-bottom: 1px solid #dddddd;
 }
 
-.questions label {
+.questions__item {
+  list-style: none !important;
+  margin-bottom: none !important;
+}
+
+section.questions input + label {
   position: relative;
   display: block;
   width: 100%;
   padding: 30px 120px 30px 30px;
+  margin-bottom: 0 !important;
   font-weight: 300;
   font-size: 19px;
   line-height: 21px;
@@ -4479,17 +4497,19 @@ input:invalid {
   border-bottom: none;
 }
 
-.questions label:hover {
+section.questions input + label:hover {
   cursor: pointer;
 }
 
-.questions label::before {
+section.questions input + label::before {
   content: "";
   position: absolute;
   top: 50%;
   right: 30px;
+  left: auto;
   width: 7px;
   height: 7px;
+  border: none;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   -webkit-transform: rotate(45deg);
@@ -4517,8 +4537,14 @@ input:invalid {
 
 .questions input:checked + label::before {
   margin-top: 3px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
+}
+
+.questions input:checked + label::after {
+  display: none;
 }
 
 .questions input:checked + label + div {
@@ -4674,6 +4700,10 @@ input:invalid {
     background-repeat: no-repeat;
     background-size: 960px auto;
   }
+}
+
+.to-programs a {
+  border: none;
 }
 
 .to-programs a:first-child::after {

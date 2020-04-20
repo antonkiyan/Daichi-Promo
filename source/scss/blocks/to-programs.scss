@@ -117,6 +117,10 @@
   }
 }
 
+.to-programs a {
+  border: none;
+}
+
 .to-programs a:first-child {
   &::after {
     left: 0;

@@ -67,10 +67,12 @@
   margin-right: 12px;
 
   background-image: url("../img/icon_googlepay_white.svg");
+  border: none;
 }
 
 .promo__app-store-link {
   background-image: url("../img/icon_appstore_white.svg");
+  border: none;
 }
 
 .promo__scroll-down {
@@ -86,6 +88,7 @@
   background-image: url("../img/icon_down_white.svg");
   background-repeat: no-repeat;
   background-position: top 14px left 0;
+  border: none;
 
   &::before,
   &::after {
