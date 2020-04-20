@@ -4480,7 +4480,7 @@ a {
 
 .questions__item {
   list-style: none !important;
-  margin-bottom: none !important;
+  margin-bottom: 0 !important;
 }
 
 section.questions input + label {
