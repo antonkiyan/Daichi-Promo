@@ -72,9 +72,13 @@
 }
 
 .to-programs__my-comfort {
-  background-image: url("../img/daichi-comfort.png");
+  // background-image: url("../img/daichi-comfort.png");
 
-  background-position: top right;
+  // background-position: top right;
+
+  background:
+    linear-gradient(to right, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 20%, rgba(247, 247, 247, 0) 100%),
+    url("../img/daichi-comfort.png") top right/960px auto no-repeat;
 
   // &::after {
   //   right: 0;
@@ -87,9 +91,13 @@
   // }
 
   @include retina {
-    background-image: url("../img/daichi-comfort@2x.png");
-    background-repeat: no-repeat;
-    background-size: 960px auto;
+    // background-image: url("../img/daichi-comfort@2x.png");
+    // background-repeat: no-repeat;
+    // background-size: 960px auto;
+
+    background:
+    linear-gradient(to right, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 20%, rgba(247, 247, 247, 0) 100%),
+    url("../img/daichi-comfort@2x.png") top right/960px auto no-repeat;
   }
 }
 
@@ -150,25 +158,40 @@
 .to-programs p {
   position: relative;
 
+  max-width: 300px;
   margin: 0;
-  margin-bottom: 7px;
 
   font-weight: 300;
   font-size: 18px;
-  line-height: 20px;
-  color: rgba(136, 136, 136, 0.8);
+  line-height: 25px;
+  color: #000;
 
   z-index: 1;
+
+  &:first-of-type {
+    margin-bottom: 25px;
+  }
+
+  &:nth-of-type(2) {
+    margin-bottom: 10px;
+
+    font-size: 15px;
+    line-height: 22px;
+
+    color: rgba(136, 136, 136, 0.8);
+  }
 }
 
-.to-programs__mobile-control p {
-  color: rgba(0, 0, 0, 0.5)
+.to-programs__my-comfort p {
+  &:first-of-type {
+    max-width: 300px;
+  }
 }
 
 .to-programs h2 {
   position: relative;
 
-  max-width: 405px;
+  max-width: 50%;
   margin: 0;
 
   font-weight: 300;
@@ -186,34 +209,44 @@
     min-height: 530px;
   }
 
+  .to-programs p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:nth-of-type(2) {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .to-programs h2 {
+    text-align: center;
+    max-width: none;
+    width: auto;
+  }
+
   .to-programs__climat-online {
     background-image: url("../img/daichi-climat-online-medium@2x.png");
     background-size: cover;
   }
 
   .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-medium.png");
-    background-size: cover;
-
-    @include retina {
-      background-image: url("../img/daichi-comfort-medium@2x.png");
-    }
+    background:
+      linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 60%),
+      url("../img/daichi-comfort-big.png") top right/cover no-repeat;
   }
 
   .to-programs__mobile-control {
     background:
-      url("../img/app-showcase-icon-medium.png") bottom right 15px/310px auto no-repeat,
+      url("../img/app-showcase-icon-medium.png") bottom center/310px auto no-repeat,
       linear-gradient(180deg, #7FB0F8, #D5D3FF);
 
     @include retina {
       background:
-        url("../img/app-showcase-icon-medium@2x.png") bottom right 15px/310px auto no-repeat,
+        url("../img/app-showcase-icon-medium@2x.png") bottom center/310px auto no-repeat,
         linear-gradient(180deg, #7FB0F8, #D5D3FF);
     }
-  }
-
-  .to-programs__mobile-control h2 {
-    width: 290px;
   }
 }
 
@@ -240,11 +273,9 @@
   }
 
   .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-tablet.png");
-
-    @include retina {
-      background-image: url("../img/daichi-comfort-tablet@2x.png");
-    }
+    background:
+      linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 100%),
+      url("../img/daichi-comfort-big.png") bottom -70px right -40px /cover no-repeat;
   }
 
   .to-programs__mobile-control {
@@ -270,27 +301,35 @@
   }
 
   .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-mobile-l.png");
-
-    @include retina {
-      background-image: url("../img/daichi-comfort-mobile-l@2x.png");
-    }
+    background:
+      // linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 100%),
+      url("../img/daichi-comfort-big.png") center right -20px /cover no-repeat;
+      background-color: #e7e9e8;
   }
 
   .to-programs__mobile-control {
     background-size: 250px auto;
-    background-position: bottom right 20px;
+    background-position: bottom right 10px;
   }
 
   .to-programs p {
     font-size: 15px;
     line-height: 16px;
+    text-align: left;
+    margin: 0 0 25px;
+    max-width: 250px;
+  }
+
+  .to-programs__my-comfort p:first-of-type {
+    max-width: 250px;
+    margin-bottom: 15px;
   }
 
   .to-programs h2 {
     font-size: 24px;
     line-height: 27px;
     letter-spacing: 0.24px;
+    text-align: left;
   }
 
   .to-programs__mobile-control h2 {
@@ -299,11 +338,34 @@
 }
 
 @include mobile {
+  .to-programs h2 {
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .to-programs p {
+    text-align: center;
+
+    &:first-of-type {
+      max-width: 250px;
+      margin: 0 auto 25px;
+
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    &:nth-of-type(2) {
+      text-align: center;
+      margin: 0 auto 10px;
+    }
+  }
+
   .to-programs__climat-online,
   .to-programs__my-comfort,
   .to-programs__mobile-control {
     min-height: 200px;
-    padding: 16px 5%;
+    padding: 25px 5%;
   }
 
   .to-programs__climat-online {
@@ -311,17 +373,26 @@
   }
 
   .to-programs__mobile-control {
-    background-size: 170px auto;
+    padding-bottom: 357px;
+
+    background-size: 300px auto;
     background-position:
-      bottom -10px right 10px,
+      bottom -10px right calc(50% + 15px),
       bottom right;
   }
 
   .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-mobile.png");
+    padding-bottom: 357px;
 
-    @include retina {
-      background-image: url("../img/daichi-comfort-mobile@2x.png");
-    }
+    background:
+      linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 60%),
+      url("../img/daichi-comfort-big.png") bottom -40px right -40px /cover no-repeat;
+      background-color: #e7e9e8;
+
+    // background-image: url("../img/daichi-comfort-mobile.png");
+
+    // @include retina {
+    //   background-image: url("../img/daichi-comfort-mobile@2x.png");
+    // }
   }
 }

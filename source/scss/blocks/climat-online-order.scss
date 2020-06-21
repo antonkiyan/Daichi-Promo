@@ -5,7 +5,7 @@
     @include container;
 
     min-height: 750px;
-    padding-top: 182px;
+    padding-top: 127px;
 
     background: url("../img/daichi-climat-online-scale.png") top left 53px/690px auto no-repeat;
 
@@ -16,11 +16,22 @@
 
   &__content {
     width: 810px;
-    min-height: 387px;
+    min-height: 496px;
     margin-left: auto;
-    padding: 100px 120px 90px;
+    padding: 120px 120px 90px;
+
+    text-align: center;
 
     background-color: #f6f6f6;
+  }
+
+  &__icon {
+    width: 236px;
+    height: 64px;
+    margin: 0 auto 50px;
+
+    background-image: url("../img/climat-online-logo.svg");
+    background-size: cover;
   }
 
   &__title {
@@ -34,6 +45,7 @@
 
   &__link {
     width: 215px;
+    margin: 0 auto;
   }
 }
 
@@ -46,7 +58,7 @@
       @include container;
 
       min-height: 564px;
-      padding-top: 118px;
+      padding-top: 80px;
 
       background: url("../img/daichi-climat-online-scale-medium.png") top right 53px/444px auto no-repeat;
 
@@ -85,6 +97,7 @@
     }
 
     &__content {
+      padding: 40px;
       width: 100%;
     }
 
@@ -114,6 +127,12 @@
       @include retina {
         background: url("../img/daichi-climat-online-1@2x.png") top right/auto 250px no-repeat;
       }
+    }
+
+    &__icon {
+      width: 177px;
+      height: 48px;
+      margin-bottom: 25px;
     }
 
     &__content {

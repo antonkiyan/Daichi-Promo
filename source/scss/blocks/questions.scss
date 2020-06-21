@@ -1,7 +1,7 @@
 .questions {
   @include container;
 
-  margin-bottom: 160px;
+  margin-bottom: 80px;
 }
 
 .questions__title {
@@ -17,6 +17,8 @@
 
 .questions ul {
   @include list-reset;
+
+  margin-bottom: 80px;
 
   border-bottom: 1px solid #dddddd;
 }
@@ -110,6 +112,15 @@ section.questions input + label {
   opacity: 1;
 }
 
+.questions__offert {
+  margin: 0 auto;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
 @include desktop-medium {
   .questions__title {
     margin-bottom: 60px;
@@ -123,6 +134,16 @@ section.questions input + label {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.53px;
+  }
+
+  .questions__offert {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  section.questions input + label {
+    font-size: 15px;
+    line-height: 22px;
   }
 }
 
@@ -148,6 +169,11 @@ section.questions input + label {
 @include mobile-l {
   .questions {
     padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .questions ul {
+    margin-bottom: 50px;
   }
 
   .questions__title {
@@ -169,6 +195,14 @@ section.questions input + label {
 
   .questions label {
     padding: 30px 50px 30px 5%;
+  }
+
+  section.questions input+label {
+    padding: 30px 33px 30px 16px;
+  }
+
+  section.questions input+label::before {
+    right: 15px;
   }
 
   .questions__item div {

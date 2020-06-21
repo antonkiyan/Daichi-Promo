@@ -1092,6 +1092,7 @@ html {
 body {
   min-width: 320px;
   margin: 0 auto;
+  font-family: "Gotham Pro", "Arial", "Helvetica", "Helvetica CY", "Nimbus Sans";
   font-style: normal;
 }
 
@@ -4138,7 +4139,7 @@ a {
 .equipment {
   max-width: 1276px;
   padding: 0 53px;
-  margin: 0 auto 160px;
+  margin: 0 auto 80px;
 }
 
 .equipment__slider-container {
@@ -4165,6 +4166,10 @@ a {
   line-height: 53px;
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
+}
+
+.equipment__title--climat-online {
+  margin-bottom: 80px;
 }
 
 .equipment__desc {
@@ -4307,7 +4312,7 @@ a {
   .equipment {
     padding: 0 32px;
     max-width: 768px;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
   }
   .equipment__title--long {
     padding: 0;
@@ -4427,7 +4432,7 @@ a {
   max-width: 1516px;
   padding-left: 53px;
   padding-right: 53px;
-  margin-bottom: 160px;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 1399px) {
@@ -4472,6 +4477,7 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 80px;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -4550,6 +4556,14 @@ section.questions input + label::before {
   opacity: 1;
 }
 
+.questions__offert {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
 @media (max-width: 1399px) {
   .questions__title {
     margin-bottom: 60px;
@@ -4561,6 +4575,14 @@ section.questions input + label::before {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.53px;
+  }
+  .questions__offert {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  section.questions input + label {
+    font-size: 15px;
+    line-height: 22px;
   }
 }
 
@@ -4583,6 +4605,10 @@ section.questions input + label::before {
 @media (max-width: 767px) {
   .questions {
     padding: 0;
+    margin-bottom: 50px;
+  }
+  .questions ul {
+    margin-bottom: 50px;
   }
   .questions__title {
     font-size: 24px;
@@ -4601,6 +4627,12 @@ section.questions input + label::before {
   }
   .questions label {
     padding: 30px 50px 30px 5%;
+  }
+  section.questions input + label {
+    padding: 30px 33px 30px 16px;
+  }
+  section.questions input + label::before {
+    right: 15px;
   }
   .questions__item div {
     padding-right: 50px;
@@ -4674,15 +4706,14 @@ section.questions input + label::before {
 }
 
 .to-programs__my-comfort {
-  background-image: url("../img/daichi-comfort.png");
-  background-position: top right;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #f7f7f7), color-stop(20%, #f7f7f7), to(rgba(247, 247, 247, 0))), url("../img/daichi-comfort.png") top right/960px auto no-repeat;
+  background: linear-gradient(to right, #f7f7f7 0, #f7f7f7 20%, rgba(247, 247, 247, 0) 100%), url("../img/daichi-comfort.png") top right/960px auto no-repeat;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort@2x.png");
-    background-repeat: no-repeat;
-    background-size: 960px auto;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #f7f7f7), color-stop(20%, #f7f7f7), to(rgba(247, 247, 247, 0))), url("../img/daichi-comfort@2x.png") top right/960px auto no-repeat;
+    background: linear-gradient(to right, #f7f7f7 0, #f7f7f7 20%, rgba(247, 247, 247, 0) 100%), url("../img/daichi-comfort@2x.png") top right/960px auto no-repeat;
   }
 }
 
@@ -4725,22 +4756,33 @@ section.questions input + label::before {
 
 .to-programs p {
   position: relative;
+  max-width: 300px;
   margin: 0;
-  margin-bottom: 7px;
   font-weight: 300;
   font-size: 18px;
-  line-height: 20px;
-  color: rgba(136, 136, 136, 0.8);
+  line-height: 25px;
+  color: #000;
   z-index: 1;
 }
 
-.to-programs__mobile-control p {
-  color: rgba(0, 0, 0, 0.5);
+.to-programs p:first-of-type {
+  margin-bottom: 25px;
+}
+
+.to-programs p:nth-of-type(2) {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(136, 136, 136, 0.8);
+}
+
+.to-programs__my-comfort p:first-of-type {
+  max-width: 300px;
 }
 
 .to-programs h2 {
   position: relative;
-  max-width: 405px;
+  max-width: 50%;
   margin: 0;
   font-weight: 300;
   font-size: 32px;
@@ -4755,39 +4797,38 @@ section.questions input + label::before {
   .to-programs__my-comfort {
     min-height: 530px;
   }
+  .to-programs p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .to-programs p:nth-of-type(2) {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .to-programs h2 {
+    text-align: center;
+    max-width: none;
+    width: auto;
+  }
   .to-programs__climat-online {
     background-image: url("../img/daichi-climat-online-medium@2x.png");
     background-size: cover;
   }
   .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-medium.png");
-    background-size: cover;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big.png") top right/cover no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 60%), url("../img/daichi-comfort-big.png") top right/cover no-repeat;
   }
-}
-
-@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
-  .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-medium@2x.png");
-  }
-}
-
-@media (max-width: 1399px) {
   .to-programs__mobile-control {
-    background: url("../img/app-showcase-icon-medium.png") bottom right 15px/310px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
-    background: url("../img/app-showcase-icon-medium.png") bottom right 15px/310px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
+    background: url("../img/app-showcase-icon-medium.png") bottom center/310px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
+    background: url("../img/app-showcase-icon-medium.png") bottom center/310px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
   }
 }
 
 @media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
   .to-programs__mobile-control {
-    background: url("../img/app-showcase-icon-medium@2x.png") bottom right 15px/310px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
-    background: url("../img/app-showcase-icon-medium@2x.png") bottom right 15px/310px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
-  }
-}
-
-@media (max-width: 1399px) {
-  .to-programs__mobile-control h2 {
-    width: 290px;
+    background: url("../img/app-showcase-icon-medium@2x.png") bottom center/310px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
+    background: url("../img/app-showcase-icon-medium@2x.png") bottom center/310px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
   }
 }
 
@@ -4808,17 +4849,9 @@ section.questions input + label::before {
     background-image: url("../img/daichi-climat-online-tablet@2x.png");
   }
   .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-tablet.png");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), to(rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big.png") bottom -70px right -40px/cover no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 100%), url("../img/daichi-comfort-big.png") bottom -70px right -40px/cover no-repeat;
   }
-}
-
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-tablet@2x.png");
-  }
-}
-
-@media (max-width: 1023px) {
   .to-programs__mobile-control {
     background-size: 335px auto;
     background-position: bottom right 50%;
@@ -4842,29 +4875,29 @@ section.questions input + label::before {
     background-image: url("../img/daichi-climat-online-mobile-l@2x.png");
   }
   .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-mobile-l.png");
+    background: url("../img/daichi-comfort-big.png") center right -20px/cover no-repeat;
+    background-color: #e7e9e8;
   }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-mobile-l@2x.png");
-  }
-}
-
-@media (max-width: 767px) {
   .to-programs__mobile-control {
     background-size: 250px auto;
-    background-position: bottom right 20px;
+    background-position: bottom right 10px;
   }
   .to-programs p {
     font-size: 15px;
     line-height: 16px;
+    text-align: left;
+    margin: 0 0 25px;
+    max-width: 250px;
+  }
+  .to-programs__my-comfort p:first-of-type {
+    max-width: 250px;
+    margin-bottom: 15px;
   }
   .to-programs h2 {
     font-size: 24px;
     line-height: 27px;
     letter-spacing: 0.24px;
+    text-align: left;
   }
   .to-programs__mobile-control h2 {
     width: 230px;
@@ -4872,27 +4905,43 @@ section.questions input + label::before {
 }
 
 @media (max-width: 479px) {
+  .to-programs h2 {
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+  }
+  .to-programs p {
+    text-align: center;
+  }
+  .to-programs p:first-of-type {
+    max-width: 250px;
+    margin: 0 auto 25px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .to-programs p:nth-of-type(2) {
+    text-align: center;
+    margin: 0 auto 10px;
+  }
   .to-programs__climat-online,
   .to-programs__my-comfort,
   .to-programs__mobile-control {
     min-height: 200px;
-    padding: 16px 5%;
+    padding: 25px 5%;
   }
   .to-programs__climat-online {
     background-image: url("../img/daichi-climat-online-mobile@2x.png");
   }
   .to-programs__mobile-control {
-    background-size: 170px auto;
-    background-position: bottom -10px right 10px, bottom right;
+    padding-bottom: 357px;
+    background-size: 300px auto;
+    background-position: bottom -10px right calc(50% + 15px), bottom right;
   }
   .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-mobile.png");
-  }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .to-programs__my-comfort {
-    background-image: url("../img/daichi-comfort-mobile@2x.png");
+    padding-bottom: 357px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big.png") bottom -40px right -40px/cover no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 60%), url("../img/daichi-comfort-big.png") bottom -40px right -40px/cover no-repeat;
+    background-color: #e7e9e8;
   }
 }
 
@@ -8113,14 +8162,23 @@ section.questions input + label::before {
   max-height: 1200px;
   background-image: url("../img/daichi-climat-online-big.png");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top right -180px;
   background-size: cover;
+  background-color: #f6f5fb;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .promo-climat-online {
     background-image: url("../img/daichi-climat-online-big@2x.png");
   }
+}
+
+.promo-climat-online__note {
+  margin: 0 0 25px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .promo-climat-online__title {
@@ -8152,7 +8210,7 @@ section.questions input + label::before {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.63px;
-  width: 690px;
+  max-width: 690px;
   margin-bottom: 50px;
 }
 
@@ -8215,7 +8273,7 @@ section.questions input + label::before {
   max-width: 1516px;
   padding-left: 53px;
   padding-right: 53px;
-  padding-top: 410px;
+  padding-top: 396px;
 }
 
 @media (max-width: 1399px) {
@@ -8248,7 +8306,7 @@ section.questions input + label::before {
 
 @media (max-width: 1399px) {
   .promo-climat-online__container {
-    padding-top: 255px;
+    padding-top: 223px;
     padding-bottom: 188px;
   }
   .promo-climat-online {
@@ -8263,7 +8321,7 @@ section.questions input + label::before {
     line-height: 46px;
   }
   .promo-climat-online__desc {
-    width: 48.4%;
+    max-width: 48.4%;
   }
 }
 
@@ -8280,14 +8338,20 @@ section.questions input + label::before {
 }
 
 @media (max-width: 1023px) {
+  .promo-climat-online__note {
+    margin-bottom: 15px;
+    text-align: center;
+  }
   .promo-climat-online__title {
     width: 600px;
     margin: 0 auto 25px;
+    font-size: 40px;
+    line-height: 46px;
     text-align: center;
   }
   .promo-climat-online__desc {
-    width: 704px;
-    margin: 0 auto 495px;
+    max-width: 704px;
+    margin: 0 auto 463px;
     text-align: center;
   }
   .promo-climat-online__link {
@@ -8301,13 +8365,13 @@ section.questions input + label::before {
 
 @media (max-width: 767px) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 240px, transparent 330px), url("../img/daichi-climat-online-big.png") bottom left calc(50% - 50px)/880px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 360px), url("../img/daichi-climat-online-big.png") bottom left calc(50% - 50px)/880px auto no-repeat;
   }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 240px, transparent 330px), url("../img/daichi-climat-online-big@2x.png") bottom left calc(50% - 50px)/880px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 360px), url("../img/daichi-climat-online-big@2x.png") bottom left calc(50% - 50px)/880px auto no-repeat;
   }
 }
 
@@ -8329,42 +8393,45 @@ section.questions input + label::before {
 
 @media (max-width: 479px) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 60px, transparent 120px), linear-gradient(180deg, rgba(246, 245, 251, 0.5) 0, #f6f5fc80 100%), url("../img/daichi-climat-online-medium.png") top 34px right/100% auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 350px), url("../img/daichi-climat-online-medium.png") top 290px right/100% auto no-repeat;
   }
 }
 
 @media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 60px, transparent 120px), linear-gradient(180deg, rgba(246, 245, 251, 0.5) 0, rgba(246, 245, 252, 0.5) 100%), url("../img/daichi-climat-online-medium@2x.png") top 34px right/100% auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 350px), url("../img/daichi-climat-online-medium@2x.png") top 290px right/100% auto no-repeat;
   }
 }
 
 @media (max-width: 479px) and (max-width: 410px) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 60px, transparent 120px), linear-gradient(180deg, rgba(246, 245, 251, 0.5) 0, rgba(246, 245, 252, 0.5) 100%), url("../img/daichi-climat-online-medium.png") bottom right/410px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 350px), url("../img/daichi-climat-online-medium.png") top 290px right/410px auto no-repeat;
   }
 }
 
 @media (max-width: 479px) and (max-width: 410px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (max-width: 410px) and (min-resolution: 144dpi), (max-width: 479px) and (max-width: 410px) and (min-resolution: 1.5dppx) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 60px, transparent 120px), linear-gradient(180deg, rgba(246, 245, 251, 0.5) 0, rgba(246, 245, 252, 0.5) 100%), url("../img/daichi-climat-online-medium@2x.png") bottom right/410px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 350px), url("../img/daichi-climat-online-medium@2x.png") top 290px right/410px auto no-repeat;
   }
 }
 
 @media (max-width: 479px) {
   .promo-climat-online__title {
     width: 280px;
-    margin-bottom: 178px;
+    margin-bottom: 25px;
   }
   .promo-climat-online__desc {
-    margin-bottom: 25px;
+    margin-bottom: 220px;
+    min-height: 197px;
+    font-size: 12px;
+    line-height: 22px;
   }
   .promo-climat-online__scroll-down {
     display: none;
   }
   .promo-climat-online__container {
     padding-top: 40px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
   }
 }
 
@@ -8650,30 +8717,39 @@ section.questions input + label::before {
   text-align: center;
 }
 
-.about-climat-online__title {
+.about-climat-online__title, .about-climat-online__monitoring-title {
   margin: 0;
   font-weight: 300;
   font-size: 48px;
   line-height: 53px;
-  margin-bottom: 80px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
 @media (max-width: 1399px) {
-  .about-climat-online__title {
+  .about-climat-online__title, .about-climat-online__monitoring-title {
     font-size: 32px;
     line-height: 35px;
   }
 }
 
 @media (max-width: 767px) {
-  .about-climat-online__title {
+  .about-climat-online__title, .about-climat-online__monitoring-title {
     font-size: 24px;
     line-height: 28px;
   }
 }
 
-.about-climat-online__content {
+.about-climat-online__desc {
+  margin: 0 auto 80px;
+  max-width: 1170px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.about-climat-online__content, .about-climat-online__monitoring-content {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8681,11 +8757,15 @@ section.questions input + label::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 930px;
+  max-width: 1170px;
   margin: 0 auto 138px;
 }
 
-.about-climat-online__content::before {
+.about-climat-online__monitoring-content {
+  margin-bottom: 80px;
+}
+
+.about-climat-online__content::before, .about-climat-online__monitoring-content::before {
   content: "";
   position: absolute;
   top: 0;
@@ -8701,14 +8781,25 @@ section.questions input + label::before {
 
 .about-climat-online__remark {
   margin: 0;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.about-climat-online__monitoring-note {
+  margin: 0 auto 138px;
+  max-width: 1170px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
   text-align: center;
 }
 
 .about-climat-online__item {
-  width: 330px;
+  width: 450px;
   padding-top: 140px;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .about-climat-online__item--status {
@@ -8719,6 +8810,18 @@ section.questions input + label::before {
 .about-climat-online__item--connection {
   background: url("../img/icon_connection.svg") top center no-repeat;
   background-size: 90px 90px;
+}
+
+.about-climat-online__item--minor-alarm {
+  padding-top: 200px;
+  background-image: url("../img/minor-alarm.svg");
+  background-size: 150px auto;
+}
+
+.about-climat-online__item--important-alarm {
+  padding-top: 200px;
+  background-image: url("../img/important-alarm.svg");
+  background-size: 150px auto;
 }
 
 .about-climat-online__item-title {
@@ -8734,8 +8837,8 @@ section.questions input + label::before {
 .about-climat-online__item-desc {
   margin: 0;
   font-weight: 300;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -8748,19 +8851,36 @@ section.questions input + label::before {
     font-size: 18px;
     line-height: 20px;
   }
-  .about-climat-online__content {
-    max-width: 760px;
+  .about-climat-online__content, .about-climat-online__monitoring-content {
+    max-width: 918px;
     margin: 0 auto 130px;
+  }
+  .about-climat-online__desc {
+    font-size: 15px;
+    line-height: 22px;
   }
   .about-climat-online__engineering-center-scheme {
     margin-bottom: 50px;
   }
   .about-climat-online__remark {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .about-climat-online__monitoring-note {
+    max-width: 918px;
+    font-size: 15px;
+    line-height: 22px;
   }
   .about-climat-online__item {
-    width: 286px;
+    width: 365px;
+  }
+  .about-climat-online__item-title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .about-climat-online__item-desc {
+    font-size: 15px;
+    line-height: 22px;
   }
 }
 
@@ -8770,11 +8890,14 @@ section.questions input + label::before {
     margin: 0 auto 130px;
   }
   .about-climat-online__title {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .about-climat-online__remark {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .about-climat-online__monitoring-content {
+    margin-bottom: 80px;
   }
   .about-climat-online__item {
     width: 336px;
@@ -8785,7 +8908,7 @@ section.questions input + label::before {
   .about-climat-online {
     margin-bottom: 100px;
   }
-  .about-climat-online__content {
+  .about-climat-online__content, .about-climat-online__monitoring-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -8795,21 +8918,30 @@ section.questions input + label::before {
             align-items: center;
     margin: 0 auto 100px;
   }
-  .about-climat-online__content::before {
+  .about-climat-online__content::before, .about-climat-online__monitoring-content::before {
     display: none;
   }
   .about-climat-online__title {
     padding: 0 50px;
   }
+  .about-climat-online__desc {
+    margin-bottom: 50px;
+  }
   .about-climat-online__remark {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .about-climat-online__monitoring-note {
+    margin-bottom: 100px;
   }
   .about-climat-online__item {
     width: 416px;
   }
   .about-climat-online__item--status {
     padding: 140px 30px 0;
+    margin-bottom: 50px;
+  }
+  .about-climat-online__item--minor-alarm {
     margin-bottom: 50px;
   }
   .about-climat-online__diagnostic-title {
@@ -8844,11 +8976,19 @@ section.questions input + label::before {
 }
 
 @media (max-width: 479px) {
+  .about-climat-online__note {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
   .about-climat-online__title {
     padding: 0;
   }
   .about-climat-online__remark {
     line-height: 26px;
+  }
+  .about-climat-online__monitoring-content {
+    margin-bottom: 50px;
   }
   .about-climat-online__item {
     width: 288px;
@@ -8872,7 +9012,7 @@ section.questions input + label::before {
   padding-left: 53px;
   padding-right: 53px;
   min-height: 750px;
-  padding-top: 182px;
+  padding-top: 127px;
   background: url("../img/daichi-climat-online-scale.png") top left 53px/690px auto no-repeat;
 }
 
@@ -8912,10 +9052,19 @@ section.questions input + label::before {
 
 .climat-online-order__content {
   width: 810px;
-  min-height: 387px;
+  min-height: 496px;
   margin-left: auto;
-  padding: 100px 120px 90px;
+  padding: 120px 120px 90px;
+  text-align: center;
   background-color: #f6f6f6;
+}
+
+.climat-online-order__icon {
+  width: 236px;
+  height: 64px;
+  margin: 0 auto 50px;
+  background-image: url("../img/climat-online-logo.svg");
+  background-size: cover;
 }
 
 .climat-online-order__title {
@@ -8928,6 +9077,7 @@ section.questions input + label::before {
 
 .climat-online-order__link {
   width: 215px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1399px) {
@@ -8941,7 +9091,7 @@ section.questions input + label::before {
     padding-left: 53px;
     padding-right: 53px;
     min-height: 564px;
-    padding-top: 118px;
+    padding-top: 80px;
     background: url("../img/daichi-climat-online-scale-medium.png") top right 53px/444px auto no-repeat;
   }
 }
@@ -9012,6 +9162,7 @@ section.questions input + label::before {
 
 @media (max-width: 1023px) {
   .climat-online-order__content {
+    padding: 40px;
     width: 100%;
   }
   .climat-online-order__title {
@@ -9042,6 +9193,11 @@ section.questions input + label::before {
 }
 
 @media (max-width: 767px) {
+  .climat-online-order__icon {
+    width: 177px;
+    height: 48px;
+    margin-bottom: 25px;
+  }
   .climat-online-order__content {
     padding: 50px;
     min-height: 230px;
@@ -10659,5 +10815,208 @@ section.questions input + label::before {
   }
   .my-comfort-order__side:first-child {
     margin-bottom: 200px;
+  }
+}
+
+.promo-climat-online__longlife {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.promo-climat-online__longlife-title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1399px) {
+  .promo-climat-online__longlife-title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-climat-online__longlife-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.promo-climat-online__longlife-desc {
+  margin: 0 0 50px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.promo-climat-online__longlife-slogan {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.promo-climat-online__logo {
+  width: 265px;
+  height: 72px;
+  margin: 0 auto 100px;
+  background-image: url("../img/climat-online-logo.svg");
+}
+
+@media (max-width: 1399px) {
+  .promo-climat-online__longlife-title br {
+    display: none;
+  }
+  .promo-climat-online__longlife-desc {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .promo-climat-online__longlife-slogan {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .promo-climat-online__longlife-title {
+    max-width: 550px;
+    margin: 0 auto 80px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .promo-climat-online__longlife-desc {
+    max-width: 704px;
+    margin: 0 auto 50px;
+  }
+  .promo-climat-online__longlife-slogan {
+    margin: 0 auto;
+    max-width: 450px;
+  }
+  .promo-climat-online__logo {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-climat-online__longlife {
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  .promo-climat-online__longlife-title {
+    max-width: 416px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .promo-climat-online__longlife-desc, .promo-climat-online__longlife-slogan {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 479px) {
+  .promo-climat-online__longlife-title {
+    max-width: 80%;
+    margin-bottom: 50px;
+  }
+  .promo-climat-online__logo {
+    margin-bottom: 50px;
+    width: 177px;
+    height: 48px;
+    background-size: cover;
+  }
+}
+
+.mobile-control-app {
+  max-width: 1410px;
+  margin: 0 auto 160px;
+  min-height: 600px;
+  padding: 50px;
+  text-align: center;
+  background-image: url("../img/mobile-control-app_bg.png");
+  background-size: 1410px auto;
+  background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .mobile-control-app {
+    background-image: url("../img/mobile-control-app_bg@2x.png");
+  }
+}
+
+.mobile-control-app__icon {
+  width: 289px;
+  height: 64px;
+  margin: 0 auto 50px;
+  background-image: url("../img/mobile-control-app_icon.svg");
+}
+
+.mobile-control-app__desc {
+  max-width: 690px;
+  margin: 0 auto 25px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+
+.mobile-control-app__link {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #00adef;
+  border-bottom: 1px solid transparent;
+}
+
+.mobile-control-app__link:hover {
+  border-bottom: 1px solid #00adef;
+}
+
+@media (max-width: 1399px) {
+  .mobile-control-app {
+    max-width: 100%;
+    background-position: center;
+  }
+  .mobile-control-app__desc {
+    max-width: 760px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mobile-control-app {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-control-app {
+    padding-top: 50px;
+    margin-bottom: 100px;
+    background-size: auto 65%;
+    background-position: bottom left;
+    background-color: #f7f7f7;
+  }
+  .mobile-control-app__icon {
+    width: 216px;
+    height: 48px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 479px) {
+  .mobile-control-app {
+    padding: 50px 5% 210px;
+    min-height: auto;
+    background-size: auto 50%;
+    background-position: bottom left;
   }
 }

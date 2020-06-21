@@ -1,0 +1,118 @@
+.promo-climat-online__longlife {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 40px;
+
+  text-align: center;
+
+  &-title {
+    @include title-font;
+
+    margin-bottom: 100px;
+  }
+
+  &-desc {
+    margin: 0 0 50px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &-slogan {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.promo-climat-online__logo {
+  width: 265px;
+  height: 72px;
+  margin: 0 auto 100px;
+
+  background-image: url("../img/climat-online-logo.svg");
+}
+
+@include desktop-medium {
+  .promo-climat-online__longlife {
+    &-title br {
+      display: none;
+    }
+
+    &-desc {
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    &-slogan {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+
+@include tablet {
+  .promo-climat-online__longlife {
+    &-title {
+      max-width: 550px;
+      margin: 0 auto 80px;
+
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &-desc {
+      max-width: 704px;
+      margin: 0 auto 50px;
+    }
+
+    &-slogan {
+      margin: 0 auto;
+      max-width: 450px;
+    }
+  }
+
+  .promo-climat-online__logo {
+    margin-bottom: 80px;
+  }
+}
+
+@include mobile-l {
+  .promo-climat-online__longlife {
+    padding-top: 100px;
+    padding-bottom: 20px;
+
+    &-title {
+      max-width: 416px;
+
+      font-size: 24px;
+      line-height: 27px;
+    }
+
+    &-desc,
+    &-slogan {
+      max-width: 90%;
+    }
+  }
+}
+
+@include mobile {
+  .promo-climat-online__longlife {
+    &-title {
+      max-width: 80%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .promo-climat-online__logo {
+    margin-bottom: 50px;
+    width: 177px;
+    height: 48px;
+
+    background-size: cover;
+  }
+}

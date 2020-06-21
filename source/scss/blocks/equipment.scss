@@ -1,7 +1,7 @@
 .equipment {
   max-width: 1276px;
   padding: 0 53px;
-  margin: 0 auto 160px;
+  margin: 0 auto 80px;
 }
 
 .equipment__slider-container {
@@ -24,6 +24,10 @@
   line-height: 53px;
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
+
+  &--climat-online {
+    margin-bottom: 80px;
+  }
 }
 
 .equipment__desc {
@@ -246,7 +250,7 @@
     padding: 0 32px;
 
     max-width: 768px;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
   }
 
   .equipment__title {

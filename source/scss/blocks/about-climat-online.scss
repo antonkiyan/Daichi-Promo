@@ -15,25 +15,42 @@
     text-align: center;
   }
 
-  &__title {
+  &__title,
+  &__monitoring-title {
     @include title-font;
 
-    margin-bottom: 80px;
+    margin-bottom: 25px;
 
     text-align: center;
   }
 
-  &__content {
+  &__desc {
+    margin: 0 auto 80px;
+    max-width: 1170px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__content,
+  &__monitoring-content {
     position: relative;
 
     display: flex;
     justify-content: space-between;
 
-    max-width: 930px;
+    max-width: 1170px;
     margin: 0 auto 138px;
   }
 
-  &__content::before {
+  &__monitoring-content {
+    margin-bottom: 80px;
+  }
+
+  &__content::before,
+  &__monitoring-content::before {
     content: "";
 
     position: absolute;
@@ -53,15 +70,28 @@
   &__remark {
     margin: 0;
 
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__monitoring-note {
+    margin: 0 auto 138px;
+    max-width: 1170px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
     text-align: center;
   }
 }
 
 .about-climat-online__item {
-  width: 330px;
+  width: 450px;
   padding-top: 140px;
+
+  background-position: top center;
+  background-repeat: no-repeat;
 
   &--status {
     background: url("../img/icon_status.svg") top center no-repeat;
@@ -71,6 +101,20 @@
   &--connection {
     background: url("../img/icon_connection.svg") top center no-repeat;
     background-size: 90px 90px;
+  }
+
+  &--minor-alarm {
+    padding-top: 200px;
+
+    background-image: url("../img/minor-alarm.svg");
+    background-size: 150px auto;
+  }
+
+  &--important-alarm {
+    padding-top: 200px;
+
+    background-image: url("../img/important-alarm.svg");
+    background-size: 150px auto;
   }
 
   &-title {
@@ -88,8 +132,8 @@
     margin: 0;
 
     font-weight: 300;
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 18px;
+    line-height: 24px;
     text-align: center;
   }
 }
@@ -105,9 +149,15 @@
       line-height: 20px;
     }
 
-    &__content {
-      max-width: 760px;
+    &__content,
+    &__monitoring-content {
+      max-width: 918px;
       margin: 0 auto 130px;
+    }
+
+    &__desc {
+      font-size: 15px;
+      line-height: 22px;
     }
 
     &__engineering-center-scheme {
@@ -115,13 +165,30 @@
     }
 
     &__remark {
-      font-size: 20px;
-      line-height: 25px;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    &__monitoring-note {
+      max-width: 918px;
+
+      font-size: 15px;
+      line-height: 22px;
     }
   }
 
   .about-climat-online__item {
-    width: 286px;
+    width: 365px;
+
+    &-title {
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    &-desc {
+      font-size: 15px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -133,12 +200,16 @@
     }
 
     &__title {
-      margin-bottom: 50px;
+      margin-bottom: 25px;
     }
 
     &__remark {
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &__monitoring-content {
+      margin-bottom: 80px;
     }
   }
 
@@ -151,13 +222,15 @@
   .about-climat-online {
     margin-bottom: 100px;
 
-    &__content {
+    &__content,
+    &__monitoring-content {
       flex-direction: column;
       align-items: center;
       margin: 0 auto 100px;
     }
 
-    &__content::before {
+    &__content::before,
+    &__monitoring-content::before {
       display: none;
     }
 
@@ -165,9 +238,17 @@
       padding: 0 50px;
     }
 
+    &__desc {
+      margin-bottom: 50px;
+    }
+
     &__remark {
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &__monitoring-note {
+      margin-bottom: 100px;
     }
   }
 
@@ -176,6 +257,10 @@
 
     &--status {
       padding: 140px 30px 0;
+      margin-bottom: 50px;
+    }
+
+    &--minor-alarm {
       margin-bottom: 50px;
     }
   }
@@ -196,12 +281,23 @@
 
 @include mobile {
   .about-climat-online {
+    &__note {
+      margin-bottom: 15px;
+
+      font-size: 16px;
+      line-height: 20px;
+    }
+
     &__title {
       padding: 0;
     }
 
     &__remark {
       line-height: 26px;
+    }
+
+    &__monitoring-content {
+      margin-bottom: 50px;
     }
   }
 

@@ -1,0 +1,98 @@
+.mobile-control-app {
+  max-width: 1410px;
+  margin: 0 auto 160px;
+  min-height: 600px;
+  padding: 50px;
+
+  text-align: center;
+
+  background-image: url("../img/mobile-control-app_bg.png");
+  background-size: 1410px auto;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/mobile-control-app_bg@2x.png");
+  }
+
+  &__icon {
+    width: 289px;
+    height: 64px;
+    margin: 0 auto 50px;
+
+    background-image: url("../img/mobile-control-app_icon.svg");
+  }
+
+  &__desc {
+    max-width: 690px;
+    margin: 0 auto 25px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+  }
+
+  &__link {
+    @include transition;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #00adef;
+
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid #00adef;
+    }
+  }
+}
+
+@include desktop-medium {
+  .mobile-control-app {
+    max-width: 100%;
+
+    background-position: center;
+
+    &__desc {
+      max-width: 760px;
+
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+
+@include tablet {
+  .mobile-control-app {
+    padding-top: 80px;
+  }
+}
+
+@include mobile-l {
+  .mobile-control-app {
+    padding-top: 50px;
+    margin-bottom: 100px;
+
+    background-size: auto 65%;
+    background-position: bottom left;
+    background-color: #f7f7f7;
+
+    &__icon {
+      width: 216px;
+      height: 48px;
+      background-size: cover;
+    }
+  }
+}
+
+@include mobile {
+  .mobile-control-app {
+    padding: 50px 5% 210px;
+    min-height: auto;
+
+    background-size: auto 50%;
+    background-position: bottom left;
+  }
+}
