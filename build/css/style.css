@@ -4178,7 +4178,7 @@ a {
   width: 100%;
   font-weight: 300;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   text-align: center;
 }
@@ -4215,10 +4215,10 @@ a {
 
 .equipment__item-title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-weight: 300;
-  font-size: 48px;
-  line-height: 53px;
+  font-size: 40px;
+  line-height: 48px;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -4227,7 +4227,7 @@ a {
   margin: 0;
   margin-bottom: 25px;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 27px;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -4238,7 +4238,7 @@ a {
 .equipment__app-desc {
   margin: 0;
   font-size: 15px;
-  line-height: 22px;
+  line-height: 23px;
   text-align: center;
 }
 
@@ -4270,7 +4270,7 @@ a {
   padding: 0 60px;
   font-weight: 300;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   text-align: center;
 }
@@ -4286,7 +4286,7 @@ a {
   }
   .equipment__desc {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 23px;
     letter-spacing: 0px;
   }
   .equipment__item {
@@ -4369,13 +4369,30 @@ a {
     display: block;
     padding-bottom: 40px;
   }
+  .equipment__header {
+    width: 417px;
+    height: 219px;
+    background-size: 417px auto;
+  }
   .equipment__item {
-    max-width: 336px;
+    width: 417px;
     margin: 0 auto;
+  }
+  .equipment__item-content {
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .equipment__list-title {
+    font-size: 15px;
+    line-height: 23px;
   }
   .equipment__item-link {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  .equipment__slide:nth-of-type(2) .equipment__app-desc {
+    margin-bottom: 50px;
   }
   .equipment__pagination {
     bottom: -20px;
@@ -4383,7 +4400,7 @@ a {
   .equipment__remark {
     margin-top: 50px;
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
   }
 }
 
@@ -4399,7 +4416,11 @@ a {
     padding: 0 16px;
   }
   .equipment__item {
-    max-width: 288px;
+    width: 288px;
+  }
+  .equipment__header {
+    width: 288px;
+    height: 152px;
   }
   .equipment__header {
     min-height: 152px;
@@ -4420,7 +4441,7 @@ a {
   }
   .equipment__list-title {
     font-size: 15px;
-    line-height: 17px;
+    line-height: 23px;
   }
   .equipment__remark {
     width: 288px;
@@ -4760,7 +4781,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   color: #000;
   z-index: 1;
 }
@@ -4772,7 +4793,7 @@ section.questions input + label::before {
 .to-programs p:nth-of-type(2) {
   margin-bottom: 10px;
   font-size: 15px;
-  line-height: 22px;
+  line-height: 23px;
   color: rgba(136, 136, 136, 0.8);
 }
 
@@ -4804,7 +4825,7 @@ section.questions input + label::before {
   }
   .to-programs p:nth-of-type(2) {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
   }
   .to-programs h2 {
     text-align: center;
@@ -4853,8 +4874,15 @@ section.questions input + label::before {
     background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 100%), url("../img/daichi-comfort-big.png") bottom -70px right -40px/cover no-repeat;
   }
   .to-programs__mobile-control {
-    background-size: 335px auto;
-    background-position: bottom right 50%;
+    background: url("../img/app-showcase-icon-medium.png") bottom right 50%/335px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
+    background: url("../img/app-showcase-icon-medium.png") bottom right 50%/335px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .to-programs__mobile-control {
+    background: url("../img/app-showcase-icon-medium@2x.png") bottom right 50%/335px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
+    background: url("../img/app-showcase-icon-medium@2x.png") bottom right 50%/335px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
   }
 }
 
@@ -4879,12 +4907,22 @@ section.questions input + label::before {
     background-color: #e7e9e8;
   }
   .to-programs__mobile-control {
-    background-size: 250px auto;
-    background-position: bottom right 10px;
+    background: url("../img/app-showcase-icon-medium.png") bottom right 10px/250px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
+    background: url("../img/app-showcase-icon-medium.png") bottom right 10px/250px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
   }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .to-programs__mobile-control {
+    background: url("../img/app-showcase-icon-medium@2x.png") bottom right 10px/250px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
+    background: url("../img/app-showcase-icon-medium@2x.png") bottom right 10px/250px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
+  }
+}
+
+@media (max-width: 767px) {
   .to-programs p {
     font-size: 15px;
-    line-height: 16px;
+    line-height: 23px;
     text-align: left;
     margin: 0 0 25px;
     max-width: 250px;
@@ -4917,7 +4955,7 @@ section.questions input + label::before {
     max-width: 250px;
     margin: 0 auto 25px;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 23px;
   }
   .to-programs p:nth-of-type(2) {
     text-align: center;
@@ -4934,9 +4972,19 @@ section.questions input + label::before {
   }
   .to-programs__mobile-control {
     padding-bottom: 357px;
-    background-size: 300px auto;
-    background-position: bottom -10px right calc(50% + 15px), bottom right;
+    background: url("../img/app-showcase-icon-medium.png") bottom -10px right calc(50% + 15px)/300px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
+    background: url("../img/app-showcase-icon-medium.png") bottom -10px right calc(50% + 15px)/300px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
   }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .to-programs__mobile-control {
+    background: url("../img/app-showcase-icon-medium@2x.png") bottom -10px right calc(50% + 15px)/300px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
+    background: url("../img/app-showcase-icon-medium@2x.png") bottom -10px right calc(50% + 15px)/300px auto no-repeat, linear-gradient(180deg, #7FB0F8, #D5D3FF);
+  }
+}
+
+@media (max-width: 479px) {
   .to-programs__my-comfort {
     padding-bottom: 357px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big.png") bottom -40px right -40px/cover no-repeat;
@@ -5221,7 +5269,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   margin-bottom: 50px;
   color: #ffffff;
@@ -5230,7 +5278,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .promo-split__desc {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -5273,7 +5321,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   line-height: 24px;
   text-align: center;
@@ -5284,7 +5332,7 @@ section.questions input + label::before {
   .promo-split__adapter p,
   .promo-split__app p {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -5587,7 +5635,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   width: 83%;
   margin: 0 auto;
@@ -5597,7 +5645,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .split-control__desc {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -5639,7 +5687,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   position: relative;
   padding-left: 30px;
@@ -5648,7 +5696,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .split-control__property {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -6011,7 +6059,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   width: 83%;
   margin: 0 auto 80px;
@@ -6021,7 +6069,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .working-scheme-split__desc {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -6044,7 +6092,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   width: 32%;
   padding: 0 60px;
@@ -6056,7 +6104,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .working-scheme-split__item {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -6867,7 +6915,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   margin-bottom: 50px;
   color: #ffffff;
@@ -6876,7 +6924,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .promo-vrf__desc {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -7219,7 +7267,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   width: 83%;
   margin: 0 auto;
@@ -7229,7 +7277,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .vrf-control__desc {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -7272,7 +7320,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   position: relative;
   padding-left: 30px;
@@ -7281,7 +7329,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .vrf-control__property {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -7643,7 +7691,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   width: 83%;
   margin: 0 auto 80px;
@@ -7653,7 +7701,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .working-scheme-vrf__desc {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -7670,7 +7718,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   width: 83%;
   margin: 0 auto 55px;
@@ -7680,7 +7728,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .working-scheme-vrf__item {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -8177,7 +8225,7 @@ section.questions input + label::before {
   margin: 0 0 25px;
   font-weight: 300;
   font-size: 15px;
-  line-height: 17px;
+  line-height: 23px;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -8208,7 +8256,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   max-width: 690px;
   margin-bottom: 50px;
@@ -8217,7 +8265,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .promo-climat-online__desc {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -8273,7 +8321,7 @@ section.questions input + label::before {
   max-width: 1516px;
   padding-left: 53px;
   padding-right: 53px;
-  padding-top: 396px;
+  padding-top: 300px;
 }
 
 @media (max-width: 1399px) {
@@ -8327,13 +8375,13 @@ section.questions input + label::before {
 
 @media (max-width: 1023px) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 300px, transparent 360px), url("../img/daichi-climat-online-big.png") bottom left calc(50% - 50px)/1200px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 300px, rgba(246, 245, 251, 0) 360px), url("../img/daichi-climat-online-big.png") bottom left calc(50% - 50px)/1200px auto no-repeat;
   }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 300px, transparent 360px), url("../img/daichi-climat-online-big@2x.png") bottom left calc(50% - 50px)/1200px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 300px, rgba(246, 245, 251, 0) 360px), url("../img/daichi-climat-online-big@2x.png") bottom left calc(50% - 50px)/1200px auto no-repeat;
   }
 }
 
@@ -8365,13 +8413,13 @@ section.questions input + label::before {
 
 @media (max-width: 767px) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 360px), url("../img/daichi-climat-online-big.png") bottom left calc(50% - 50px)/880px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, rgba(246, 245, 251, 0) 360px), url("../img/daichi-climat-online-big.png") bottom left calc(50% - 50px)/880px auto no-repeat;
   }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 360px), url("../img/daichi-climat-online-big@2x.png") bottom left calc(50% - 50px)/880px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, rgba(246, 245, 251, 0) 360px), url("../img/daichi-climat-online-big@2x.png") bottom left calc(50% - 50px)/880px auto no-repeat;
   }
 }
 
@@ -8393,25 +8441,25 @@ section.questions input + label::before {
 
 @media (max-width: 479px) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 350px), url("../img/daichi-climat-online-medium.png") top 290px right/100% auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, rgba(246, 245, 251, 0) 350px), url("../img/daichi-climat-online-medium.png") top 290px right/100% auto no-repeat;
   }
 }
 
 @media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 350px), url("../img/daichi-climat-online-medium@2x.png") top 290px right/100% auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, rgba(246, 245, 251, 0) 350px), url("../img/daichi-climat-online-medium@2x.png") top 290px right/100% auto no-repeat;
   }
 }
 
 @media (max-width: 479px) and (max-width: 410px) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 350px), url("../img/daichi-climat-online-medium.png") top 290px right/410px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, rgba(246, 245, 251, 0) 350px), url("../img/daichi-climat-online-medium.png") top 290px right/410px auto no-repeat;
   }
 }
 
 @media (max-width: 479px) and (max-width: 410px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (max-width: 410px) and (min-resolution: 144dpi), (max-width: 479px) and (max-width: 410px) and (min-resolution: 1.5dppx) {
   .promo-climat-online {
-    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, transparent 350px), url("../img/daichi-climat-online-medium@2x.png") top 290px right/410px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 310px, rgba(246, 245, 251, 0) 350px), url("../img/daichi-climat-online-medium@2x.png") top 290px right/410px auto no-repeat;
   }
 }
 
@@ -8526,7 +8574,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   line-height: 27px;
   letter-spacing: 0.63px;
@@ -8535,7 +8583,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .engineering-center__desc {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -8745,7 +8793,7 @@ section.questions input + label::before {
   max-width: 1170px;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   text-align: center;
 }
 
@@ -8782,7 +8830,7 @@ section.questions input + label::before {
 .about-climat-online__remark {
   margin: 0;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   text-align: center;
 }
 
@@ -8791,7 +8839,7 @@ section.questions input + label::before {
   max-width: 1170px;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   text-align: center;
 }
 
@@ -8829,7 +8877,7 @@ section.questions input + label::before {
   margin-bottom: 25px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   text-align: center;
 }
@@ -8838,7 +8886,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
   text-align: center;
 }
 
@@ -8849,7 +8897,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .about-climat-online__note {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 27px;
   }
   .about-climat-online__content, .about-climat-online__monitoring-content {
     max-width: 918px;
@@ -8857,30 +8905,30 @@ section.questions input + label::before {
   }
   .about-climat-online__desc {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
   }
   .about-climat-online__engineering-center-scheme {
     margin-bottom: 50px;
   }
   .about-climat-online__remark {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
   }
   .about-climat-online__monitoring-note {
     max-width: 918px;
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
   }
   .about-climat-online__item {
     width: 365px;
   }
   .about-climat-online__item-title {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
   }
   .about-climat-online__item-desc {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
   }
 }
 
@@ -9284,7 +9332,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   width: 690px;
   margin-bottom: 50px;
@@ -9296,7 +9344,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .promo-my-comfort__desc {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -10637,7 +10685,7 @@ section.questions input + label::before {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   position: relative;
   padding-left: 30px;
@@ -10646,7 +10694,7 @@ section.questions input + label::before {
 @media (max-width: 1399px) {
   .my-comfort-order__item {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
     letter-spacing: 0;
   }
 }
@@ -10852,14 +10900,14 @@ section.questions input + label::before {
   margin: 0 0 50px;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
 }
 
 .promo-climat-online__longlife-slogan {
   margin: 0;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
 }
 
 .promo-climat-online__logo {
@@ -10875,11 +10923,11 @@ section.questions input + label::before {
   }
   .promo-climat-online__longlife-desc {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
   }
   .promo-climat-online__longlife-slogan {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
   }
 }
 
@@ -10960,7 +11008,7 @@ section.questions input + label::before {
   margin: 0 auto 25px;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   color: #000;
 }
 
@@ -10969,7 +11017,7 @@ section.questions input + label::before {
   transition: all 0.2s ease;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   text-decoration: none;
   color: #00adef;
   border-bottom: 1px solid transparent;
@@ -10987,7 +11035,7 @@ section.questions input + label::before {
   .mobile-control-app__desc {
     max-width: 760px;
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
   }
 }
 

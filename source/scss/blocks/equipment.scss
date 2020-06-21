@@ -37,7 +37,7 @@
 
   font-weight: 300;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   text-align: center;
 }
@@ -114,11 +114,11 @@
 
 .equipment__item-title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 
   font-weight: 300;
-  font-size: 48px;
-  line-height: 53px;
+  font-size: 40px;
+  line-height: 48px;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -128,7 +128,7 @@
   margin-bottom: 25px;
 
   font-size: 18px;
-  line-height: 21px;
+  line-height: 27px;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -140,7 +140,7 @@
   margin: 0;
 
   font-size: 15px;
-  line-height: 22px;
+  line-height: 23px;
   text-align: center;
 }
 
@@ -174,7 +174,7 @@
 
   font-weight: 300;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
   letter-spacing: 0.63px;
   text-align: center;
 }
@@ -220,7 +220,7 @@
 
   .equipment__desc {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 23px;
     letter-spacing: 0px;
   }
 
@@ -325,13 +325,35 @@
     padding-bottom: 40px;
   }
 
+  .equipment__header {
+    width: 417px;
+    height: 219px;
+
+    background-size: 417px auto;
+  }
+
   .equipment__item {
-    max-width: 336px;
+    width: 417px;
     margin: 0 auto;
+  }
+
+  .equipment__item-content {
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .equipment__list-title {
+    font-size: 15px;
+    line-height: 23px;
   }
 
   .equipment__item-link {
     box-sizing: border-box;
+  }
+
+  .equipment__slide:nth-of-type(2) .equipment__app-desc {
+    margin-bottom: 50px;
   }
 
   .equipment__pagination {
@@ -342,7 +364,7 @@
     margin-top: 50px;
 
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
   }
 }
 
@@ -361,7 +383,12 @@
   }
 
   .equipment__item {
-    max-width: 288px;
+    width: 288px;
+  }
+
+  .equipment__header {
+    width: 288px;
+    height: 152px;
   }
 
   .equipment__header {
@@ -389,7 +416,7 @@
 
   .equipment__list-title {
     font-size: 15px;
-    line-height: 17px;
+    line-height: 23px;
   }
 
   .equipment__remark {

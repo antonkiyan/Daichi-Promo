@@ -163,7 +163,7 @@
 
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   color: #000;
 
   z-index: 1;
@@ -176,7 +176,7 @@
     margin-bottom: 10px;
 
     font-size: 15px;
-    line-height: 22px;
+    line-height: 23px;
 
     color: rgba(136, 136, 136, 0.8);
   }
@@ -216,7 +216,7 @@
 
     &:nth-of-type(2) {
       font-size: 15px;
-      line-height: 22px;
+      line-height: 23px;
     }
   }
 
@@ -279,8 +279,18 @@
   }
 
   .to-programs__mobile-control {
-    background-size: 335px auto;
-    background-position: bottom right 50%;
+    //background-size: 335px auto;
+    //background-position: bottom right 50%;
+
+    background:
+      url("../img/app-showcase-icon-medium.png") bottom right 50% /335px auto no-repeat,
+      linear-gradient(180deg, #7FB0F8, #D5D3FF);
+
+    @include retina {
+      background:
+        url("../img/app-showcase-icon-medium@2x.png") bottom right 50% /335px auto no-repeat,
+        linear-gradient(180deg, #7FB0F8, #D5D3FF);
+    }
   }
 }
 
@@ -308,13 +318,23 @@
   }
 
   .to-programs__mobile-control {
-    background-size: 250px auto;
-    background-position: bottom right 10px;
+    //background-size: 250px auto;
+    //background-position: bottom right 10px;
+
+    background:
+      url("../img/app-showcase-icon-medium.png") bottom right 10px /250px auto no-repeat,
+      linear-gradient(180deg, #7FB0F8, #D5D3FF);
+
+    @include retina {
+      background:
+        url("../img/app-showcase-icon-medium@2x.png") bottom right 10px /250px auto no-repeat,
+        linear-gradient(180deg, #7FB0F8, #D5D3FF);
+    }
   }
 
   .to-programs p {
     font-size: 15px;
-    line-height: 16px;
+    line-height: 23px;
     text-align: left;
     margin: 0 0 25px;
     max-width: 250px;
@@ -352,7 +372,7 @@
       margin: 0 auto 25px;
 
       font-size: 15px;
-      line-height: 20px;
+      line-height: 23px;
     }
 
     &:nth-of-type(2) {
@@ -375,10 +395,20 @@
   .to-programs__mobile-control {
     padding-bottom: 357px;
 
-    background-size: 300px auto;
-    background-position:
-      bottom -10px right calc(50% + 15px),
-      bottom right;
+    // background-size: 300px auto;
+    // background-position:
+    //   bottom -10px right calc(50% + 15px),
+    //   bottom right;
+
+    background:
+      url("../img/app-showcase-icon-medium.png") bottom -10px right calc(50% + 15px) /300px auto no-repeat,
+      linear-gradient(180deg, #7FB0F8, #D5D3FF);
+
+    @include retina {
+      background:
+        url("../img/app-showcase-icon-medium@2x.png") bottom -10px right calc(50% + 15px) /300px auto no-repeat,
+        linear-gradient(180deg, #7FB0F8, #D5D3FF);
+    }
   }
 
   .to-programs__my-comfort {
