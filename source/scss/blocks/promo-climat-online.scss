@@ -21,6 +21,7 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 23px;
+    letter-spacing: 0.5px;
     color: rgba(0, 0, 0, 0.8);
   }
 
@@ -130,12 +131,6 @@
       linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 300px, rgba(246, 245, 251, 0) 360px),
       url("../img/daichi-climat-online-big.png") bottom left calc(50% - 50px)/1200px auto no-repeat;
 
-    @include retina {
-      background:
-      linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 300px, rgba(246, 245, 251, 0) 360px),
-      url("../img/daichi-climat-online-big@2x.png") bottom left calc(50% - 50px)/1200px auto no-repeat;
-    }
-
     &__note {
       margin-bottom: 15px;
 
@@ -174,12 +169,6 @@
     background:
       linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 310px, rgba(246, 245, 251, 0) 360px),
       url("../img/daichi-climat-online-big.png") bottom left calc(50% - 50px)/880px auto no-repeat;
-
-    @include retina {
-      background:
-      linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 310px, rgba(246, 245, 251, 0) 360px),
-      url("../img/daichi-climat-online-big@2x.png") bottom left calc(50% - 50px)/880px auto no-repeat;
-    }
 
     &__title {
       width: 70%;

@@ -90,15 +90,15 @@
   //   opacity: 1;
   // }
 
-  @include retina {
-    // background-image: url("../img/daichi-comfort@2x.png");
-    // background-repeat: no-repeat;
-    // background-size: 960px auto;
+  // @include retina {
+  //   // background-image: url("../img/daichi-comfort@2x.png");
+  //   // background-repeat: no-repeat;
+  //   // background-size: 960px auto;
 
-    background:
-    linear-gradient(to right, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 20%, rgba(247, 247, 247, 0) 100%),
-    url("../img/daichi-comfort@2x.png") top right/960px auto no-repeat;
-  }
+  //   background:
+  //   linear-gradient(to right, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 20%, rgba(247, 247, 247, 0) 100%),
+  //   url("../img/daichi-comfort@2x.png") top right/960px auto no-repeat;
+  // }
 }
 
 .to-programs__mobile-control {
@@ -177,8 +177,8 @@
 
     font-size: 15px;
     line-height: 23px;
-
-    color: rgba(136, 136, 136, 0.8);
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.8);
   }
 }
 
