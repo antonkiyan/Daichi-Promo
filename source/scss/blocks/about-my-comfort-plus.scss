@@ -16,6 +16,7 @@
 
 .about-my-comfort-plus__first {
   min-height: 758px;
+  margin-bottom: 162px;
 
   background-image: url("../img/family-on-couch.png");
   background-repeat: no-repeat;
@@ -42,5 +43,105 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 27px;
+  }
+}
+
+.about-my-comfort-plus__second {
+  @include container;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+
+.about-my-comfort-plus__benefit {
+  max-width: 450px;
+  padding-top: 152px;
+
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &-desc {
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #000;
+  }
+
+  &--service {
+    background-image: url("../img/icon_service-1.svg");
+  }
+
+  &--monitoring {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    background-image: url("../img/icon_monitoring-1.svg");
+  }
+
+  &--replace {
+    background-image: url("../img/icon_replace-1.svg");
+  }
+
+  &--48-hours {
+    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background-image: url("../img/icon_48-hours-1.svg");
+  }
+
+  &--assistant {
+    background-image: url("../img/icon_assistant-1.svg");
+  }
+}
+
+.about-my-comfort-plus__third {
+  @include container;
+
+  &-content {
+    padding: 183px 120px;
+
+    background-image: url("../img/promo-pic-comfort.png");
+    background-size: cover;
+  }
+
+  &-logo {
+    width: 350px;
+    height: 84px;
+    margin-left: auto;
+    margin-bottom: 50px;
+
+    background-image: url("../img/logo-my-comfort-plus.svg");
+    background-size: cover;
+  }
+
+  &-desc {
+    margin: 0;
+    margin-bottom: 50px;
+    margin-left: auto;
+    max-width: 500px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: right;
+    color: #000;
+  }
+
+  &-slogan {
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: right;
+    color: #000;
   }
 }

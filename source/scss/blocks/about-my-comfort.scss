@@ -1,440 +1,443 @@
+// .about-my-comfort {
+//   padding-top: 120px;
+
+//   &__container {
+//     @include container;
+//   }
+
+//   &__note {
+//     margin: 0;
+//     margin-bottom: 25px;
+
+//     font-size: 24px;
+//     line-height: 27px;
+//     color: rgba(136, 136, 136, 0.8);
+//     text-align: center;
+//   }
+
+//   &__title {
+//     @include title-font;
+
+//     margin-bottom: 105px;
+
+//     text-align: center;
+//   }
+
+//   &__remark {
+//     width: 100%;
+//     padding-top: 80px;
+//     padding-bottom: 80px;
+
+//     font-weight: 300;
+//     font-size: 32px;
+//     line-height: 37px;
+//     text-align: center;
+//     color: #ffffff;
+
+//     background: linear-gradient(102deg, #8aabc0, #485964);
+//   }
+
+//   &__remark p {
+//     max-width: 930px;
+//     margin: 0 auto;
+//   }
+
+//   &__remark p:first-child {
+//     margin-bottom: 50px;
+//   }
+// }
+
+// .about-my-comfort__first {
+//   min-height: 615px;
+//   margin-bottom: 160px;
+
+//   background:
+//     url("../img/daikin-2.png") top left calc(50% - 635px)/auto 615px no-repeat,
+//     url("../img/wi-fi-sign.png") top 74px left calc(50% - 30px)/auto 263px no-repeat;
+
+//   @include retina {
+//     background:
+//       url("../img/daikin-2@2x.png") top left calc(50% - 635px)/auto 615px no-repeat,
+//       url("../img/wi-fi-sign@2x.png") top 74px left calc(50% - 30px)/auto 263px no-repeat;
+//   }
+
+//   &-content {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     padding-right: 120px;
+//     padding-top: 62px;
+//   }
+// }
+
+// .about-my-comfort__item {
+//   width: 450px;
+
+//   font-weight: 300;
+//   font-size: 20px;
+//   line-height: 25px;
+//   letter-spacing: 0.7px;
+//   text-align: center;
+
+//   &--status {
+//     padding-top: 118px;
+//     margin-bottom: 80px;
+
+//     background: url("../img/icon_status-no-ring.svg") top center no-repeat;
+//   }
+
+//   &--replace {
+//     padding-top: 121px;
+
+//     background: url("../img/icon_replace.svg") top center no-repeat;
+//   }
+
+//   &--48hours {
+//     padding-top: 115px;
+//     margin-bottom: 80px;
+
+//     background: url("../img/icon_48hours.svg") top center no-repeat;
+//   }
+
+//   &--assistant {
+//     padding-top: 116px;
+
+//     background: url("../img/icon_assistant.svg") top center no-repeat;
+//   }
+// }
+
+// .about-my-comfort__second {
+//   padding-top: 80px;
+//   max-width: 1920px;
+//   margin: 0 auto 160px;
+
+//   background: url("../img/48hours.png") top right/auto 600px no-repeat;
+
+//   @include retina {
+//     background: url("../img/48hours@2x.png") top right/auto 600px no-repeat;
+//   }
+
+//   &-content {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 690px;
+//     padding-top: 80px;
+//     padding-bottom: 80px;
+
+//     background-color: #f6f6f6;
+//   }
+// }
+
+// @include desktop-medium {
+//   .about-my-comfort {
+//     &__note {
+//       font-size: 18px;
+//       line-height: 20px;
+//     }
+
+//     &__title {
+//       margin-bottom: 80px;
+//     }
+
+//     &__remark {
+//       font-size: 24px;
+//       line-height: 28px;
+//     }
+
+//     &__remark p {
+//       max-width: 918px;
+//     }
+//   }
+
+//   .about-my-comfort__first {
+//     min-height: auto;
+
+//     background:
+//       url("../img/daikin-2.png") top 96px left calc(50% - 405px)/auto 402px no-repeat,
+//       url("../img/wi-fi-sign.png") top 111px left calc(50% - 20px)/140px auto no-repeat;
+
+//     @include retina {
+//       background:
+//         url("../img/daikin-2@2x.png") top 96px left calc(50% - 405px)/auto 402px no-repeat,
+//         url("../img/wi-fi-sign@2x.png") top 111px left calc(50% - 20px)/140px auto no-repeat;
+//     }
+
+//     &-content {
+//       max-width: 918px;
+//       margin: 0 auto;
+//       padding: 0;
+//     }
+//   }
+
+//   .about-my-comfort__item {
+//     width: 365px;
+
+//     font-size: 18px;
+//     letter-spacing: 0.63px;
+
+//     &--status {
+//       margin-bottom: 50px;
+//     }
+
+//     &--48hours {
+//       padding-left: 10px;
+//       padding-right: 10px;
+//     }
+//   }
+
+//   .about-my-comfort__second {
+//     max-width: 1024px;
+
+//     background: url("../img/48hours-medium.png") top right/auto 489px no-repeat;
+
+//     @include retina {
+//       background: url("../img/48hours-medium@2x.png") top right/auto 489px no-repeat;
+//     }
+
+//     &-content {
+//       width: 444px;
+//     }
+//   }
+// }
+
+// @include tablet {
+//   .about-my-comfort {
+//     &__remark {
+//       font-size: 20px;
+//       line-height: 25px;
+//     }
+
+//     &__remark p {
+//       max-width: 704px;
+//     }
+
+//     &__remark p:first-child {
+//       margin-bottom: 25px;
+//     }
+//   }
+
+//   .about-my-comfort__first {
+//     margin-bottom: 80px;
+
+//     background:
+//       url("../img/daikin-2.png") bottom left calc(50% + 55px)/auto 364px no-repeat,
+//       url("../img/wi-fi-sign-vertical.png") bottom 389px left 50%/169px auto no-repeat;
+
+//     @include retina {
+//       background:
+//         url("../img/daikin-2@2x.png") bottom left calc(50% + 55px)/auto 364px no-repeat,
+//         url("../img/wi-fi-sign-vertical@2x.png") bottom 389px left 50%/169px auto no-repeat;
+//     }
+
+//     &-content {
+//       max-width: 704px;
+//       padding-bottom: 536px;
+//       flex-direction: row;
+//       justify-content: space-between;
+//       align-items: flex-start;
+//     }
+//   }
+
+//   .about-my-comfort__item {
+//     width: 336px;
+
+//     &--status {
+//       margin-bottom: 0;
+//     }
+
+//     &--48hours {
+//       width: 244px;
+//       margin-right: 32px;
+//       margin-bottom: 0;
+//     }
+
+//     &--assistant {
+//       width: 244px;
+//     }
+//   }
+
+//   .about-my-comfort__second {
+//     max-width: none;
+//     padding-bottom: 325px;
+//     padding-top: 0;
+//     margin-bottom: 80px;
+
+//     background: url("../img/48hours.png") top 375px center/100% auto no-repeat;
+
+//     @include retina {
+//       background: url("../img/48hours@2x.png") top 375px center/100% auto no-repeat;
+//     }
+
+//     &-content {
+//       width: 704px;
+//       margin: 0 auto;
+//       flex-direction: row;
+//       justify-content: center;
+//     }
+//   }
+// }
+
+// @include mobile-l {
+//   .about-my-comfort {
+//     padding-top: 80px;
+
+//     &__title {
+//       max-width: 416px;
+//       margin: 0 auto 80px;
+//     }
+
+//     &__container--second {
+//       padding: 0;
+//     }
+
+//     &__remark {
+//       padding: 50px 0;
+//       font-size: 18px;
+//     }
+
+//     &__remark p {
+//       max-width: 416px;
+//     }
+//   }
+
+//   .about-my-comfort__first {
+//     margin-bottom: 108px;
+
+//     background:
+//       url("../img/daikin-2.png") bottom left calc(50% + 30px)/auto 234px no-repeat,
+//       url("../img/wi-fi-sign-vertical.png") bottom 260px left 50%/169px auto no-repeat;
+
+//     @include retina {
+//       background:
+//         url("../img/daikin-2@2x.png") bottom left calc(50% + 30px)/auto 234px no-repeat,
+//         url("../img/wi-fi-sign-vertical@2x.png") bottom 260px left 50%/169px auto no-repeat;
+//     }
+
+//     &-content {
+//       max-width: 416px;
+//       padding-bottom: 447px;
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+
+//   .about-my-comfort__item {
+//     width: 416px;
+
+//     font-size: 15px;
+//     line-height: 20px;
+//     letter-spacing: 0px;
+
+//     &--status {
+//       margin-bottom: 50px;
+//       padding-left: 40px;
+//       padding-right: 40px;
+//     }
+
+//     &--replace {
+//       padding-left: 10px;
+//       padding-right: 10px;
+//     }
+
+//     &--48hours {
+//       margin-right: 0;
+//       margin-bottom: 50px;
+//       padding-left: 30px;
+//       padding-right: 30px;
+//     }
+
+//     &--assistant {
+//       padding-left: 20px;
+//       padding-right: 20px;
+//     }
+//   }
+
+//   .about-my-comfort__second {
+//     padding-bottom: 325px;
+//     margin-bottom: 100px;
+
+//     background: url("../img/48hours.png") top 485px center/110% auto no-repeat;
+
+//     @include retina {
+//       background: url("../img/48hours@2x.png") top 485px center/110% auto no-repeat;
+//     }
+
+//     &-content {
+//       width: 100%;
+//       padding: 50px 0;
+
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+// }
+
+// @include mobile {
+//   .about-my-comfort {
+//     padding-top: 80px;
+//   }
+
+//   .about-my-comfort__first {
+//     margin-bottom: 100px;
+
+//     background:
+//       url("../img/daikin-2.png") bottom left calc(50% + 22px)/auto 164px no-repeat,
+//       url("../img/wi-fi-sign-vertical.png") bottom 182px left 50%/169px auto no-repeat;
+
+//     @include retina {
+//       background:
+//         url("../img/daikin-2@2x.png") bottom left calc(50% + 22px)/auto 164px no-repeat,
+//         url("../img/wi-fi-sign-vertical@2x.png") bottom 182px left 50%/169px auto no-repeat;
+//     }
+
+//     &-content {
+//       max-width: 416px;
+//       padding-bottom: 339px;
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+
+//   .about-my-comfort__item {
+//     width: 288px;
+
+//     &--status {
+//       padding-left: 20px;
+//       padding-right: 20px;
+//     }
+
+//     &--replace {
+//       padding-left: 0;
+//       padding-right: 0;
+//     }
+
+//     &--48hours {
+//       padding-left: 10px;
+//       padding-right: 10px;
+//     }
+
+//     &--assistant {
+//       padding-left: 10px;
+//       padding-right: 10px;
+//     }
+//   }
+
+//   .about-my-comfort__second {
+//     padding-bottom: 225px;
+//     margin-bottom: 100px;
+
+//     background: url("../img/48hours.png") top 506px center/110% auto no-repeat;
+
+//     @include retina {
+//       background: url("../img/48hours@2x.png") top 506px center/110% auto no-repeat;
+//     }
+//   }
+// }
+
 .about-my-comfort {
-  padding-top: 120px;
-
-  &__container {
-    @include container;
-  }
-
-  &__note {
-    margin: 0;
-    margin-bottom: 25px;
-
-    font-size: 24px;
-    line-height: 27px;
-    color: rgba(136, 136, 136, 0.8);
-    text-align: center;
-  }
-
-  &__title {
-    @include title-font;
-
-    margin-bottom: 105px;
-
-    text-align: center;
-  }
-
-  &__remark {
-    width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 37px;
-    text-align: center;
-    color: #ffffff;
-
-    background: linear-gradient(102deg, #8aabc0, #485964);
-  }
-
-  &__remark p {
-    max-width: 930px;
-    margin: 0 auto;
-  }
-
-  &__remark p:first-child {
-    margin-bottom: 50px;
-  }
+  display: block;
 }
-
-.about-my-comfort__first {
-  min-height: 615px;
-  margin-bottom: 160px;
-
-  background:
-    url("../img/daikin-2.png") top left calc(50% - 635px)/auto 615px no-repeat,
-    url("../img/wi-fi-sign.png") top 74px left calc(50% - 30px)/auto 263px no-repeat;
-
-  @include retina {
-    background:
-      url("../img/daikin-2@2x.png") top left calc(50% - 635px)/auto 615px no-repeat,
-      url("../img/wi-fi-sign@2x.png") top 74px left calc(50% - 30px)/auto 263px no-repeat;
-  }
-
-  &-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 120px;
-    padding-top: 62px;
-  }
-}
-
-.about-my-comfort__item {
-  width: 450px;
-
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.7px;
-  text-align: center;
-
-  &--status {
-    padding-top: 118px;
-    margin-bottom: 80px;
-
-    background: url("../img/icon_status-no-ring.svg") top center no-repeat;
-  }
-
-  &--replace {
-    padding-top: 121px;
-
-    background: url("../img/icon_replace.svg") top center no-repeat;
-  }
-
-  &--48hours {
-    padding-top: 115px;
-    margin-bottom: 80px;
-
-    background: url("../img/icon_48hours.svg") top center no-repeat;
-  }
-
-  &--assistant {
-    padding-top: 116px;
-
-    background: url("../img/icon_assistant.svg") top center no-repeat;
-  }
-}
-
-.about-my-comfort__second {
-  padding-top: 80px;
-  max-width: 1920px;
-  margin: 0 auto 160px;
-
-  background: url("../img/48hours.png") top right/auto 600px no-repeat;
-
-  @include retina {
-    background: url("../img/48hours@2x.png") top right/auto 600px no-repeat;
-  }
-
-  &-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 690px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    background-color: #f6f6f6;
-  }
-}
-
-@include desktop-medium {
-  .about-my-comfort {
-    &__note {
-      font-size: 18px;
-      line-height: 20px;
-    }
-
-    &__title {
-      margin-bottom: 80px;
-    }
-
-    &__remark {
-      font-size: 24px;
-      line-height: 28px;
-    }
-
-    &__remark p {
-      max-width: 918px;
-    }
-  }
-
-  .about-my-comfort__first {
-    min-height: auto;
-
-    background:
-      url("../img/daikin-2.png") top 96px left calc(50% - 405px)/auto 402px no-repeat,
-      url("../img/wi-fi-sign.png") top 111px left calc(50% - 20px)/140px auto no-repeat;
-
-    @include retina {
-      background:
-        url("../img/daikin-2@2x.png") top 96px left calc(50% - 405px)/auto 402px no-repeat,
-        url("../img/wi-fi-sign@2x.png") top 111px left calc(50% - 20px)/140px auto no-repeat;
-    }
-
-    &-content {
-      max-width: 918px;
-      margin: 0 auto;
-      padding: 0;
-    }
-  }
-
-  .about-my-comfort__item {
-    width: 365px;
-
-    font-size: 18px;
-    letter-spacing: 0.63px;
-
-    &--status {
-      margin-bottom: 50px;
-    }
-
-    &--48hours {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-  .about-my-comfort__second {
-    max-width: 1024px;
-
-    background: url("../img/48hours-medium.png") top right/auto 489px no-repeat;
-
-    @include retina {
-      background: url("../img/48hours-medium@2x.png") top right/auto 489px no-repeat;
-    }
-
-    &-content {
-      width: 444px;
-    }
-  }
-}
-
-@include tablet {
-  .about-my-comfort {
-    &__remark {
-      font-size: 20px;
-      line-height: 25px;
-    }
-
-    &__remark p {
-      max-width: 704px;
-    }
-
-    &__remark p:first-child {
-      margin-bottom: 25px;
-    }
-  }
-
-  .about-my-comfort__first {
-    margin-bottom: 80px;
-
-    background:
-      url("../img/daikin-2.png") bottom left calc(50% + 55px)/auto 364px no-repeat,
-      url("../img/wi-fi-sign-vertical.png") bottom 389px left 50%/169px auto no-repeat;
-
-    @include retina {
-      background:
-        url("../img/daikin-2@2x.png") bottom left calc(50% + 55px)/auto 364px no-repeat,
-        url("../img/wi-fi-sign-vertical@2x.png") bottom 389px left 50%/169px auto no-repeat;
-    }
-
-    &-content {
-      max-width: 704px;
-      padding-bottom: 536px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-  }
-
-  .about-my-comfort__item {
-    width: 336px;
-
-    &--status {
-      margin-bottom: 0;
-    }
-
-    &--48hours {
-      width: 244px;
-      margin-right: 32px;
-      margin-bottom: 0;
-    }
-
-    &--assistant {
-      width: 244px;
-    }
-  }
-
-  .about-my-comfort__second {
-    max-width: none;
-    padding-bottom: 325px;
-    padding-top: 0;
-    margin-bottom: 80px;
-
-    background: url("../img/48hours.png") top 375px center/100% auto no-repeat;
-
-    @include retina {
-      background: url("../img/48hours@2x.png") top 375px center/100% auto no-repeat;
-    }
-
-    &-content {
-      width: 704px;
-      margin: 0 auto;
-      flex-direction: row;
-      justify-content: center;
-    }
-  }
-}
-
-@include mobile-l {
-  .about-my-comfort {
-    padding-top: 80px;
-
-    &__title {
-      max-width: 416px;
-      margin: 0 auto 80px;
-    }
-
-    &__container--second {
-      padding: 0;
-    }
-
-    &__remark {
-      padding: 50px 0;
-      font-size: 18px;
-    }
-
-    &__remark p {
-      max-width: 416px;
-    }
-  }
-
-  .about-my-comfort__first {
-    margin-bottom: 108px;
-
-    background:
-      url("../img/daikin-2.png") bottom left calc(50% + 30px)/auto 234px no-repeat,
-      url("../img/wi-fi-sign-vertical.png") bottom 260px left 50%/169px auto no-repeat;
-
-    @include retina {
-      background:
-        url("../img/daikin-2@2x.png") bottom left calc(50% + 30px)/auto 234px no-repeat,
-        url("../img/wi-fi-sign-vertical@2x.png") bottom 260px left 50%/169px auto no-repeat;
-    }
-
-    &-content {
-      max-width: 416px;
-      padding-bottom: 447px;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  .about-my-comfort__item {
-    width: 416px;
-
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0px;
-
-    &--status {
-      margin-bottom: 50px;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    &--replace {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &--48hours {
-      margin-right: 0;
-      margin-bottom: 50px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &--assistant {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-
-  .about-my-comfort__second {
-    padding-bottom: 325px;
-    margin-bottom: 100px;
-
-    background: url("../img/48hours.png") top 485px center/110% auto no-repeat;
-
-    @include retina {
-      background: url("../img/48hours@2x.png") top 485px center/110% auto no-repeat;
-    }
-
-    &-content {
-      width: 100%;
-      padding: 50px 0;
-
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-}
-
-@include mobile {
-  .about-my-comfort {
-    padding-top: 80px;
-  }
-
-  .about-my-comfort__first {
-    margin-bottom: 100px;
-
-    background:
-      url("../img/daikin-2.png") bottom left calc(50% + 22px)/auto 164px no-repeat,
-      url("../img/wi-fi-sign-vertical.png") bottom 182px left 50%/169px auto no-repeat;
-
-    @include retina {
-      background:
-        url("../img/daikin-2@2x.png") bottom left calc(50% + 22px)/auto 164px no-repeat,
-        url("../img/wi-fi-sign-vertical@2x.png") bottom 182px left 50%/169px auto no-repeat;
-    }
-
-    &-content {
-      max-width: 416px;
-      padding-bottom: 339px;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  .about-my-comfort__item {
-    width: 288px;
-
-    &--status {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &--replace {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &--48hours {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &--assistant {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-  .about-my-comfort__second {
-    padding-bottom: 225px;
-    margin-bottom: 100px;
-
-    background: url("../img/48hours.png") top 506px center/110% auto no-repeat;
-
-    @include retina {
-      background: url("../img/48hours@2x.png") top 506px center/110% auto no-repeat;
-    }
-  }
-}
-
 
 
 
