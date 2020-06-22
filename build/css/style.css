@@ -1092,7 +1092,6 @@ html {
 body {
   min-width: 320px;
   margin: 0 auto;
-  font-family: "Gotham Pro", "Arial", "Helvetica", "Helvetica CY", "Nimbus Sans";
   font-style: normal;
 }
 
@@ -4831,8 +4830,8 @@ section.questions input + label::before {
     background-size: cover;
   }
   .to-programs__my-comfort {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big.png") top right/cover no-repeat;
-    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 60%), url("../img/daichi-comfort-big.png") top right/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big-1.png") top right/cover no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 60%), url("../img/daichi-comfort-big-1.png") top right/cover no-repeat;
   }
   .to-programs__mobile-control {
     background: url("../img/app-showcase-icon-medium.png") bottom center/310px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
@@ -4864,8 +4863,8 @@ section.questions input + label::before {
     background-image: url("../img/daichi-climat-online-tablet@2x.png");
   }
   .to-programs__my-comfort {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), to(rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big.png") bottom -70px right -40px/cover no-repeat;
-    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 100%), url("../img/daichi-comfort-big.png") bottom -70px right -40px/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), to(rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big-1.png") bottom -70px right -40px/cover no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 100%), url("../img/daichi-comfort-big-1.png") bottom -70px right -40px/cover no-repeat;
   }
   .to-programs__mobile-control {
     background: url("../img/app-showcase-icon-medium.png") bottom right 50%/335px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
@@ -4897,7 +4896,7 @@ section.questions input + label::before {
     background-image: url("../img/daichi-climat-online-mobile-l@2x.png");
   }
   .to-programs__my-comfort {
-    background: url("../img/daichi-comfort-big.png") center right -20px/cover no-repeat;
+    background: url("../img/daichi-comfort-big-1.png") center right -20px/cover no-repeat;
     background-color: #e7e9e8;
   }
   .to-programs__mobile-control {
@@ -4981,8 +4980,8 @@ section.questions input + label::before {
 @media (max-width: 479px) {
   .to-programs__my-comfort {
     padding-bottom: 357px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big.png") bottom -40px right -40px/cover no-repeat;
-    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 60%), url("../img/daichi-comfort-big.png") bottom -40px right -40px/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big-1.png") bottom -40px right -40px/cover no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 60%), url("../img/daichi-comfort-big-1.png") bottom -40px right -40px/cover no-repeat;
     background-color: #e7e9e8;
   }
 }
@@ -9278,12 +9277,20 @@ section.questions input + label::before {
   }
 }
 
+.promo-my-comfort__note {
+  margin: 0 0 25px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .promo-my-comfort__title {
   margin: 0;
   font-weight: 300;
   font-size: 48px;
   line-height: 53px;
-  width: 450px;
   margin-bottom: 50px;
 }
 
@@ -9307,10 +9314,10 @@ section.questions input + label::before {
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.63px;
-  width: 690px;
+  max-width: 705px;
   margin-bottom: 50px;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 27px;
   letter-spacing: 0px;
 }
 
@@ -9374,7 +9381,7 @@ section.questions input + label::before {
   max-width: 1516px;
   padding-left: 53px;
   padding-right: 53px;
-  padding-top: 410px;
+  padding-top: 320px;
 }
 
 @media (max-width: 1399px) {
@@ -9427,7 +9434,7 @@ section.questions input + label::before {
     line-height: 46px;
   }
   .promo-my-comfort__desc {
-    width: 48%;
+    max-width: 48%;
     margin-bottom: 0;
     font-size: 18px;
     line-height: 25px;
@@ -9460,7 +9467,7 @@ section.questions input + label::before {
     text-align: center;
   }
   .promo-my-comfort__desc {
-    width: 704px;
+    max-width: 704px;
     margin: 0 auto;
     font-size: 15px;
     line-height: 23px;
@@ -9494,7 +9501,7 @@ section.questions input + label::before {
     line-height: 27px;
   }
   .promo-my-comfort__desc {
-    width: 100%;
+    max-width: 100%;
   }
   .promo-my-comfort__container {
     padding-top: 60px;
@@ -9991,8 +9998,30 @@ section.questions input + label::before {
 }
 
 .about-my-comfort-plus {
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 120px;
+}
+
+.about-my-comfort-plus__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort-plus__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort-plus__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .about-my-comfort-plus__container {
@@ -10030,547 +10059,32 @@ section.questions input + label::before {
   }
 }
 
-.about-my-comfort-plus__container--third {
-  background: url("../img/car.png") top left/690px auto no-repeat;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__container--third {
-    background: url("../img/car@2x.png") top left/690px auto no-repeat;
-  }
-}
-
-.about-my-comfort-plus__title {
-  margin: 0;
-  font-weight: 300;
-  font-size: 48px;
-  line-height: 53px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-@media (max-width: 1399px) {
-  .about-my-comfort-plus__title {
-    font-size: 32px;
-    line-height: 35px;
-  }
-}
-
-@media (max-width: 767px) {
-  .about-my-comfort-plus__title {
-    font-size: 24px;
-    line-height: 28px;
-  }
-}
-
-.about-my-comfort-plus__remark {
-  width: 100%;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 37px;
-  text-align: center;
-  color: #ffffff;
-  background: linear-gradient(102deg, #0a202f, #14415e);
-}
-
-.about-my-comfort-plus__remark p {
-  max-width: 930px;
-  margin: 0 auto;
-}
-
-.about-my-comfort-plus__remark p:first-child {
-  margin-bottom: 50px;
-}
-
 .about-my-comfort-plus__first {
-  min-height: 400px;
-  margin-bottom: 160px;
-  background: url("../img/daikin-1.png") top left calc(50% - 700px)/auto 400px no-repeat, url("../img/wi-fi-sign.png") top 82px left calc(50% - 10px)/auto 237px no-repeat;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__first {
-    background: url("../img/daikin-1@2x.png") top left calc(50% - 700px)/auto 400px no-repeat, url("../img/wi-fi-sign@2x.png") top 82px left calc(50% - 10px)/auto 237px no-repeat;
-  }
+  min-height: 758px;
+  background-image: url("../img/family-on-couch.png");
+  background-repeat: no-repeat;
+  background-position: center left calc(50% + 630px);
 }
 
 .about-my-comfort-plus__first-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-right: 120px;
-  padding-top: 106px;
+  max-width: 690px;
+  padding-top: 55px;
 }
 
-.about-my-comfort-plus__item {
-  width: 450px;
+.about-my-comfort-plus__first-title {
+  margin: 0;
+  margin-bottom: 50px;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.7px;
-  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000;
 }
 
-.about-my-comfort-plus__item--service {
-  padding-top: 140px;
-  background: url("../img/icon_service.svg") top center no-repeat;
-}
-
-.about-my-comfort-plus__item--status {
-  padding-top: 118px;
-  margin-bottom: 80px;
-  background: url("../img/icon_status-no-ring.svg") top center no-repeat;
-}
-
-.about-my-comfort-plus__item--replace {
-  padding-top: 121px;
-  background: url("../img/icon_replace.svg") top center no-repeat;
-}
-
-.about-my-comfort-plus__item--48hours {
-  padding-top: 115px;
-  margin-bottom: 80px;
-  background: url("../img/icon_48hours.svg") top center no-repeat;
-}
-
-.about-my-comfort-plus__item--assistant {
-  padding-top: 116px;
-  background: url("../img/icon_assistant.svg") top center no-repeat;
-}
-
-.about-my-comfort-plus__second {
-  padding-top: 80px;
-  max-width: 1920px;
-  margin: 0 auto 160px;
-  background: url("../img/service.png") top right/auto 600px no-repeat;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__second {
-    background: url("../img/service@2x.png") top right/auto 600px no-repeat;
-  }
-}
-
-.about-my-comfort-plus__second-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 690px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: #f6f6f6;
-}
-
-.about-my-comfort-plus__third {
-  margin-bottom: 139px;
-}
-
-.about-my-comfort-plus__third-content {
-  width: 450px;
-  margin-left: auto;
-  margin-right: 120px;
-  padding-bottom: 21px;
-}
-
-@media (max-width: 1399px) {
-  .about-my-comfort-plus {
-    padding-bottom: 120px;
-  }
-  .about-my-comfort-plus__container--third {
-    background: url("../img/car.png") top 16px left 53px/523px auto no-repeat;
-  }
-}
-
-@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__container--third {
-    background: url("../img/car@2x.png") top 16px left 53px/523px auto no-repeat;
-  }
-}
-
-@media (max-width: 1399px) {
-  .about-my-comfort-plus__remark {
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .about-my-comfort-plus__remark p {
-    max-width: 918px;
-  }
-  .about-my-comfort-plus__first {
-    min-height: 254px;
-    background: url("../img/daikin-1.png") top left calc(50% - 435px)/auto 254px no-repeat, url("../img/wi-fi-sign.png") top 16px left calc(50% - 5px)/140px auto no-repeat;
-  }
-}
-
-@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__first {
-    background: url("../img/daikin-1@2x.png") top left calc(50% - 435px)/auto 254px no-repeat, url("../img/wi-fi-sign@2x.png") top 16px left calc(50% - 5px)/140px auto no-repeat;
-  }
-}
-
-@media (max-width: 1399px) {
-  .about-my-comfort-plus__first-content {
-    max-width: 918px;
-    margin: 0 auto;
-    padding-right: 0;
-    padding-top: 40px;
-  }
-  .about-my-comfort-plus__item {
-    width: 365px;
-    font-size: 18px;
-    letter-spacing: 0.63px;
-  }
-  .about-my-comfort-plus__item--service {
-    padding-top: 123px;
-    background-size: auto 73px;
-  }
-  .about-my-comfort-plus__item--status {
-    padding-top: 114px;
-    margin-bottom: 50px;
-  }
-  .about-my-comfort-plus__item--replace {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .about-my-comfort-plus__item--48hours {
-    margin-bottom: 50px;
-  }
-  .about-my-comfort-plus__item--assistant {
-    padding-top: 115px;
-  }
-  .about-my-comfort-plus__second {
-    max-width: 1024px;
-    margin: 0 auto 140px;
-    background: url("../img/service-medium.png") top right/auto 600px no-repeat;
-  }
-}
-
-@media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 144dpi), (max-width: 1399px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__second {
-    background: url("../img/service-medium@2x.png") top right/auto 600px no-repeat;
-  }
-}
-
-@media (max-width: 1399px) {
-  .about-my-comfort-plus__second-content {
-    width: 444px;
-  }
-  .about-my-comfort-plus__third {
-    max-width: 1024px;
-    margin: 0 auto 160px;
-  }
-  .about-my-comfort-plus__third-content {
-    width: 365px;
-    margin-left: auto;
-    margin-right: 0;
-    padding-bottom: 0;
-  }
-}
-
-@media (max-width: 1023px) {
-  .about-my-comfort-plus {
-    padding-bottom: 80px;
-  }
-  .about-my-comfort-plus__container--third {
-    background: url("../img/car.png") bottom center/523px auto no-repeat;
-  }
-}
-
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__container--third {
-    background: url("../img/car@2x.png") bottom center/523px auto no-repeat;
-  }
-}
-
-@media (max-width: 1023px) {
-  .about-my-comfort-plus__remark p {
-    max-width: 640px;
-  }
-  .about-my-comfort-plus__remark p:first-child {
-    margin-bottom: 25px;
-  }
-  .about-my-comfort-plus__first {
-    min-height: auto;
-    margin-bottom: 80px;
-    background: url("../img/daikin-1.png") top left calc(50% - 335px)/auto 163px no-repeat, url("../img/wi-fi-sign.png") top 16px left calc(50% - 55px)/90px auto no-repeat;
-  }
-}
-
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__first {
-    background: url("../img/daikin-1@2x.png") top left calc(50% - 335px)/auto 163px no-repeat, url("../img/wi-fi-sign@2x.png") top 16px left calc(50% - 55px)/90px auto no-repeat;
-  }
-}
-
-@media (max-width: 1023px) {
-  .about-my-comfort-plus__first-content {
-    max-width: 704px;
-    padding-top: 0;
-  }
-  .about-my-comfort-plus__item {
-    width: 336px;
-  }
-  .about-my-comfort-plus__item--status {
-    width: 244px;
-    margin-bottom: 0;
-    margin-right: 32px;
-    padding-right: 14px;
-    padding-left: 14px;
-  }
-  .about-my-comfort-plus__item--replace {
-    width: 244px;
-  }
-  .about-my-comfort-plus__item--48hours {
-    margin-bottom: 0;
-    margin-right: 32px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .about-my-comfort-plus__second {
-    max-width: none;
-    margin: 0 auto 80px;
-    padding: 0 0 325px;
-    background: linear-gradient(180deg, #ffffff 0, #ffffff 507px, transparent 507px), url("../img/service.png") bottom -70px right/100% auto no-repeat;
-  }
-}
-
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__second {
-    background: linear-gradient(180deg, #ffffff 0, #ffffff 507px, transparent 507px), url("../img/service@2x.png") bottom -70px right/100% auto no-repeat;
-  }
-}
-
-@media (max-width: 1023px) {
-  .about-my-comfort-plus__second-content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 704px;
-    margin: 0 auto;
-  }
-  .about-my-comfort-plus__third {
-    max-width: 768px;
-    margin: 0 auto 80px;
-  }
-  .about-my-comfort-plus__third-content {
-    width: 704px;
-    padding-bottom: 374px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .about-my-comfort-plus {
-    padding-top: 100px;
-  }
-  .about-my-comfort-plus__container--third {
-    background: url("../img/car.png") bottom center/480px auto no-repeat;
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__container--third {
-    background: url("../img/car@2x.png") bottom center/480px auto no-repeat;
-  }
-}
-
-@media (max-width: 767px) {
-  .about-my-comfort-plus__container--second {
-    padding: 0;
-  }
-  .about-my-comfort-plus__title {
-    max-width: 416px;
-    margin: 0 auto 50px;
-  }
-  .about-my-comfort-plus__remark {
-    padding: 50px 0;
-    font-size: 18px;
-    letter-spacing: 0.63px;
-  }
-  .about-my-comfort-plus__remark p {
-    max-width: 416px;
-  }
-  .about-my-comfort-plus__first {
-    margin-bottom: 100px;
-    padding-bottom: 280px;
-    background: url("../img/daikin-1.png") bottom left 50%/auto 143px no-repeat, url("../img/wi-fi-sign-vertical.png") bottom 148px left 50%/142px auto no-repeat;
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__first {
-    background: url("../img/daikin-1@2x.png") bottom left 50%/auto 143px no-repeat, url("../img/wi-fi-sign-vertical@2x.png") bottom 148px left 50%/142px auto no-repeat;
-  }
-}
-
-@media (max-width: 767px) {
-  .about-my-comfort-plus__first-content {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about-my-comfort-plus__item {
-    width: 416px;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0px;
-  }
-  .about-my-comfort-plus__item--service {
-    margin-right: 0;
-    padding-right: 60px;
-    padding-left: 60px;
-  }
-  .about-my-comfort-plus__item--status {
-    margin-bottom: 50px;
-    margin-right: 0;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  .about-my-comfort-plus__item--48hours {
-    margin-bottom: 50px;
-    margin-right: 0;
-    padding-right: 70px;
-    padding-left: 70px;
-  }
-  .about-my-comfort-plus__item--assistant {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .about-my-comfort-plus__second {
-    margin: 0 auto 100px;
-    background: linear-gradient(180deg, #ffffff 0, #ffffff 507px, transparent 507px), url("../img/service.png") bottom right/110% auto no-repeat;
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__second {
-    background: linear-gradient(180deg, #ffffff 0, #ffffff 507px, transparent 507px), url("../img/service@2x.png") bottom right/110% auto no-repeat;
-  }
-}
-
-@media (max-width: 767px) {
-  .about-my-comfort-plus__second-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    padding: 50px 0;
-  }
-  .about-my-comfort-plus__third {
-    margin: 0 auto 50px;
-  }
-  .about-my-comfort-plus__third-content {
-    width: 100%;
-    padding-bottom: 348px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media (max-width: 479px) {
-  .about-my-comfort-plus__container--third {
-    background: url("../img/car.png") bottom center/320px auto no-repeat;
-  }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__container--third {
-    background: url("../img/car@2x.png") bottom center/320px auto no-repeat;
-  }
-}
-
-@media (max-width: 479px) {
-  .about-my-comfort-plus__first {
-    padding-bottom: 263px;
-    background: url("../img/daikin-1.png") bottom left 50%/320px auto no-repeat, url("../img/wi-fi-sign-vertical.png") bottom 133px left 50%/142px auto no-repeat;
-  }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__first {
-    background: url("../img/daikin-1@2x.png") bottom left 50%/320px auto no-repeat, url("../img/wi-fi-sign-vertical@2x.png") bottom 133px left 50%/142px auto no-repeat;
-  }
-}
-
-@media (max-width: 479px) {
-  .about-my-comfort-plus__item {
-    width: 288px;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0px;
-  }
-  .about-my-comfort-plus__item--service {
-    padding-right: 37px;
-    padding-left: 37px;
-  }
-  .about-my-comfort-plus__item--status {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .about-my-comfort-plus__item--replace {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .about-my-comfort-plus__item--48hours {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  .about-my-comfort-plus__item--assistant {
-    padding-right: 22px;
-    padding-left: 22px;
-  }
-  .about-my-comfort-plus__second {
-    padding-bottom: 225px;
-    background: linear-gradient(180deg, #ffffff 0, #ffffff 570px, transparent 570px), url("../img/service.png") bottom right/110% auto no-repeat;
-  }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .about-my-comfort-plus__second {
-    background: linear-gradient(180deg, #ffffff 0, #ffffff 570px, transparent 570px), url("../img/service@2x.png") bottom right/110% auto no-repeat;
-  }
-}
-
-@media (max-width: 479px) {
-  .about-my-comfort-plus__third-content {
-    padding-bottom: 250px;
-  }
+.about-my-comfort-plus__first-desc {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .my-comfort-order {
@@ -10839,7 +10353,7 @@ section.questions input + label::before {
   }
 }
 
-.promo-climat-online__longlife {
+.promo__longlife {
   max-width: 1170px;
   margin: 0 auto;
   padding-top: 120px;
@@ -10847,7 +10361,7 @@ section.questions input + label::before {
   text-align: center;
 }
 
-.promo-climat-online__longlife-title {
+.promo__longlife-title {
   margin: 0;
   font-weight: 300;
   font-size: 48px;
@@ -10856,95 +10370,118 @@ section.questions input + label::before {
 }
 
 @media (max-width: 1399px) {
-  .promo-climat-online__longlife-title {
+  .promo__longlife-title {
     font-size: 32px;
     line-height: 35px;
   }
 }
 
 @media (max-width: 767px) {
-  .promo-climat-online__longlife-title {
+  .promo__longlife-title {
     font-size: 24px;
     line-height: 28px;
   }
 }
 
-.promo-climat-online__longlife-desc {
+.promo__longlife-desc {
   margin: 0 0 50px;
   font-weight: 300;
   font-size: 18px;
   line-height: 27px;
 }
 
-.promo-climat-online__longlife-slogan {
+.promo__longlife-slogan {
   margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
 }
 
-.promo-climat-online__logo {
+.promo__logo {
   width: 265px;
   height: 72px;
   margin: 0 auto 100px;
   background-image: url("../img/climat-online-logo.svg");
 }
 
+.promo__logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.promo__logo-my-comfort {
+  width: 283px;
+  height: 72px;
+  background-image: url("../img/logo-my-comfort.svg");
+}
+
+.promo__logo-my-comfort-plus {
+  width: 300px;
+  height: 72px;
+  margin-right: 80px;
+  background-image: url("../img/logo-my-comfort-plus.svg");
+}
+
 @media (max-width: 1399px) {
-  .promo-climat-online__longlife-title br {
+  .promo__longlife-title br {
     display: none;
   }
-  .promo-climat-online__longlife-desc {
+  .promo__longlife-desc {
     font-size: 15px;
     line-height: 23px;
   }
-  .promo-climat-online__longlife-slogan {
+  .promo__longlife-slogan {
     font-size: 15px;
     line-height: 23px;
   }
 }
 
 @media (max-width: 1023px) {
-  .promo-climat-online__longlife-title {
+  .promo__longlife-title {
     max-width: 550px;
     margin: 0 auto 80px;
     font-size: 32px;
     line-height: 35px;
   }
-  .promo-climat-online__longlife-desc {
+  .promo__longlife-desc {
     max-width: 704px;
     margin: 0 auto 50px;
   }
-  .promo-climat-online__longlife-slogan {
+  .promo__longlife-slogan {
     margin: 0 auto;
     max-width: 450px;
   }
-  .promo-climat-online__logo {
+  .promo__logo {
     margin-bottom: 80px;
   }
 }
 
 @media (max-width: 767px) {
-  .promo-climat-online__longlife {
+  .promo__longlife {
     padding-top: 100px;
     padding-bottom: 20px;
   }
-  .promo-climat-online__longlife-title {
+  .promo__longlife-title {
     max-width: 416px;
     font-size: 24px;
     line-height: 27px;
   }
-  .promo-climat-online__longlife-desc, .promo-climat-online__longlife-slogan {
+  .promo__longlife-desc, .promo__longlife-slogan {
     max-width: 90%;
   }
 }
 
 @media (max-width: 479px) {
-  .promo-climat-online__longlife-title {
+  .promo__longlife-title {
     max-width: 80%;
     margin-bottom: 50px;
   }
-  .promo-climat-online__logo {
+  .promo__logo {
     margin-bottom: 50px;
     width: 177px;
     height: 48px;
