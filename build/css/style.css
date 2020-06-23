@@ -1092,6 +1092,7 @@ html {
 body {
   min-width: 320px;
   margin: 0 auto;
+  font-family: "Gotham Pro", "Arial", "Helvetica", "Helvetica CY", "Nimbus Sans";
   font-style: normal;
 }
 
@@ -4171,6 +4172,12 @@ a {
   margin-bottom: 80px;
 }
 
+.equipment__title--comfort {
+  margin-bottom: 80px;
+  font-size: 40px;
+  line-height: 48px;
+}
+
 .equipment__desc {
   margin: 0;
   margin-bottom: 80px;
@@ -4283,6 +4290,9 @@ a {
     font-size: 32px;
     line-height: 35px;
   }
+  .equipment__title--comfort {
+    padding: 0;
+  }
   .equipment__desc {
     font-size: 15px;
     line-height: 23px;
@@ -4304,6 +4314,10 @@ a {
     font-size: 32px;
     line-height: 35px;
     letter-spacing: 0.32px;
+  }
+  .equipment__remark {
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 
@@ -4356,6 +4370,9 @@ a {
     font-size: 24px;
     line-height: 27px;
   }
+  .equipment__title--comfort {
+    margin-bottom: 50px;
+  }
   .equipment__desc {
     max-width: 416px;
     width: auto;
@@ -4407,6 +4424,9 @@ a {
   .equipment {
     padding: 0;
     margin-bottom: 100px;
+  }
+  .equipment--comfort {
+    margin-bottom: 50px;
   }
   .equipment__title {
     padding: 0 16px;
@@ -4725,6 +4745,12 @@ section.questions input + label::before {
   background-position: top right;
 }
 
+@media (max-width: 1540px) {
+  .to-programs__climat-online {
+    background-position: top right -80px;
+  }
+}
+
 .to-programs__my-comfort {
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #f7f7f7), color-stop(20%, #f7f7f7), to(rgba(247, 247, 247, 0))), url("../img/daichi-comfort.png") top right/960px auto no-repeat;
   background: linear-gradient(to right, #f7f7f7 0, #f7f7f7 20%, rgba(247, 247, 247, 0) 100%), url("../img/daichi-comfort.png") top right/960px auto no-repeat;
@@ -4826,8 +4852,7 @@ section.questions input + label::before {
     width: auto;
   }
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-medium@2x.png");
-    background-size: cover;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 200px, rgba(246, 245, 251, 0) 260px), url("../img/daichi-climat-online-2.png") top 200px center/115% auto no-repeat;
   }
   .to-programs__my-comfort {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big-1.png") top right/cover no-repeat;
@@ -4860,7 +4885,7 @@ section.questions input + label::before {
     display: none;
   }
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-tablet@2x.png");
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 200px, rgba(246, 245, 251, 0) 260px), url("../img/daichi-climat-online-2.png") top 200px right -100px/200% auto no-repeat;
   }
   .to-programs__my-comfort {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), to(rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big-1.png") bottom -70px right -40px/cover no-repeat;
@@ -4893,7 +4918,8 @@ section.questions input + label::before {
     min-height: 290px;
   }
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-mobile-l@2x.png");
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #f6f5fb), color-stop(42%, #f6f5fb), color-stop(54%, rgba(246, 245, 251, 0))), url("../img/daichi-climat-online-2.png") center right -80px/auto 100% no-repeat;
+    background: linear-gradient(to right, #f6f5fb 0, #f6f5fb 42%, rgba(246, 245, 251, 0) 54%), url("../img/daichi-climat-online-2.png") center right -80px/auto 100% no-repeat;
   }
   .to-programs__my-comfort {
     background: url("../img/daichi-comfort-big-1.png") center right -20px/cover no-repeat;
@@ -4961,8 +4987,20 @@ section.questions input + label::before {
     padding: 25px 5%;
   }
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-mobile@2x.png");
+    padding-bottom: 367px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f5fb), color-stop(32%, #f6f5fb), color-stop(44%, rgba(246, 245, 251, 0))), url("../img/daichi-climat-online-medium.png") right top 160px/110% auto no-repeat;
+    background: linear-gradient(to bottom, #f6f5fb 0, #f6f5fb 32%, rgba(246, 245, 251, 0) 44%), url("../img/daichi-climat-online-medium.png") right top 160px/110% auto no-repeat;
   }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .to-programs__climat-online {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f5fb), color-stop(32%, #f6f5fb), color-stop(44%, rgba(246, 245, 251, 0))), url("../img/daichi-climat-online-medium@2x.png") right top 160px/110% auto no-repeat;
+    background: linear-gradient(to bottom, #f6f5fb 0, #f6f5fb 32%, rgba(246, 245, 251, 0) 44%), url("../img/daichi-climat-online-medium@2x.png") right top 160px/110% auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
   .to-programs__mobile-control {
     padding-bottom: 357px;
     background: url("../img/app-showcase-icon-medium.png") bottom -10px right calc(50% + 15px)/300px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
@@ -9269,6 +9307,7 @@ section.questions input + label::before {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  background-color: #e6e8e7;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -9423,7 +9462,7 @@ section.questions input + label::before {
 
 @media (max-width: 1399px) and (max-width: 1300px) {
   .promo-my-comfort {
-    background-position: top right -40px;
+    background-position: top right -80px;
   }
 }
 
@@ -9434,11 +9473,10 @@ section.questions input + label::before {
     line-height: 46px;
   }
   .promo-my-comfort__desc {
-    max-width: 48%;
+    max-width: 440px;
     margin-bottom: 0;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.63px;
+    font-size: 15px;
+    line-height: 23px;
   }
   .promo-my-comfort__link {
     display: none;
@@ -9457,21 +9495,20 @@ section.questions input + label::before {
 @media (max-width: 1023px) {
   .promo-my-comfort {
     min-height: 959px;
-    background-size: auto 900px;
-    background-position: top 180px right;
-    background-color: #e6e8e7;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), #e6e8e7 url("../img/daichi-comfort-big.png") top 180px right/auto 900px no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 60%), #e6e8e7 url("../img/daichi-comfort-big.png") top 180px right/auto 900px no-repeat;
+  }
+  .promo-my-comfort__note {
+    text-align: center;
   }
   .promo-my-comfort__title {
-    width: 380px;
+    width: auto;
     margin: 0 auto 25px;
     text-align: center;
   }
   .promo-my-comfort__desc {
     max-width: 704px;
     margin: 0 auto;
-    font-size: 15px;
-    line-height: 23px;
-    letter-spacing: 0px;
     text-align: center;
   }
   .promo-my-comfort__container {
@@ -9482,37 +9519,48 @@ section.questions input + label::before {
 @media (max-width: 767px) {
   .promo-my-comfort {
     min-height: 735px;
-    background-size: auto 690px;
-    background-position: top 130px right calc(50% + 240px);
-    background-color: #e6e8e7;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), #e6e8e7 url("../img/daichi-comfort-big.png") top 130px right calc(50% + 240px)/auto 690px no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 60%), #e6e8e7 url("../img/daichi-comfort-big.png") top 130px right calc(50% + 240px)/auto 690px no-repeat;
   }
 }
 
 @media (max-width: 767px) and (max-width: 600px) {
   .promo-my-comfort {
-    background-position: top 130px right -60px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(30%, #f7f7f7), color-stop(60%, rgba(247, 247, 247, 0))), #e6e8e7 url("../img/daichi-comfort-big.png") top 130px right -60px/auto 690px no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 30%, rgba(247, 247, 247, 0) 60%), #e6e8e7 url("../img/daichi-comfort-big.png") top 130px right -60px/auto 690px no-repeat;
   }
 }
 
 @media (max-width: 767px) {
   .promo-my-comfort__title {
     width: auto;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 32px;
+    line-height: 35px;
   }
   .promo-my-comfort__desc {
     max-width: 100%;
   }
   .promo-my-comfort__container {
-    padding-top: 60px;
+    padding-top: 50px;
   }
 }
 
 @media (max-width: 479px) {
   .promo-my-comfort {
     min-height: 503px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.6) 100%), #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(45%, #f7f7f7), color-stop(80%, rgba(247, 247, 247, 0))), #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+    background: linear-gradient(to bottom, #f7f7f7 0, #f7f7f7 45%, rgba(247, 247, 247, 0) 80%), #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+  }
+  .promo-my-comfort__note {
+    margin-bottom: 15px;
+  }
+  .promo-my-comfort__title {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .promo-my-comfort__desc {
+    font-size: 12px;
+    line-height: 23px;
   }
   .promo-my-comfort__container {
     padding-top: 40px;
@@ -9520,11 +9568,118 @@ section.questions input + label::before {
 }
 
 .about-my-comfort {
-  display: block;
+  padding-bottom: 160px;
+}
+
+.about-my-comfort__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-my-comfort__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-my-comfort__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.about-my-comfort__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.about-my-comfort__desc {
+  max-width: 1170px;
+  margin: 0 auto 100px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #000;
+}
+
+.about-my-comfort__logo {
+  width: 329px;
+  height: 84px;
+  margin: 0 auto;
+  background-image: url("../img/logo-my-comfort.svg");
+  background-size: cover;
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort__desc {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort {
+    padding-bottom: 100px;
+  }
+  .about-my-comfort__title {
+    margin-bottom: 25px;
+  }
+  .about-my-comfort__desc {
+    margin-bottom: 50px;
+  }
+  .about-my-comfort__logo {
+    width: 283px;
+    height: 72px;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-my-comfort__logo {
+    width: 189px;
+    height: 48px;
+  }
 }
 
 .about-my-comfort-plus {
   padding-top: 120px;
+  padding-bottom: 160px;
 }
 
 .about-my-comfort-plus__title {
@@ -9772,8 +9927,200 @@ section.questions input + label::before {
   color: #000;
 }
 
+@media (max-width: 1460px) {
+  .about-my-comfort-plus__second {
+    max-width: 1024px;
+  }
+  .about-my-comfort-plus__benefit {
+    max-width: 286px;
+  }
+  .about-my-comfort-plus__benefit-desc {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .about-my-comfort-plus__benefit--monitoring {
+    margin-bottom: 80px;
+  }
+  .about-my-comfort-plus__benefit--48-hours {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1399px) {
+  .about-my-comfort-plus__container--first {
+    min-height: 758px;
+  }
+  .about-my-comfort-plus__first {
+    background-position: center left calc(50% + 375px);
+  }
+  .about-my-comfort-plus__first-content {
+    max-width: 474px;
+    padding-right: 30px;
+    min-height: 758px;
+    background-color: #fff;
+  }
+  .about-my-comfort-plus__first-title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .about-my-comfort-plus__first-desc {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .about-my-comfort-plus__second {
+    max-width: 1024px;
+  }
+  .about-my-comfort-plus__benefit {
+    max-width: 286px;
+  }
+  .about-my-comfort-plus__benefit-desc {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .about-my-comfort-plus__benefit--monitoring {
+    margin-bottom: 80px;
+  }
+  .about-my-comfort-plus__benefit--48-hours {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about-my-comfort-plus__third {
+    padding: 0;
+  }
+  .about-my-comfort-plus__third-content {
+    padding: 196px 53px;
+  }
+  .about-my-comfort-plus__third-desc {
+    max-width: 440px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .about-my-comfort-plus__third-slogan {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-my-comfort-plus__container--first {
+    min-height: auto;
+    background-color: #fff;
+  }
+  .about-my-comfort-plus__first {
+    background-position: top -70px center;
+    background-size: contain;
+    min-height: auto;
+    padding-top: 39%;
+  }
+  .about-my-comfort-plus__first-content {
+    min-height: auto;
+    max-width: 704px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .about-my-comfort-plus__second {
+    max-width: 768px;
+    margin-bottom: 160px;
+  }
+  .about-my-comfort-plus__benefit {
+    max-width: 336px;
+  }
+  .about-my-comfort-plus__benefit:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  .about-my-comfort-plus__benefit--service {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about-my-comfort-plus__benefit--monitoring {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .about-my-comfort-plus__benefit--48-hours {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .about-my-comfort-plus__third-content {
+    padding: 100px 32px 292px;
+    background-position: left -130px top;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-my-comfort-plus {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .about-my-comfort-plus__title {
+    margin-bottom: 50px;
+  }
+  .about-my-comfort-plus__first {
+    padding-top: 62.5%;
+    margin-bottom: 50px;
+    background-position: top -20px center;
+  }
+  .about-my-comfort-plus__first-title {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .about-my-comfort-plus__second {
+    margin-bottom: 100px;
+  }
+  .about-my-comfort-plus__benefit {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-my-comfort-plus__benefit:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .about-my-comfort-plus__third-content {
+    padding: 180px 32px 305px;
+  }
+  .about-my-comfort-plus__third-logo {
+    width: 200px;
+    height: 48px;
+    margin: 0 auto 25px;
+  }
+  .about-my-comfort-plus__third-desc {
+    max-width: 416px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .about-my-comfort-plus__third-slogan {
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-my-comfort-plus__first {
+    padding-top: 94%;
+    background-position: top left calc(50% + 30px);
+    background-size: 132% auto;
+  }
+  .about-my-comfort-plus__benefit {
+    max-width: 288px;
+  }
+  .about-my-comfort-plus__benefit--service {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about-my-comfort-plus__third-content {
+    padding: 167px 5% 296px;
+  }
+  .about-my-comfort-plus__third-desc {
+    max-width: 288px;
+  }
+}
+
 .my-comfort-order {
-  margin-bottom: 160px;
+  margin-bottom: 80px;
 }
 
 .my-comfort-order__container {
@@ -9837,6 +10184,22 @@ section.questions input + label::before {
   line-height: 37px;
   letter-spacing: 0.32px;
   text-align: center;
+}
+
+.my-comfort-order__logo {
+  width: 223px;
+  height: 57px;
+  margin: 0 auto 50px;
+  background-image: url("../img/logo-my-comfort.svg");
+  background-size: cover;
+}
+
+.my-comfort-order__logo-plus {
+  width: 236px;
+  height: 57px;
+  margin: 0 auto 50px;
+  background-image: url("../img/logo-my-comfort-plus.svg");
+  background-size: cover;
 }
 
 .my-comfort-order__list {
@@ -9928,6 +10291,14 @@ section.questions input + label::before {
     line-height: 28px;
     letter-spacing: 0px;
   }
+  .my-comfort-order__logo {
+    width: 189px;
+    height: 48px;
+  }
+  .my-comfort-order__logo-plus {
+    width: 200px;
+    height: 48px;
+  }
   .my-comfort-order__list--left {
     margin-bottom: 25px;
   }
@@ -9939,6 +10310,8 @@ section.questions input + label::before {
   }
   .my-comfort-order__remark {
     max-width: 880px;
+    font-size: 15px;
+    line-height: 23px;
   }
   .my-comfort-order__side {
     width: 316px;
@@ -9953,7 +10326,7 @@ section.questions input + label::before {
   .my-comfort-order__content {
     max-width: 704px;
     padding-top: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     background: url("../img/happy-people-4-tablet.png") top center/contain no-repeat;
   }
 }
@@ -9981,6 +10354,9 @@ section.questions input + label::before {
 }
 
 @media (max-width: 767px) {
+  .my-comfort-order {
+    margin-bottom: 100px;
+  }
   .my-comfort-order__content {
     max-width: 352px;
     padding-top: 0;
@@ -9988,6 +10364,7 @@ section.questions input + label::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 50px;
     background: url("../img/happy-people-4.png") top 54% center/contain no-repeat;
   }
 }
@@ -10116,9 +10493,16 @@ section.questions input + label::before {
   .promo__longlife-title br {
     display: none;
   }
+  .promo__longlife-title--comfort br {
+    display: block;
+  }
   .promo__longlife-desc {
     font-size: 15px;
     line-height: 23px;
+  }
+  .promo__longlife-desc--comfort {
+    max-width: 918px;
+    margin: 0 auto 50px;
   }
   .promo__longlife-slogan {
     font-size: 15px;
@@ -10159,6 +10543,23 @@ section.questions input + label::before {
   .promo__longlife-desc, .promo__longlife-slogan {
     max-width: 90%;
   }
+  .promo__longlife-desc--comfort, .promo__longlife-slogan--comfort {
+    max-width: 87%;
+  }
+  .promo__logo-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+  .promo__logo-my-comfort-plus {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -10169,6 +10570,18 @@ section.questions input + label::before {
   .promo__logo {
     margin-bottom: 50px;
     width: 177px;
+    height: 48px;
+    background-size: cover;
+  }
+  .promo__logo-my-comfort {
+    width: 189px;
+    height: 48px;
+    margin-right: 11px;
+    background-size: cover;
+  }
+  .promo__logo-my-comfort-plus {
+    margin-bottom: 25px;
+    width: 200px;
     height: 48px;
     background-size: cover;
   }

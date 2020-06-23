@@ -1,5 +1,5 @@
 .my-comfort-order {
-  margin-bottom: 160px;
+  margin-bottom: 80px;
 
   &__container {
     @include container;
@@ -27,6 +27,24 @@
     line-height: 37px;
     letter-spacing: 0.32px;
     text-align: center;
+  }
+
+  &__logo {
+    width: 223px;
+    height: 57px;
+    margin: 0 auto 50px;
+
+    background-image: url("../img/logo-my-comfort.svg");
+    background-size: cover;
+  }
+
+  &__logo-plus {
+    width: 236px;
+    height: 57px;
+    margin: 0 auto 50px;
+
+    background-image: url("../img/logo-my-comfort-plus.svg");
+    background-size: cover;
   }
 
   &__list {
@@ -112,6 +130,16 @@
       letter-spacing: 0px;
     }
 
+    &__logo {
+      width: 189px;
+      height: 48px;
+    }
+
+    &__logo-plus {
+      width: 200px;
+      height: 48px;
+    }
+
     &__list--left {
       margin-bottom: 25px;
     }
@@ -126,6 +154,9 @@
 
     &__remark {
       max-width: 880px;
+
+      font-size: 15px;
+      line-height: 23px;
     }
   }
 
@@ -142,7 +173,7 @@
     &__content {
       max-width: 704px;
       padding-top: 300px;
-      margin-bottom: 50px;
+      margin-bottom: 80px;
 
       background: url("../img/happy-people-4-tablet.png") top center/contain no-repeat;
 
@@ -172,10 +203,13 @@
 
 @include mobile-l {
   .my-comfort-order {
+    margin-bottom: 100px;
+
     &__content {
       max-width: 352px;
       padding-top: 0;
       flex-direction: column;
+      margin-bottom: 50px;
 
       background: url("../img/happy-people-4.png") top 54% center/contain no-repeat;
 

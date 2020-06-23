@@ -436,7 +436,76 @@
 // }
 
 .about-my-comfort {
-  display: block;
+  padding-bottom: 160px;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    @include title-font;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+  }
+
+  &__desc {
+    max-width: 1170px;
+    margin: 0 auto 100px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #000;
+  }
+
+  &__logo {
+    width: 329px;
+    height: 84px;
+    margin: 0 auto;
+
+    background-image: url("../img/logo-my-comfort.svg");
+    background-size: cover;
+  }
+}
+
+@include desktop-medium {
+  .about-my-comfort {
+    &__desc {
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+}
+
+@include mobile-l {
+  .about-my-comfort {
+    padding-bottom: 100px;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__desc {
+      margin-bottom: 50px;
+    }
+
+    &__logo {
+      width: 283px;
+      height: 72px;
+    }
+  }
+}
+
+@include mobile {
+  .about-my-comfort {
+    &__logo {
+      width: 189px;
+      height: 48px;
+    }
+  }
 }
 
 

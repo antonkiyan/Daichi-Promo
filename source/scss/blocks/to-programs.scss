@@ -58,6 +58,10 @@
   background-repeat: no-repeat;
   background-position: top right;
 
+  @media (max-width: 1540px) {
+    background-position: top right -80px;
+  }
+
   // &::after {
   //   left: 0;
 
@@ -227,8 +231,13 @@
   }
 
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-medium@2x.png");
-    background-size: cover;
+    background:
+      linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 200px, rgba(246, 245, 251, 0) 260px),
+      url("../img/daichi-climat-online-2.png") top 200px center/115% auto no-repeat;
+
+    // background-image: url("../img/daichi-climat-online-2.png");
+    // background-size: 110% auto;
+    // background-position: bottom center;
   }
 
   .to-programs__my-comfort {
@@ -269,7 +278,9 @@
   }
 
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-tablet@2x.png");
+    background:
+      linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 200px, rgba(246, 245, 251, 0) 260px),
+      url("../img/daichi-climat-online-2.png") top 200px right -100px /200% auto no-repeat;
   }
 
   .to-programs__my-comfort {
@@ -307,7 +318,10 @@
   }
 
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-mobile-l@2x.png");
+    background:
+      linear-gradient(to right, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 42%, rgba(246, 245, 251, 0) 54%),
+      url("../img/daichi-climat-online-2.png") center right -80px /auto 100% no-repeat;
+    //background-image: url("../img/daichi-climat-online-mobile-l@2x.png");
   }
 
   .to-programs__my-comfort {
@@ -389,7 +403,18 @@
   }
 
   .to-programs__climat-online {
-    background-image: url("../img/daichi-climat-online-mobile@2x.png");
+    padding-bottom: 367px;
+
+    background:
+      linear-gradient(to bottom, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 32%, rgba(246, 245, 251, 0) 44%),
+      url("../img/daichi-climat-online-medium.png") right top 160px /110% auto no-repeat;
+    //background-image: url("../img/daichi-climat-online-mobile@2x.png");
+
+    @include retina {
+      background:
+      linear-gradient(to bottom, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 32%, rgba(246, 245, 251, 0) 44%),
+      url("../img/daichi-climat-online-medium@2x.png") right top 160px /110% auto no-repeat;
+    }
   }
 
   .to-programs__mobile-control {

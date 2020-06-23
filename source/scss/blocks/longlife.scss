@@ -64,9 +64,18 @@
       display: none;
     }
 
+    &-title--comfort br{
+      display: block;
+    }
+
     &-desc {
       font-size: 15px;
       line-height: 23px;
+    }
+
+    &-desc--comfort {
+      max-width: 918px;
+      margin: 0 auto 50px;
     }
 
     &-slogan {
@@ -118,6 +127,22 @@
     &-slogan {
       max-width: 90%;
     }
+
+    &-desc--comfort,
+    &-slogan--comfort {
+      max-width: 87%;
+    }
+  }
+
+  .promo__logo-box {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .promo__logo-my-comfort-plus {
+    margin-right: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -132,6 +157,23 @@
   .promo__logo {
     margin-bottom: 50px;
     width: 177px;
+    height: 48px;
+
+    background-size: cover;
+  }
+
+  .promo__logo-my-comfort {
+    width: 189px;
+    height: 48px;
+    margin-right: 11px;
+
+    background-size: cover;
+  }
+
+  .promo__logo-my-comfort-plus {
+    margin-bottom: 25px;
+
+    width: 200px;
     height: 48px;
 
     background-size: cover;

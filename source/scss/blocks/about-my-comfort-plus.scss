@@ -1,5 +1,6 @@
 .about-my-comfort-plus {
   padding-top: 120px;
+  padding-bottom: 160px;
 
   &__title {
     @include title-font;
@@ -143,5 +144,256 @@
     line-height: 53px;
     text-align: right;
     color: #000;
+  }
+}
+
+@media (max-width: 1460px) {
+  .about-my-comfort-plus__second {
+    max-width: 1024px;
+  }
+
+  .about-my-comfort-plus__benefit {
+    max-width: 286px;
+
+    &-desc {
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &--monitoring {
+      margin-bottom: 80px;
+    }
+
+    &--48-hours {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@include desktop-medium {
+  .about-my-comfort-plus {
+    &__container--first {
+      min-height: 758px;
+    }
+  }
+
+  .about-my-comfort-plus__first {
+    background-position: center left calc(50% + 375px);
+
+    &-content {
+      max-width: 474px;
+      padding-right: 30px;
+      min-height: 758px;
+
+      background-color: #fff;
+    }
+
+    &-title {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &-desc {
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+
+  .about-my-comfort-plus__second {
+    max-width: 1024px;
+  }
+
+  .about-my-comfort-plus__benefit {
+    max-width: 286px;
+
+    &-desc {
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &--monitoring {
+      margin-bottom: 80px;
+    }
+
+    &--48-hours {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .about-my-comfort-plus__third {
+    padding: 0;
+
+    &-content {
+      padding: 196px 53px;
+    }
+
+    &-desc {
+      max-width: 440px;
+
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &-slogan {
+      font-size: 32px;
+      line-height: 35px;
+    }
+  }
+}
+
+@include tablet {
+  .about-my-comfort-plus {
+    &__container--first {
+      min-height: auto;
+      background-color: #fff;
+    }
+  }
+
+  .about-my-comfort-plus__first {
+    background-position: top -70px center;
+    background-size: contain;
+
+    min-height: auto;
+    padding-top: 39%;
+
+    &-content {
+      min-height: auto;
+      max-width: 704px;
+      margin: 0 auto;
+      padding-right: 0;
+      padding-top: 50px;
+
+      text-align: center;
+    }
+  }
+
+  .about-my-comfort-plus__second {
+    max-width: 768px;
+    margin-bottom: 160px;
+  }
+
+  .about-my-comfort-plus__benefit {
+    max-width: 336px;
+
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+
+    &--service {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &--monitoring {
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    &--48-hours {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  .about-my-comfort-plus__third {
+    &-content {
+      padding: 100px 32px 292px;
+
+      background-position: left -130px top;
+    }
+  }
+}
+
+@include mobile-l {
+  .about-my-comfort-plus {
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+
+  .about-my-comfort-plus__first {
+    padding-top: 62.5%;
+    margin-bottom: 50px;
+
+    background-position: top -20px center;
+
+    &-title {
+      margin-bottom: 25px;
+
+      font-size: 24px;
+      line-height: 27px;
+    }
+  }
+
+  .about-my-comfort-plus__second {
+    margin-bottom: 100px;
+  }
+
+  .about-my-comfort-plus__benefit {
+    margin-left: 0;
+    margin-right: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  .about-my-comfort-plus__third {
+    &-content {
+      padding: 180px 32px 305px;
+    }
+
+    &-logo {
+      width: 200px;
+      height: 48px;
+      margin: 0 auto 25px;
+    }
+
+    &-desc {
+      max-width: 416px;
+      margin: 0 auto 25px;
+
+      text-align: center;
+    }
+
+    &-slogan {
+      font-size: 24px;
+      line-height: 27px;
+      text-align: center;
+    }
+  }
+}
+
+@include mobile {
+  .about-my-comfort-plus__first {
+    padding-top: 94%;
+
+    background-position: top left calc(50% + 30px);
+    background-size: 132% auto;
+  }
+
+  .about-my-comfort-plus__benefit {
+    max-width: 288px;
+
+    &--service {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .about-my-comfort-plus__third {
+    &-content {
+      padding: 167px 5% 296px;
+    }
+
+    &-desc {
+      max-width: 288px;
+    }
   }
 }

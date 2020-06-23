@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  background-color: #e6e8e7;
 
   @include retina {
     background-image: url("../img/daichi-comfort-big@2x.png");
@@ -112,7 +113,7 @@
     background-position: top right;
 
     @media (max-width: 1300px) {
-      background-position: top right -40px;
+      background-position: top right -80px;
     }
 
     &__title {
@@ -123,12 +124,11 @@
     }
 
     &__desc {
-      max-width: 48%;
+      max-width: 440px;
       margin-bottom: 0;
 
-      font-size: 18px;
-      line-height: 25px;
-      letter-spacing: 0.63px;
+      font-size: 15px;
+      line-height: 23px;
     }
 
     &__link {
@@ -154,12 +154,19 @@
   .promo-my-comfort {
     min-height: 959px;
 
-    background-size: auto 900px;
-    background-position: top 180px right;
-    background-color: #e6e8e7;
+    background:
+      linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 60%),
+      #e6e8e7 url("../img/daichi-comfort-big.png") top 180px right/auto 900px no-repeat;
+    // background-size: auto 900px;
+    // background-position: top 180px right;
+    // background-color: #e6e8e7;
+
+    &__note {
+      text-align: center;
+    }
 
     &__title {
-      width: 380px;
+      width: auto;
       margin: 0 auto 25px;
 
       text-align: center;
@@ -169,9 +176,6 @@
       max-width: 704px;
       margin: 0 auto;
 
-      font-size: 15px;
-      line-height: 23px;
-      letter-spacing: 0px;
       text-align: center;
     }
   }
@@ -185,19 +189,26 @@
   .promo-my-comfort {
     min-height: 735px;
 
-    background-size: auto 690px;
-    background-position: top 130px right calc(50% + 240px);
-    background-color: #e6e8e7;
+    background:
+      linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 60%),
+      #e6e8e7 url("../img/daichi-comfort-big.png") top 130px right calc(50% + 240px) /auto 690px no-repeat;
+
+    // background-size: auto 690px;
+    // background-position: top 130px right calc(50% + 240px);
+    // background-color: #e6e8e7;
 
     @media (max-width: 600px) {
-      background-position: top 130px right -60px;
+      background:
+        linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 60%),
+        #e6e8e7 url("../img/daichi-comfort-big.png") top 130px right -60px /auto 690px no-repeat;
+      //background-position: top 130px right -60px;
     }
 
     &__title {
       width: auto;
 
-      font-size: 24px;
-      line-height: 27px;
+      font-size: 32px;
+      line-height: 35px;
     }
 
     &__desc {
@@ -206,7 +217,7 @@
   }
 
   .promo-my-comfort__container {
-    padding-top: 60px;
+    padding-top: 50px;
   }
 }
 
@@ -219,8 +230,22 @@
     //background-color: #e6e8e7;
 
     background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.6) 100%),
+    linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 45%, rgba(247, 247, 247, 0) 80%),
     #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+
+    &__note {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 27px;
+    }
+
+    &__desc {
+      font-size: 12px;
+      line-height: 23px;
+    }
   }
 
   .promo-my-comfort__container {

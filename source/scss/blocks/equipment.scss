@@ -28,6 +28,13 @@
   &--climat-online {
     margin-bottom: 80px;
   }
+
+  &--comfort {
+    margin-bottom: 80px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .equipment__desc {
@@ -218,6 +225,10 @@
     line-height: 35px;
   }
 
+  .equipment__title--comfort {
+    padding: 0;
+  }
+
   .equipment__desc {
     font-size: 15px;
     line-height: 23px;
@@ -242,6 +253,11 @@
     font-size: 32px;
     line-height: 35px;
     letter-spacing: 0.32px;
+  }
+
+  .equipment__remark {
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 
@@ -310,6 +326,10 @@
     line-height: 27px;
   }
 
+  .equipment__title--comfort {
+    margin-bottom: 50px;
+  }
+
   .equipment__desc {
     max-width: 416px;
     width: auto;
@@ -372,6 +392,10 @@
   .equipment {
     padding: 0;
     margin-bottom: 100px;
+
+    &--comfort {
+      margin-bottom: 50px;
+    }
   }
 
   .equipment__title {
