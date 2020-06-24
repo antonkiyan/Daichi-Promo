@@ -5,14 +5,14 @@
   height: 100vh;
   max-height: 1200px;
 
-  background-image: url("../img/daichi-comfort-big.png");
+  background-image: url("../img/daichi-comfort-2.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   background-color: #e6e8e7;
 
   @include retina {
-    background-image: url("../img/daichi-comfort-big@2x.png");
+    background-image: url("../img/daichi-comfort-2@2x.jpg");
   }
 
   &__note {
@@ -101,7 +101,7 @@
 .promo-my-comfort__container {
   @include container;
 
-  padding-top: 320px;
+  padding-top: 360px;
 }
 
 @include desktop-medium {
@@ -146,7 +146,7 @@
   }
 
   .promo-my-comfort__container {
-    padding-top: 263px;
+    padding-top: 280px;
   }
 }
 
@@ -156,7 +156,7 @@
 
     background:
       linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 60%),
-      #e6e8e7 url("../img/daichi-comfort-big.png") top 180px right/auto 900px no-repeat;
+      #e6e8e7 url("../img/daichi-comfort-2.jpg") top 180px right/auto 900px no-repeat;
     // background-size: auto 900px;
     // background-position: top 180px right;
     // background-color: #e6e8e7;
@@ -191,7 +191,7 @@
 
     background:
       linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 60%),
-      #e6e8e7 url("../img/daichi-comfort-big.png") top 130px right calc(50% + 240px) /auto 690px no-repeat;
+      #e6e8e7 url("../img/daichi-comfort-2.jpg") top 130px right calc(50% + 240px) /auto 690px no-repeat;
 
     // background-size: auto 690px;
     // background-position: top 130px right calc(50% + 240px);
@@ -200,7 +200,7 @@
     @media (max-width: 600px) {
       background:
         linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 60%),
-        #e6e8e7 url("../img/daichi-comfort-big.png") top 130px right -60px /auto 690px no-repeat;
+        #e6e8e7 url("../img/daichi-comfort-2.jpg") top 130px right -60px /auto 690px no-repeat;
       //background-position: top 130px right -60px;
     }
 
@@ -231,7 +231,7 @@
 
     background:
     linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 45%, rgba(247, 247, 247, 0) 80%),
-    #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+    #e6e8e7 url("../img/daichi-comfort-2.jpg") top 75px right calc(50% + 240px)/auto 490px no-repeat;
 
     &__note {
       margin-bottom: 15px;

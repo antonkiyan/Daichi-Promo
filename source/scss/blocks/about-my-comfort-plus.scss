@@ -22,6 +22,11 @@
   background-image: url("../img/family-on-couch.png");
   background-repeat: no-repeat;
   background-position: center left calc(50% + 630px);
+  background-size: auto 758px;
+
+  @include retina {
+    background-image: url("../img/family-on-couch@2x.png");
+  }
 
   &-content {
     max-width: 690px;

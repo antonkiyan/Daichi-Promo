@@ -7,14 +7,14 @@
 
   position: relative;
 
-  padding-top: 377px;
+  padding-top: 300px;
   min-height: 950px;
   height: 100vh;
   max-height: 1200px;
 
   background-image: url("../img/app-showcase-icon.png");
   background-repeat: no-repeat;
-  background-position: top 184px right 53px;
+  background-position: top 100px right 53px;
 
   @include retina {
     background-image: url("../img/app-showcase-icon@2x.png");
@@ -28,9 +28,8 @@
   max-width: 50%;
 
   font-weight: 300;
-  font-size: 56px;
-  line-height: 61px;
-  letter-spacing: 0.56px;
+  font-size: 48px;
+  line-height: 53px;
 }
 
 .promo__description {
@@ -40,8 +39,7 @@
 
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 0.63px;
+  line-height: 27px;
 }
 
 .promo__google-pay-link,

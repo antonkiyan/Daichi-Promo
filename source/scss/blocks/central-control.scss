@@ -1,13 +1,63 @@
 .central-control {
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  &__title {
+    @include title-font;
+
+    margin: 0 auto 80px;
+    max-width: 1170px;
+
+    text-align: center;
+  }
+
+  &__all-in-one {
+    @include container;
+
+    min-height: 584px;
+    padding-top: 157px;
+    margin-bottom: 50px;
+
+    background-position: right 53px center;
+    background-repeat: no-repeat;
+    background-image: url("../img/all-in-one.png");
+  }
+
+  &__assistant {
+    @include container;
+
+    min-height: 630px;
+    padding-top: 195px;
+    margin-bottom: 80px;
+
+    background-position: left 53px center;
+    background-repeat: no-repeat;
+    background-image: url("../img/assistant.png");
+  }
+
+  &__intelligent {
+    @include container;
+
+    min-height: 600px;
+    padding-top: 80px;
+
+    background-position: right 53px center;
+    background-repeat: no-repeat;
+    background-image: url("../img/intelligent.png");
+  }
+}
+
+.central-control__distance {
   @include container;
 
-  min-height: 850px;
+  min-height: 650px;
   padding-left: 773px;
-  padding-top: 229px;
+  padding-top: 80px;
+  margin-bottom: 80px;
 
   background-image: url("../img/mobile-app.png");
   background-repeat: no-repeat;
-  background-position: top 120px left 53px;
+  background-position: top left 53px;
 
   @include retina {
     background-image: url("../img/mobile-app@2x.png");
@@ -15,23 +65,32 @@
   }
 }
 
-.central-control__title {
+.central-control__sub-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  max-width: 690px;
 
   font-weight: 300;
-  font-size: 42px;
-  line-height: 46px;
+  font-size: 40px;
+  line-height: 48px;
+
+  &--assistant {
+    margin-left: auto;
+  }
 }
 
 .central-control__desc {
   margin: 0;
   margin-bottom: 50px;
+  max-width: 690px;
 
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.63px;
+  line-height: 27px;
+
+  &--assistant {
+    margin-left: auto;
+  }
 }
 
 .central-control__google-pay-link,
@@ -64,7 +123,7 @@
 }
 
 @include desktop-medium {
-  .central-control {
+  .central-control__distance {
     min-height: 628px;
     padding-left: calc(474px + 5.18%);
     padding-top: 126px;
@@ -78,7 +137,7 @@
     }
   }
 
-  .central-control__title {
+  .central-control__sub-title {
     font-size: 32px;
     line-height: 35px;
     letter-spacing: 0.32px;
@@ -100,7 +159,7 @@
 }
 
 @include tablet {
-  .central-control {
+  .central-control__distance {
     position: relative;
 
     text-align: center;
@@ -131,7 +190,7 @@
     }
   }
 
-  .central-control__title {
+  .central-control__sub-title {
     position: relative;
     z-index: 10;
   }
@@ -149,7 +208,7 @@
 }
 
 @include mobile-l {
-  .central-control__title {
+  .central-control__sub-title {
     font-size: 24px;
     line-height: 28px;
   }
@@ -159,7 +218,7 @@
     padding: 0 10px;
   }
 
-  .central-control {
+  .central-control__distance {
     min-height: 892px;
 
     &::before {
@@ -176,7 +235,7 @@
 }
 
 @include mobile {
-  .central-control {
+  .central-control__distance {
     padding-left: 5%;
     min-height: 930px;
 
@@ -192,7 +251,7 @@
     }
   }
 
-  .central-control__title {
+  .central-control__sub-title {
     margin-bottom: 25px;
     min-height: 114px;
   }
