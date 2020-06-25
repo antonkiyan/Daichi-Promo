@@ -7,14 +7,14 @@
 
   position: relative;
 
-  padding-top: 300px;
+  padding-top: 330px;
   min-height: 950px;
   height: 100vh;
   max-height: 1200px;
 
   background-image: url("../img/app-showcase-icon.png");
   background-repeat: no-repeat;
-  background-position: top 100px right 53px;
+  background-position: top 130px right 53px;
 
   @include retina {
     background-image: url("../img/app-showcase-icon@2x.png");
@@ -23,23 +23,19 @@
 }
 
 .promo__title {
+  @include title-font;
+
   margin: 0;
   margin-bottom: 50px;
   max-width: 50%;
-
-  font-weight: 300;
-  font-size: 48px;
-  line-height: 53px;
 }
 
 .promo__description {
+  @include desc-font;
+
   margin: 0;
   margin-bottom: 50px;
   max-width: 49%;
-
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
 }
 
 .promo__google-pay-link,
@@ -141,22 +137,18 @@
   .promo__title {
     max-width: 43%;
 
-    font-size: 42px;
-    line-height: 46px;
-    letter-spacing: 0px;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   .promo__description {
-    max-width: 44%;
-
-    font-size: 15px;
-    letter-spacing: 0px;
+    max-width: 440px;
   }
 }
 
 @include tablet {
   .promo__container {
-    padding-top: 120px;
+    padding-top: 80px;
     min-height: 960px;
 
     text-align: center;

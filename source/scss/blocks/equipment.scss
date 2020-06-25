@@ -35,6 +35,13 @@
     font-size: 40px;
     line-height: 48px;
   }
+
+  &--mobile {
+    @include sub-title-font;
+
+    max-width: 750px;
+    margin: 0 auto 25px;
+  }
 }
 
 .equipment__desc {
@@ -45,7 +52,6 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 27px;
-  letter-spacing: 0.63px;
   text-align: center;
 }
 

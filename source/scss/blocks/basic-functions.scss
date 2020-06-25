@@ -22,7 +22,7 @@
 
   font-weight: 300;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
   text-align: center;
   letter-spacing: 0;
 }
@@ -35,14 +35,15 @@
 .basic-functions__image-box {
   position: relative;
 
-  width: 387px;
-  height: 952px;
+  width: 451px;
+  height: 882px;
 
-  background-image: url("../img/basic-functions.png");
+  background-image: url("../img/basic-functions-1.png");
+  background-repeat: no-repeat;
 
   @include retina {
-    background-image: url("../img/basic-functions@2x.png");
-    background-size: 387px 952px;
+    background-image: url("../img/basic-functions-1@2x.png");
+    background-size: 451px 882px;
   }
 }
 
@@ -238,21 +239,25 @@
 
   .basic-functions__desc {
     width: 85%;
+    margin-bottom: 40px;
 
     font-size: 15px;
     line-height: 23px;
   }
 
   .basic-functions__image-box {
-    width: 286px;
-    height: 704px;
+    width: 306px;
+    height: 599px;
+    margin-top: 40px;
 
-    background-image: url("../img/basic-functions-medium.png");
+    background-size: 306px auto;
 
-    @include retina {
-      background-image: url("../img/basic-functions-medium@2x.png");
-      background-size: 286px auto;
-    }
+    background-image: url("../img/basic-functions-1@2x.png");
+
+    // @include retina {
+    //   background-image: url("../img/basic-functions-medium@2x.png");
+    //   background-size: 286px auto;
+    // }
   }
 
   .basiс-functions__temperature-image-box {
@@ -357,6 +362,7 @@
   .basic-functions__desc {
     max-width: 704px;
     width: auto;
+    margin-bottom: 80px;
   }
 
   .basic-functions__wrapper {
@@ -368,17 +374,20 @@
   }
 
   .basic-functions__image-box {
-    width: 337px;
-    height: 827px;
+    width: 341px;
+    height: 667px;
     margin-right: auto;
+    margin-top: 120px;
 
-    background-image: url("../img/basic-functions-tablet.png");
-    background-size: 337px auto;
-    order: 1;
+    background-size: 341px auto;
 
-    @include retina {
-      background-image: url("../img/basic-functions-tablet@2x.png");
-    }
+    // background-image: url("../img/basic-functions-tablet.png");
+    // background-size: 337px auto;
+    // order: 1;
+
+    // @include retina {
+    //   background-image: url("../img/basic-functions-tablet@2x.png");
+    // }
   }
 
   .basiс-functions__temperature-image-box {

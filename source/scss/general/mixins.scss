@@ -77,13 +77,30 @@
   }
 }
 
+@mixin sub-title-font {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+
+  @include desktop-medium {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  @include mobile-l {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 @mixin desc-font {
   margin: 0;
 
   font-weight: 300;
   font-size: 18px;
   line-height: 27px;
-  letter-spacing: 0.63px;
 
   @include desktop-medium {
     font-size: 15px;

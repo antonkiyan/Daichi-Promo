@@ -1,6 +1,6 @@
 .support {
-  padding: 90px 0 63px;
-  margin-bottom: 188px;
+  padding: 113px 0;
+  margin-bottom: 228px;
   min-height: 300;
 
   background-color: #f6f6f6;
@@ -15,7 +15,7 @@
     content: "";
 
     position: absolute;
-    top: -160px;
+    top: -183px;
     left: 53px;
 
     width: 705px;
@@ -31,13 +31,12 @@
 }
 
 .support p {
-  width: 49%;
-  margin: 0;
+  @include desc-font;
+
+  max-width: 690px;
   margin-left: auto;
 
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 37px;
+  font-weight: 400;
 }
 
 @include desktop-medium {
@@ -68,8 +67,8 @@
   .support p {
     width: 48.4%;
 
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 

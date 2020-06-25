@@ -92,6 +92,14 @@
   background-image: url("../img/logo-my-comfort-plus.svg");
 }
 
+.promo__logo-mobile {
+  width: 325px;
+  height: 72px;
+  margin: 0 auto 100px;
+
+  background-image: url("../img/mobile-control-logo.svg");
+}
+
 @include desktop-medium {
   .promo__longlife {
     &-title br {
@@ -110,6 +118,11 @@
     &-desc--comfort {
       max-width: 918px;
       margin: 0 auto 50px;
+    }
+
+    &-desc--mobile {
+      max-width: 918px;
+      margin: 0 auto 80px;
     }
 
     &-slogan {
