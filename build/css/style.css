@@ -1570,7 +1570,7 @@ a {
     padding-top: 60px;
     min-height: 735px;
     background-image: url("../img/app-showcase-icon-mobile-l.png");
-    background-position: top 203px left calc(50% - 20px);
+    background-position: top 264px left calc(50% - 20px);
     background-size: 316px auto;
   }
 }
@@ -1583,14 +1583,17 @@ a {
 
 @media (max-width: 767px) {
   .promo__title {
-    max-width: 90%;
-    font-size: 24px;
-    line-height: 28px;
+    max-width: none;
+    font-size: 32px;
+    line-height: 35px;
   }
   .promo__description {
     min-height: 62px;
     margin: 0 auto 373px;
     line-height: 21px;
+  }
+  .promo__scroll-down {
+    display: none;
   }
 }
 
@@ -1598,6 +1601,7 @@ a {
   .promo__container {
     min-height: auto;
     padding-bottom: 93px;
+    padding-top: 38px;
     background-image: url("../img/app-showcase-icon-mobile.png");
     background-position: bottom 199px left calc(50% - 15px);
     background-size: 258px auto;
@@ -1613,9 +1617,13 @@ a {
 @media (max-width: 479px) {
   .promo__title {
     max-width: 100%;
+    font-size: 24px;
+    line-height: 29px;
   }
   .promo__description {
     margin-bottom: 305px;
+    font-size: 12px;
+    line-height: 23px;
   }
   .promo__google-pay-link,
   .promo__app-store-link {
@@ -1624,6 +1632,9 @@ a {
   }
   .promo__google-pay-link {
     margin-bottom: 10px;
+  }
+  .promo__scroll-down {
+    display: block;
   }
 }
 
@@ -1840,6 +1851,12 @@ a {
   margin-left: auto;
 }
 
+@media (max-width: 1500px) {
+  .central-control__sub-title--assistant {
+    max-width: 650px;
+  }
+}
+
 .central-control__desc {
   margin: 0;
   margin-bottom: 50px;
@@ -1851,6 +1868,12 @@ a {
 
 .central-control__desc--assistant {
   margin-left: auto;
+}
+
+@media (max-width: 1500px) {
+  .central-control__desc--assistant {
+    max-width: 650px;
+  }
 }
 
 .central-control__google-pay-link,
@@ -2046,56 +2069,73 @@ a {
 }
 
 @media (max-width: 767px) {
-  .central-control__sub-title {
-    font-size: 24px;
-    line-height: 28px;
+  .central-control {
+    padding-top: 80px;
   }
-  .central-control__desc {
-    min-height: 154px;
-    padding: 0 10px;
+  .central-control__title {
+    max-width: 425px;
   }
-  .central-control__distance {
-    min-height: 892px;
-    background-image: url("../img/mobile-app-mobile-l.png");
-    background-position: top calc(50% + 246px) left 50%;
-  }
-  .central-control__distance::before {
-    height: 492px;
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .central-control__distance {
+  .central-control__image-box {
+    padding-top: 63%;
     background-image: url("../img/mobile-app-mobile-l@2x.png");
+    background-position: top -40px center;
+    background-size: 100% auto;
   }
-}
-
-@media (max-width: 479px) {
-  .central-control__distance {
-    padding-left: 5%;
-    min-height: 930px;
-    background-image: url("../img/mobile-app-mobile.png");
-    background-position: top calc(50% + 315px) left 50%;
+  .central-control__all-in-one {
+    margin-bottom: 75px;
   }
-  .central-control__distance::before {
-    height: 630px;
+  .central-control__assistant {
+    margin-bottom: 75px;
   }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .central-control__distance {
-    background-image: url("../img/mobile-app-mobile@2x.png");
-  }
-}
-
-@media (max-width: 479px) {
   .central-control__sub-title {
+    max-width: 416px;
     margin-bottom: 25px;
-    min-height: 114px;
+    font-size: 24px;
+    line-height: 27px;
   }
   .central-control__desc {
-    min-height: 200px;
-    padding: 0;
+    max-width: 416px;
+  }
+  .central-control__distance {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 479px) {
+  .central-control__title {
+    max-width: 85%;
+  }
+  .central-control__image-box {
+    padding-top: 94%;
+    background-image: url("../img/mobile-app-mobile@2x.png");
+    background-position: top center;
+  }
+  .central-control__all-in-one {
+    padding-top: calc(88% + 50px);
+    padding-left: 0;
+    padding-right: 0;
+    background-size: 90% auto;
+  }
+  .central-control__assistant {
+    padding-top: calc(90% + 50px);
+    padding-left: 0;
+    padding-right: 0;
+    background-size: 90% auto;
+  }
+  .central-control__intelligent {
+    padding-top: calc(88% + 50px);
+    padding-left: 0;
+    padding-right: 0;
+    background-size: 90% auto;
+  }
+  .central-control__sub-title {
+    max-width: 90%;
+  }
+  .central-control__desc {
+    max-width: 90%;
+  }
+  .central-control__desc--all-in-one {
+    max-width: 100%;
   }
   .central-control__google-pay-link,
   .central-control__app-store-link {
@@ -2536,6 +2576,10 @@ a {
 }
 
 @media (max-width: 767px) {
+  .basic-functions {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
   .basic-functions__title {
     padding: 0 60px;
     margin-bottom: 25px;
@@ -2550,6 +2594,9 @@ a {
   }
   .basic-functions__image-box {
     margin: 0 auto 50px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .basic-functions__right-side,
   .basic-functions__left-side {
@@ -2595,7 +2642,7 @@ a {
 
 @media (max-width: 479px) {
   .basic-functions {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   .basic-functions__title {
     padding: 0;
@@ -2627,17 +2674,10 @@ a {
     padding: 0 40px;
   }
   .basic-functions__image-box {
-    width: 250px;
-    height: 615px;
+    width: 288px;
+    height: 563px;
     margin: 0 auto 50px;
-    background-image: url("../img/basic-functions-mobile.png");
-    background-size: 250px auto;
-  }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .basic-functions__image-box {
-    background-image: url("../img/basic-functions-mobile@2x.png");
+    background-size: 288px auto;
   }
 }
 
@@ -3672,19 +3712,10 @@ a {
   .advanced-functions__second {
     margin: 0 auto 80px;
     padding-top: 42.3%;
-    background-image: url("../img/happy-people-2-tablet.png");
+    background-image: url("../img/happy-people-2-tablet@2x.png");
     background-position: top 0 right 50%;
     background-size: 100% auto;
   }
-}
-
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .advanced-functions__second {
-    background-image: url("../img/happy-people-2-tablet@2x.png");
-  }
-}
-
-@media (max-width: 1023px) {
   .advanced-functions__second-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3773,19 +3804,10 @@ a {
   .advanced-functions__fourth {
     margin: 0 auto 80px;
     padding-top: 42.3%;
-    background-image: url("../img/happy-people-3-tablet.png");
+    background-image: url("../img/happy-people-3-tablet@2x.png");
     background-position: top 0 right 50%;
     background-size: 100% auto;
   }
-}
-
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .advanced-functions__fourth {
-    background-image: url("../img/happy-people-3-tablet@2x.png");
-  }
-}
-
-@media (max-width: 1023px) {
   .advanced-functions__fourth-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3850,6 +3872,9 @@ a {
 }
 
 @media (max-width: 767px) {
+  .advanced-functions {
+    padding-top: 100px;
+  }
   .advanced-functions__title {
     font-size: 24px;
     line-height: 27px;
@@ -3859,7 +3884,22 @@ a {
     line-height: 21px;
   }
   .advanced-functions__first {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    min-height: auto;
+    padding-bottom: 718px;
+    padding-top: 0;
+    background-position: bottom center;
+  }
+  .advanced-functions__first-title {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .advanced-functions__first-desc {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
   }
   .advanced-functions__first-container {
     display: -webkit-box;
@@ -3907,35 +3947,42 @@ a {
     width: auto;
     margin: 0 auto;
   }
+  .advanced-functions__access-rights {
+    min-height: none;
+    padding-top: 0;
+    padding-bottom: 718px;
+    margin-bottom: 100px;
+    background-position: bottom center;
+  }
+  .advanced-functions__access-rights-title, .advanced-functions__access-rights-desc {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .advanced-functions__access-rights-title {
+    margin-bottom: 25px;
+  }
   .advanced-functions__second-container {
     padding: 0;
   }
   .advanced-functions__second {
     margin-bottom: 50px;
     padding-top: 67.7%;
-    background-image: url("../img/happy-people-2-mobile-l.png");
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .advanced-functions__second {
     background-image: url("../img/happy-people-2-mobile-l@2x.png");
   }
-}
-
-@media (max-width: 767px) {
   .advanced-functions__second-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 50px;
     min-height: 561px;
     padding: 50px 32px;
   }
   .advanced-functions__third {
     padding: 0;
     min-height: 1619px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   .advanced-functions__third::before {
     top: 310px;
@@ -3974,19 +4021,10 @@ a {
     padding: 0;
   }
   .advanced-functions__fourth {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding-top: 67.7%;
-    background-image: url("../img/happy-people-3-mobile-l.png");
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .advanced-functions__fourth {
     background-image: url("../img/happy-people-3-mobile-l@2x.png");
   }
-}
-
-@media (max-width: 767px) {
   .advanced-functions__fourth-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4057,91 +4095,54 @@ a {
     margin-right: 0;
   }
   .advanced-functions__item--location {
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
   .advanced-functions__item--like {
     margin: 0 auto 50px;
   }
-  .advanced-functions__title {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .advanced-functions__desc {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .advanced-functions__third {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .advanced-functions__first {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-  .advanced-functions__fourth {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-  }
-  .advanced-functions__fifth {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
-  }
   .advanced-functions__second {
-    display: none;
+    width: 100%;
   }
-  .advanced-functions__third .advanced-functions__item--location,
-  .advanced-functions__third .advanced-functions__item--like {
-    display: block;
+  .advanced-functions__second-note {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .advanced-functions__second-content {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
   }
   .advanced-functions__third {
     width: 100%;
     min-height: auto;
+    margin-bottom: 50px;
   }
   .advanced-functions__third::before {
-    top: 355px;
-    width: 250px;
-    height: 497px;
-    margin-left: -125px;
-    background-image: url("../img/advanced-scenario-mobile.png");
-    background-size: 250px auto;
+    top: 358px;
+    width: 288px;
+    height: 573px;
+    margin-left: -144px;
+    background-size: cover;
   }
   .advanced-functions__third::after {
-    top: 1445px;
-    width: 244px;
-    height: 485px;
-    margin-right: -122px;
-    background-image: url("../img/advanced-schedule-mobile.png");
-    background-size: 244px auto;
+    top: 1243px;
+    width: 288px;
+    height: 573px;
+    margin-right: -144px;
+    background-size: cover;
   }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .advanced-functions__third::before {
-    background-image: url("../img/advanced-scenario-mobile@2x.png");
-  }
-  .advanced-functions__third::after {
-    background-image: url("../img/advanced-schedule-mobile@2x.png");
-  }
-}
-
-@media (max-width: 479px) {
   .advanced-functions__third-content .advanced-functions__item {
     max-width: 288px;
   }
   .advanced-functions__third-content .advanced-functions__item--pin {
-    margin-bottom: 596px;
+    margin-bottom: 673px;
   }
   .advanced-functions__third-content .advanced-functions__item--pin .advanced-functions__item-title {
     padding: 0 50px;
   }
   .advanced-functions__third-content .advanced-functions__item--calendar {
-    margin-bottom: 585px;
+    margin-bottom: 623px;
   }
   .advanced-functions__third-content .advanced-functions__item--calendar .advanced-functions__item-title {
     padding: 0 50px;
@@ -4152,6 +4153,11 @@ a {
   }
   .advanced-functions__first {
     margin-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 622px;
+    background-size: 288px auto;
   }
   .advanced-functions__first-container {
     min-height: auto;
@@ -4168,20 +4174,17 @@ a {
 }
 
 @media (max-width: 479px) {
+  .advanced-functions__access-rights {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 622px;
+    background-size: 288px auto;
+  }
   .advanced-functions__fourth {
     width: 100%;
     padding-top: 70%;
-    background-image: url("../img/happy-people-3-mobile.png");
-  }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .advanced-functions__fourth {
     background-image: url("../img/happy-people-3-mobile@2x.png");
   }
-}
-
-@media (max-width: 479px) {
   .advanced-functions__fourth-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5384,7 +5387,7 @@ section.questions input + label::before {
   }
   .to-programs__my-comfort {
     background: url("../img/daichi-comfort-big-1.png") center right -20px/cover no-repeat;
-    background-color: #e7e9e8;
+    background-color: #f7f7f7;
   }
   .to-programs__mobile-control {
     background: url("../img/app-showcase-icon-medium.png") bottom right 10px/250px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
@@ -5449,19 +5452,9 @@ section.questions input + label::before {
   }
   .to-programs__climat-online {
     padding-bottom: 367px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f5fb), color-stop(32%, #f6f5fb), color-stop(44%, rgba(246, 245, 251, 0))), url("../img/daichi-climat-online-medium.png") right top 160px/110% auto no-repeat;
-    background: linear-gradient(to bottom, #f6f5fb 0, #f6f5fb 32%, rgba(246, 245, 251, 0) 44%), url("../img/daichi-climat-online-medium.png") right top 160px/110% auto no-repeat;
-  }
-}
-
-@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
-  .to-programs__climat-online {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f5fb), color-stop(32%, #f6f5fb), color-stop(44%, rgba(246, 245, 251, 0))), url("../img/daichi-climat-online-medium@2x.png") right top 160px/110% auto no-repeat;
     background: linear-gradient(to bottom, #f6f5fb 0, #f6f5fb 32%, rgba(246, 245, 251, 0) 44%), url("../img/daichi-climat-online-medium@2x.png") right top 160px/110% auto no-repeat;
   }
-}
-
-@media (max-width: 479px) {
   .to-programs__mobile-control {
     padding-bottom: 357px;
     background: url("../img/app-showcase-icon-medium.png") bottom -10px right calc(50% + 15px)/300px auto no-repeat, -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
@@ -5660,7 +5653,7 @@ section.questions input + label::before {
 @media (max-width: 479px) {
   .support {
     padding: 187px 0 0 0;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     min-height: auto;
     background: linear-gradient(180deg, #f6f6f6, #f6f6f6 144px, #ffffff 144px, #ffffff 100%);
   }
@@ -11044,11 +11037,19 @@ section.questions input + label::before {
     font-size: 24px;
     line-height: 27px;
   }
+  .promo__longlife-title--mobile {
+    max-width: 400px;
+  }
   .promo__longlife-desc, .promo__longlife-slogan {
     max-width: 90%;
   }
   .promo__longlife-desc--comfort, .promo__longlife-slogan--comfort {
     max-width: 87%;
+  }
+  .promo__longlife-google-pay-link, .promo__longlife-app-store-link {
+    width: 162px;
+    height: 48px;
+    background-size: cover;
   }
   .promo__logo-box {
     -webkit-box-orient: vertical;
@@ -11064,12 +11065,27 @@ section.questions input + label::before {
     margin-right: 0;
     margin-bottom: 50px;
   }
+  .promo__logo-mobile {
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 479px) {
   .promo__longlife-title {
     max-width: 80%;
     margin-bottom: 50px;
+  }
+  .promo__longlife-title--mobile {
+    max-width: 90%;
+  }
+  .promo__longlife-google-pay-link {
+    margin-right: 75px;
+    margin-left: 75px;
+    margin-bottom: 15px;
+  }
+  .promo__longlife-app-store-link {
+    margin-left: 75px;
+    margin-right: 75px;
   }
   .promo__logo {
     margin-bottom: 50px;
@@ -11087,6 +11103,12 @@ section.questions input + label::before {
     margin-bottom: 25px;
     width: 200px;
     height: 48px;
+    background-size: cover;
+  }
+  .promo__logo-mobile {
+    width: 217px;
+    height: 48px;
+    margin-bottom: 50px;
     background-size: cover;
   }
 }

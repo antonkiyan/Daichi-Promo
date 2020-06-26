@@ -743,13 +743,13 @@
     margin: 0 auto 80px;
     padding-top: 42.3%;
 
-    background-image: url("../img/happy-people-2-tablet.png");
+    background-image: url("../img/happy-people-2-tablet@2x.png");
     background-position: top 0 right 50%;
     background-size: 100% auto;
 
-    @include retina {
-      background-image: url("../img/happy-people-2-tablet@2x.png");
-    }
+    // @include retina {
+    //   background-image: url("../img/happy-people-2-tablet@2x.png");
+    // }
   }
 
   .advanced-functions__second-content {
@@ -826,14 +826,13 @@
     margin: 0 auto 80px;
     padding-top: 42.3%;
 
-    background-image: url("../img/happy-people-3-tablet.png");
+    background-image: url("../img/happy-people-3-tablet@2x.png");
     background-position: top 0 right 50%;
     background-size: 100% auto;
 
-
-    @include retina {
-      background-image: url("../img/happy-people-3-tablet@2x.png");
-    }
+    // @include retina {
+    //   background-image: url("../img/happy-people-3-tablet@2x.png");
+    // }
   }
 
   .advanced-functions__fourth-content {
@@ -895,6 +894,10 @@
 }
 
 @include mobile-l {
+  .advanced-functions {
+    padding-top: 100px;
+  }
+
   .advanced-functions__title {
     font-size: 24px;
     line-height: 27px;
@@ -908,7 +911,27 @@
   }
 
   .advanced-functions__first {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    min-height: auto;
+    padding-bottom: 718px;
+    padding-top: 0;
+
+    background-position: bottom center;
+
+    &-title {
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 25px;
+
+      text-align: center;
+    }
+
+    &-desc {
+      max-width: 100%;
+      padding: 0;
+
+      text-align: center;
+    }
   }
 
   .advanced-functions__first-container {
@@ -962,6 +985,27 @@
     }
   }
 
+  .advanced-functions__access-rights {
+    min-height: none;
+    padding-top: 0;
+    padding-bottom: 718px;
+    margin-bottom: 100px;
+
+    background-position: bottom center;
+
+    &-title,
+    &-desc {
+      max-width: 100%;
+      padding: 0;
+
+      text-align: center;
+    }
+
+    &-title {
+      margin-bottom: 25px;
+    }
+  }
+
   .advanced-functions__second-container {
     padding: 0;
   }
@@ -970,15 +1014,12 @@
     margin-bottom: 50px;
     padding-top: 67.7%;
 
-    background-image: url("../img/happy-people-2-mobile-l.png");
-
-    @include retina {
-      background-image: url("../img/happy-people-2-mobile-l@2x.png");
-    }
+    background-image: url("../img/happy-people-2-mobile-l@2x.png");
   }
 
   .advanced-functions__second-content {
     flex-direction: column;
+    margin-bottom: 50px;
 
     min-height: 561px;
     padding: 50px 32px;
@@ -987,7 +1028,7 @@
   .advanced-functions__third {
     padding: 0;
     min-height: 1619px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 
     &::before {
       top: 310px;
@@ -1029,14 +1070,10 @@
   }
 
   .advanced-functions__fourth {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding-top: 67.7%;
 
-    background-image: url("../img/happy-people-3-mobile-l.png");
-
-    @include retina {
-      background-image: url("../img/happy-people-3-mobile-l@2x.png");
-    }
+    background-image: url("../img/happy-people-3-mobile-l@2x.png");
   }
 
   .advanced-functions__fourth-content {
@@ -1124,7 +1161,7 @@
     // }
 
     &--location {
-      margin-bottom: 0;
+      margin-bottom: 50px;
     }
 
     &--like {
@@ -1145,81 +1182,102 @@
     // }
   }
 
-  .advanced-functions__title {
-    order: 1;
-  }
+  // .advanced-functions__title {
+  //   order: 1;
+  // }
 
-  .advanced-functions__desc {
-    order: 2;
-  }
+  // .advanced-functions__desc {
+  //   order: 2;
+  // }
 
-  .advanced-functions__third {
-    order: 3;
-  }
+  // .advanced-functions__third {
+  //   order: 3;
+  // }
 
-  .advanced-functions__first {
-    order: 4;
-  }
+  // .advanced-functions__first {
+  //   order: 4;
+  // }
 
-  .advanced-functions__fourth {
-    order: 5;
-  }
+  // .advanced-functions__fourth {
+  //   order: 5;
+  // }
 
-  .advanced-functions__fifth {
-    order: 6;
-  }
+  // .advanced-functions__fifth {
+  //   order: 6;
+  // }
+
+  // .advanced-functions__second {
+  //   display: none;
+  // }
+
+  // .advanced-functions__third .advanced-functions__item--location,
+  // .advanced-functions__third .advanced-functions__item--like {
+  //   display: block;
+  // }
 
   .advanced-functions__second {
-    display: none;
+    width: 100%;
+
+    &-note {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
-  .advanced-functions__third .advanced-functions__item--location,
-  .advanced-functions__third .advanced-functions__item--like {
-    display: block;
+  .advanced-functions__second-content {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
   }
 
   .advanced-functions__third {
     width: 100%;
     min-height: auto;
+    margin-bottom: 50px;
 
     &::before {
-      top: 355px;
+      top: 358px;
 
-      width: 250px;
-      height: 497px;
-      margin-left: -125px;
+      width: 288px;
+      height: 573px;
+      margin-left: -144px;
 
-      background-image: url("../img/advanced-scenario-mobile.png");
-      background-size: 250px auto;
+      background-size: cover;
+
+      // background-image: url("../img/advanced-scenario-mobile.png");
+      // background-size: 250px auto;
     }
 
     &::after {
-      top: 1445px;
+      top: 1243px;
 
-      width: 244px;
-      height: 485px;
-      margin-right: -122px;
+      width: 288px;
+      height: 573px;
+      margin-right: -144px;
 
-      background-image: url("../img/advanced-schedule-mobile.png");
-      background-size: 244px auto;
+      background-size: cover;
+
+      // background-image: url("../img/advanced-schedule-mobile.png");
+      // background-size: 244px auto;
     }
 
-    @include retina {
-      &::before {
-        background-image: url("../img/advanced-scenario-mobile@2x.png");
-      }
+    // @include retina {
+    //   &::before {
+    //     background-image: url("../img/advanced-scenario-mobile@2x.png");
+    //   }
 
-      &::after {
-        background-image: url("../img/advanced-schedule-mobile@2x.png");
-      }
-    }
+    //   &::after {
+    //     background-image: url("../img/advanced-schedule-mobile@2x.png");
+    //   }
+    // }
   }
 
   .advanced-functions__third-content .advanced-functions__item {
     max-width: 288px;
 
     &--pin {
-      margin-bottom: 596px;
+      margin-bottom: 673px;
     }
 
     &--pin .advanced-functions__item-title {
@@ -1227,7 +1285,7 @@
     }
 
     &--calendar {
-      margin-bottom: 585px;
+      margin-bottom: 623px;
     }
 
     &--calendar .advanced-functions__item-title {
@@ -1242,6 +1300,13 @@
 
   .advanced-functions__first {
     margin-bottom: 50px;
+
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 622px;
+
+    background-size: 288px auto;
   }
 
   .advanced-functions__first-container {
@@ -1256,15 +1321,19 @@
     }
   }
 
+  .advanced-functions__access-rights {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 622px;
+
+    background-size: 288px auto;
+  }
+
   .advanced-functions__fourth {
     width: 100%;
     padding-top: 70%;
 
-    background-image: url("../img/happy-people-3-mobile.png");
-
-    @include retina {
-      background-image: url("../img/happy-people-3-mobile@2x.png");
-    }
+    background-image: url("../img/happy-people-3-mobile@2x.png");
   }
 
   .advanced-functions__fourth-content {

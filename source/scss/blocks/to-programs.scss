@@ -328,7 +328,7 @@
     background:
       // linear-gradient(to bottom, rgba(247, 247, 247, 1) 0, rgba(247, 247, 247, 1) 30%, rgba(247, 247, 247, 0) 100%),
       url("../img/daichi-comfort-big-1.png") center right -20px /cover no-repeat;
-      background-color: #e7e9e8;
+      background-color: #f7f7f7;
   }
 
   .to-programs__mobile-control {
@@ -407,14 +407,14 @@
 
     background:
       linear-gradient(to bottom, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 32%, rgba(246, 245, 251, 0) 44%),
-      url("../img/daichi-climat-online-medium.png") right top 160px /110% auto no-repeat;
+      url("../img/daichi-climat-online-medium@2x.png") right top 160px /110% auto no-repeat;
     //background-image: url("../img/daichi-climat-online-mobile@2x.png");
 
-    @include retina {
-      background:
-      linear-gradient(to bottom, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 32%, rgba(246, 245, 251, 0) 44%),
-      url("../img/daichi-climat-online-medium@2x.png") right top 160px /110% auto no-repeat;
-    }
+    // @include retina {
+    //   background:
+    //   linear-gradient(to bottom, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 32%, rgba(246, 245, 251, 0) 44%),
+    //   url("../img/daichi-climat-online-medium@2x.png") right top 160px /110% auto no-repeat;
+    // }
   }
 
   .to-programs__mobile-control {

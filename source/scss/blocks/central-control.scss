@@ -76,6 +76,10 @@
 
   &--assistant {
     margin-left: auto;
+
+    @media (max-width: 1500px) {
+      max-width: 650px;
+    }
   }
 }
 
@@ -90,6 +94,10 @@
 
   &--assistant {
     margin-left: auto;
+
+    @media (max-width: 1500px) {
+      max-width: 650px;
+    }
   }
 }
 
@@ -344,57 +352,95 @@
 }
 
 @include mobile-l {
+  .central-control {
+    padding-top: 80px;
+
+    &__title {
+      max-width: 425px;
+    }
+
+    &__image-box {
+      padding-top: 63%;
+
+      background-image: url("../img/mobile-app-mobile-l@2x.png");
+      background-position: top -40px center;
+      background-size: 100% auto;
+    }
+
+    &__all-in-one {
+      margin-bottom: 75px;
+    }
+
+    &__assistant {
+      margin-bottom: 75px;
+    }
+  }
+
   .central-control__sub-title {
+    max-width: 416px;
+    margin-bottom: 25px;
+
     font-size: 24px;
-    line-height: 28px;
+    line-height: 27px;
   }
 
   .central-control__desc {
-    min-height: 154px;
-    padding: 0 10px;
+    max-width: 416px;
   }
 
   .central-control__distance {
-    min-height: 892px;
-
-    &::before {
-      height: 492px;
-    }
-
-    background-image: url("../img/mobile-app-mobile-l.png");
-    background-position: top calc(50% + 246px) left 50%;
-
-    @include retina {
-      background-image: url("../img/mobile-app-mobile-l@2x.png");
-    }
+    margin-bottom: 75px;
   }
 }
 
 @include mobile {
-  .central-control__distance {
-    padding-left: 5%;
-    min-height: 930px;
-
-    &::before {
-      height: 630px;
+  .central-control {
+    &__title {
+      max-width: 85%;
     }
 
-    background-image: url("../img/mobile-app-mobile.png");
-    background-position: top calc(50% + 315px) left 50%;
+    &__image-box {
+      padding-top: 94%;
 
-    @include retina {
       background-image: url("../img/mobile-app-mobile@2x.png");
+      background-position: top center;
+    }
+
+    &__all-in-one {
+      padding-top: calc(88% + 50px);
+      padding-left: 0;
+      padding-right: 0;
+
+      background-size: 90% auto;
+    }
+
+    &__assistant {
+      padding-top: calc(90% + 50px);
+      padding-left: 0;
+      padding-right: 0;
+
+      background-size: 90% auto;
+    }
+
+    &__intelligent {
+      padding-top: calc(88% + 50px);
+      padding-left: 0;
+      padding-right: 0;
+
+      background-size: 90% auto;
     }
   }
 
   .central-control__sub-title {
-    margin-bottom: 25px;
-    min-height: 114px;
+    max-width: 90%;
   }
 
   .central-control__desc {
-    min-height: 200px;
-    padding: 0;
+    max-width: 90%;
+
+    &--all-in-one {
+      max-width: 100%;
+    }
   }
 
   .central-control__google-pay-link,

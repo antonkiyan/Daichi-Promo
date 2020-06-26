@@ -466,6 +466,11 @@
 }
 
 @include mobile-l {
+  .basic-functions {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
   .basic-functions__title {
     padding: 0 60px;
     margin-bottom: 25px;
@@ -484,6 +489,8 @@
 
   .basic-functions__image-box {
     margin: 0 auto 50px;
+
+    order: 2;
   }
 
   .basic-functions__right-side,
@@ -530,7 +537,7 @@
 
 @include mobile {
   .basic-functions {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 
   .basic-functions__title {
@@ -568,15 +575,17 @@
   }
 
   .basic-functions__image-box {
-    width: 250px;
-    height: 615px;
+    width: 288px;
+    height: 563px;
     margin: 0 auto 50px;
 
-    background-image: url("../img/basic-functions-mobile.png");
-    background-size: 250px auto;
+    background-size: 288px auto;
 
-    @include retina {
-      background-image: url("../img/basic-functions-mobile@2x.png");
-    }
+    // background-image: url("../img/basic-functions-mobile.png");
+    // background-size: 250px auto;
+
+    // @include retina {
+    //   background-image: url("../img/basic-functions-mobile@2x.png");
+    // }
   }
 }
