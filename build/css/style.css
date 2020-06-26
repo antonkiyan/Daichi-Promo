@@ -10877,7 +10877,7 @@ section.questions input + label::before {
   max-width: 1170px;
   margin: 0 auto;
   padding-top: 120px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
