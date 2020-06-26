@@ -20,7 +20,8 @@
 
     background-position: right 53px center;
     background-repeat: no-repeat;
-    background-image: url("../img/all-in-one.png");
+    background-image: url("../img/all-in-one@2x.png");
+    background-size: 600px auto;
   }
 
   &__assistant {
@@ -32,7 +33,8 @@
 
     background-position: left 53px center;
     background-repeat: no-repeat;
-    background-image: url("../img/assistant.png");
+    background-image: url("../img/assistant@2x.png");
+    background-size: 660px auto;
   }
 
   &__intelligent {
@@ -43,7 +45,8 @@
 
     background-position: right 53px center;
     background-repeat: no-repeat;
-    background-image: url("../img/intelligent.png");
+    background-image: url("../img/intelligent@2x.png");
+    background-size: 613px auto;
   }
 }
 

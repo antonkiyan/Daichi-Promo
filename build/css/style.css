@@ -1677,7 +1677,8 @@ a {
   margin-bottom: 50px;
   background-position: right 53px center;
   background-repeat: no-repeat;
-  background-image: url("../img/all-in-one.png");
+  background-image: url("../img/all-in-one@2x.png");
+  background-size: 600px auto;
 }
 
 @media (max-width: 1399px) {
@@ -1718,7 +1719,8 @@ a {
   margin-bottom: 80px;
   background-position: left 53px center;
   background-repeat: no-repeat;
-  background-image: url("../img/assistant.png");
+  background-image: url("../img/assistant@2x.png");
+  background-size: 660px auto;
 }
 
 @media (max-width: 1399px) {
@@ -1758,7 +1760,8 @@ a {
   padding-top: 80px;
   background-position: right 53px center;
   background-repeat: no-repeat;
-  background-image: url("../img/intelligent.png");
+  background-image: url("../img/intelligent@2x.png");
+  background-size: 613px auto;
 }
 
 @media (max-width: 1399px) {
@@ -5216,8 +5219,8 @@ section.questions input + label::before {
 }
 
 .to-programs__my-comfort {
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #f7f7f7), color-stop(20%, #f7f7f7), to(rgba(247, 247, 247, 0))), url("../img/daichi-comfort.png") top right/960px auto no-repeat;
-  background: linear-gradient(to right, #f7f7f7 0, #f7f7f7 20%, rgba(247, 247, 247, 0) 100%), url("../img/daichi-comfort.png") top right/960px auto no-repeat;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #f7f7f7), color-stop(20%, #f7f7f7), color-stop(25%, rgba(247, 247, 247, 0))), url("../img/daichi-comfort-big-1.png") top right/960px auto no-repeat;
+  background: linear-gradient(to right, #f7f7f7 0, #f7f7f7 20%, rgba(247, 247, 247, 0) 25%), url("../img/daichi-comfort-big-1.png") top right/960px auto no-repeat;
 }
 
 .to-programs__mobile-control {
@@ -10926,6 +10929,7 @@ section.questions input + label::before {
   width: 203px;
   height: 60px;
   background-repeat: no-repeat;
+  background-size: 203px 60px;
 }
 
 .promo__longlife-google-pay-link:hover, .promo__longlife-app-store-link:hover {
@@ -11049,7 +11053,7 @@ section.questions input + label::before {
   .promo__longlife-google-pay-link, .promo__longlife-app-store-link {
     width: 162px;
     height: 48px;
-    background-size: cover;
+    background-size: 162px 48px;
   }
   .promo__logo-box {
     -webkit-box-orient: vertical;
