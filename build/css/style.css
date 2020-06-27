@@ -2136,9 +2136,6 @@ a {
   .central-control__desc {
     max-width: 90%;
   }
-  .central-control__desc--all-in-one {
-    max-width: 100%;
-  }
   .central-control__google-pay-link,
   .central-control__app-store-link {
     display: block;
