@@ -1092,7 +1092,6 @@ html {
 body {
   min-width: 320px;
   margin: 0 auto;
-  font-family: "Gotham Pro", "Arial", "Helvetica", "Helvetica CY", "Nimbus Sans";
   font-style: normal;
 }
 
@@ -4584,7 +4583,7 @@ a {
 .equipment {
   max-width: 1276px;
   padding: 0 53px;
-  margin: 0 auto 80px;
+  margin: 0 auto 160px;
 }
 
 .equipment__slider-container {
